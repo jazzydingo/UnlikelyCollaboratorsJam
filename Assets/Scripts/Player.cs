@@ -7,6 +7,10 @@ public class Player : MonoBehaviour
     public Rigidbody2D body;
     public float speed;
 
+
+    public bool hasKey;
+
+    //singleton
     private void Awake()
     {
         if(current == null)
@@ -28,6 +32,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //player movement
         body.linearVelocity = new Vector3(InputSystem.actions["Move"].ReadValue<Vector2>().x * speed, InputSystem.actions["Move"].ReadValue<Vector2>().y * speed, 0);
 
         //change sprite rotation depending on which way going
