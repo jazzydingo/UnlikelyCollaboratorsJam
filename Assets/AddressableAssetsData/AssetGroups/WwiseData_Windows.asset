@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: WwiseData_Windows
+  m_EditorClassIdentifier: 
+  m_GroupName: WwiseData_Windows
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 8cf31ae98a9b5ca469a663f068c1de12
+  m_SerializeEntries:
+  - m_GUID: 88523453150db0e4aaade8086cde2749
+    m_Address: Assets/WwiseData/Banks/Windows/Main.bnk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 849abbd5e912c7a419d4e193b8a45585, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 81f8c47227434fa4ab1671802c7c0740, type: 2}
+    - {fileID: 11400000, guid: 353523705b5aaeb458baf45e28cdf794, type: 2}

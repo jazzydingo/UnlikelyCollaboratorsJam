@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Web" BasePlatform="Web" SchemaVersion="16" SoundBankVersion="154">
+	<SoundBanks>
+		<SoundBank Id="3161908922" Type="User" GUID="{88305422-A641-4F8F-950F-A4F6BF65F496}" Language="SFX" Hash="{11CE3D2C-B4A2-49DB-D6D7-5BEFB7DE3069}">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{BC052152-A776-F7EB-1A1D-79A52EEE2511}</FileHash>
+</SoundBanksInfo>
