@@ -23,11 +23,24 @@
 				<Bus Id="3803692087" Name="Master Audio Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus" GUID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" GUID="{88305422-A641-4F8F-950F-A4F6BF65F496}" Language="SFX" Hash="{11CE3D2C-B4A2-49DB-D6D7-5BEFB7DE3069}">
+		<SoundBank Id="3161908922" Type="User" GUID="{88305422-A641-4F8F-950F-A4F6BF65F496}" Language="SFX" Hash="{7C8FB238-16B3-F417-9750-6F38F2809B8E}">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
+			<Media>
+				<File Id="806454560" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>R16-05-Children Laughing.wav</ShortName>
+					<CachePath>AB/{ABFEFA6D-FC73-9FD5-A54A-DAE12B632454}.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3157003241" Name="TEST" ObjectPath="\Events\Default Work Unit\TEST" GUID="{847B3BD1-9476-4424-9A7F-487C1941DE2C}" DurationType="OneShot" DurationMin="4.788833" DurationMax="4.788833">
+					<MediaRefs>
+						<MediaRef Id="806454560"/>
+					</MediaRefs>
+				</Event>
+			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{16237FC5-1F31-9140-BD1C-C52106A7454A}</FileHash>
+	<FileHash>{C1FF6EF7-A4B8-DAB8-496B-E1DB18D9D7B8}</FileHash>
 </SoundBanksInfo>

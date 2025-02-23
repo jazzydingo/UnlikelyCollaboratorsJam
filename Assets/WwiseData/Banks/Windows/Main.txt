@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3157003241	TEST			\Default Work Unit\TEST	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	806454560	TEST	C:\Users\Andrei\Documents\GitHub\UnlikelyCollaboratorsJam\UnlikelyCollaboratorsJam_WwiseProject\.cache\AB\{ABFEFA6D-FC73-9FD5-A54A-DAE12B632454}.wem		\Actor-Mixer Hierarchy\Default Work Unit\TEST		459824
+

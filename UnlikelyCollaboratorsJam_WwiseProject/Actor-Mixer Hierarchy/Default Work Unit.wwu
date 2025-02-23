@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{4C241ED4-F104-487B-8AD7-32D3D42B0A85}" SchemaVersion="123">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{4C241ED4-F104-487B-8AD7-32D3D42B0A85}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{4C241ED4-F104-487B-8AD7-32D3D42B0A85}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="TEST" ID="{7F23F07C-84E0-4801-966C-17CA37730F58}" ShortID="715828721">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33B1D9EB-EF8C-4132-A246-584A4FB13536}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1312DD4B-C7BD-4C96-BBC5-02C2403F8FA5}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="R16-05-Children Laughing" ID="{9CEA8EE8-FA94-481B-A9A3-3976DE048D9B}">
+							<Language>SFX</Language>
+							<AudioFile>R16-05-Children Laughing.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="806454560"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="R16-05-Children Laughing" ID="{9CEA8EE8-FA94-481B-A9A3-3976DE048D9B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

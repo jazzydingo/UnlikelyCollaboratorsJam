@@ -56,12 +56,38 @@
     "Type": "User",
     "GUID": "{88305422-A641-4F8F-950F-A4F6BF65F496}",
     "Language": "SFX",
-    "Hash": "{11CE3D2C-B4A2-49DB-D6D7-5BEFB7DE3069}",
+    "Hash": "{7C8FB238-16B3-F417-9750-6F38F2809B8E}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
-    "Path": "Main.bnk"
+    "Path": "Main.bnk",
+    "Media": [
+     {
+      "Id": "806454560",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "R16-05-Children Laughing.wav",
+      "CachePath": "AB/{ABFEFA6D-FC73-9FD5-A54A-DAE12B632454}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3157003241",
+      "Name": "TEST",
+      "ObjectPath": "\\Events\\Default Work Unit\\TEST",
+      "GUID": "{847B3BD1-9476-4424-9A7F-487C1941DE2C}",
+      "DurationType": "OneShot",
+      "DurationMin": "4.788833",
+      "DurationMax": "4.788833",
+      "MediaRefs": [
+       {
+        "Id": "806454560"
+       }
+      ]
+     }
+    ]
    }
   ],
-  "FileHash": "{45FBCA94-29D7-7B48-AD8B-0683C90CDBB2}"
+  "FileHash": "{71A15D53-356C-59AB-7A39-1285DB9A715B}"
  }
 }

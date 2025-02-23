@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="154">
 	<SoundBanks>
-		<SoundBank Id="3161908922" Type="User" GUID="{88305422-A641-4F8F-950F-A4F6BF65F496}" Language="SFX" Hash="{11CE3D2C-B4A2-49DB-D6D7-5BEFB7DE3069}">
+		<SoundBank Id="3161908922" Type="User" GUID="{88305422-A641-4F8F-950F-A4F6BF65F496}" Language="SFX" Hash="{7C8FB238-16B3-F417-9750-6F38F2809B8E}">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
+			<Media>
+				<File Id="806454560" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>R16-05-Children Laughing.wav</ShortName>
+					<CachePath>AB/{ABFEFA6D-FC73-9FD5-A54A-DAE12B632454}.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3157003241" Name="TEST" ObjectPath="\Events\Default Work Unit\TEST" GUID="{847B3BD1-9476-4424-9A7F-487C1941DE2C}" DurationType="OneShot" DurationMin="4.788833" DurationMax="4.788833">
+					<MediaRefs>
+						<MediaRef Id="806454560"/>
+					</MediaRefs>
+				</Event>
+			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4AB89051-705A-F82E-8E3D-55DA8442889C}</FileHash>
+	<FileHash>{9CBD9EC0-916C-F8C5-678D-D174DE313858}</FileHash>
 </SoundBanksInfo>
