@@ -5,6 +5,7 @@ using UnityEngine;
 public class Interactable : MonoBehaviour
 {
     public bool pickup;
+    public GameObject prefab;
 
 
     // Start is called before the first frame update
@@ -25,9 +26,8 @@ public class Interactable : MonoBehaviour
         if(pickup)
         {
             //add this game object to inventory (save this object as reference, set sprite of this object to next inventory slot)
+            InventoryController.current.AddObject(this.gameObject);
 
-            //destroy this game object
-            Destroy(this.gameObject);
 
             //allow object to be "used"
         }

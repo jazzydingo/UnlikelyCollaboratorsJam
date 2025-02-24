@@ -39,11 +39,11 @@ public class Player : MonoBehaviour
         //change sprite rotation depending on which way going
         if (moveInput.x > 0)
         {
-            transform.localScale = new Vector3(1, 1, 1); //facing right
+            transform.localScale = new Vector3(2, 2, 2); //facing right
         }
         else if (moveInput.x < 0)
         {
-            transform.localScale = new Vector3(-1, 1, 1); //facing left
+            transform.localScale = new Vector3(-2, 2, 2); //facing left
         }
         
 
