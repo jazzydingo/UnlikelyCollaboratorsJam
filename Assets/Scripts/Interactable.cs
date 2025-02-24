@@ -8,6 +8,8 @@ public class Interactable : MonoBehaviour
     public GameObject prefab;
     public bool flashlight;
     public bool key;
+    public Material defaultMaterial;
+    public Material outlineMaterial;
 
 
     // Start is called before the first frame update
@@ -47,5 +49,25 @@ public class Interactable : MonoBehaviour
         }
 
         //other objects that need to be collected
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.GetComponent<Player>() != null)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().material = outlineMaterial;
+        }
+
+
+
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.GetComponent<Player>() != null)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().material = defaultMaterial;
+        }
+
     }
 }
