@@ -5,6 +5,8 @@ using System;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
+namespace Game 
+{
 public class DialogueController : MonoBehaviour
 {
     public TextMeshProUGUI dialogue;
@@ -87,4 +89,5 @@ public class DialogueController : MonoBehaviour
         }
 
     }
+}
 }

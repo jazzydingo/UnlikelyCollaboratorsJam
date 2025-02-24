@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+namespace Game 
+{
 public class PauseController : MonoBehaviour
 {
     public GameObject pauseObj;
@@ -57,4 +59,5 @@ public class PauseController : MonoBehaviour
         Time.timeScale = 1f;
         Application.Quit();
     }
+}
 }

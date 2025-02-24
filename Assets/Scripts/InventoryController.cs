@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+namespace Game 
+{
 public class InventoryController : MonoBehaviour
 {
     public static InventoryController current;
@@ -138,4 +140,5 @@ public class InventoryController : MonoBehaviour
 
 
     }
+}
 }

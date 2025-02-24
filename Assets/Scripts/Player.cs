@@ -1,5 +1,7 @@
 using UnityEngine;
 
+namespace Game 
+{
 public class Player : MonoBehaviour
 {
     public static Player current;
@@ -250,4 +252,5 @@ public class Player : MonoBehaviour
 
     }
 
+}
 }

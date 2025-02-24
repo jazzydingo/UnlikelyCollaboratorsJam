@@ -1,5 +1,7 @@
 using UnityEngine;
 
+namespace Game 
+{
 public class SpriteOutline : MonoBehaviour
 {
     public Color outlineColor = Color.black;
@@ -30,4 +32,5 @@ public class SpriteOutline : MonoBehaviour
             outlines[i] = outline;
         }
     }
+}
 }
