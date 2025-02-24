@@ -6,6 +6,8 @@ public class Interactable : MonoBehaviour
 {
     public bool pickup;
     public GameObject prefab;
+    public bool flashlight;
+    public bool key;
 
 
     // Start is called before the first frame update
@@ -31,5 +33,19 @@ public class Interactable : MonoBehaviour
 
             //allow object to be "used"
         }
+    }
+
+    public void UseObject()
+    {
+        if(flashlight)
+        {
+            //code to use flashlight
+        }
+        else if(key)
+        {
+            //code to use key to unlock door
+        }
+
+        //other objects that need to be collected
     }
 }
