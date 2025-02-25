@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 181689785035265350, guid: 74b13df08c4d74b44a0da8d6b50b5136, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653348486641995740, guid: 74b13df08c4d74b44a0da8d6b50b5136, type: 3}
       propertyPath: m_Size.x
       value: 3.1243796
@@ -146,6 +150,10 @@ PrefabInstance:
     - target: {fileID: 1653348486641995740, guid: 74b13df08c4d74b44a0da8d6b50b5136, type: 3}
       propertyPath: m_Offset.y
       value: -0.14952898
+      objectReference: {fileID: 0}
+    - target: {fileID: 2768495008310876346, guid: 74b13df08c4d74b44a0da8d6b50b5136, type: 3}
+      propertyPath: radius
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3723992071723542964, guid: 74b13df08c4d74b44a0da8d6b50b5136, type: 3}
       propertyPath: m_LocalScale.x
@@ -198,6 +206,14 @@ PrefabInstance:
     - target: {fileID: 3723992071723542964, guid: 74b13df08c4d74b44a0da8d6b50b5136, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004887584679254105, guid: 74b13df08c4d74b44a0da8d6b50b5136, type: 3}
+      propertyPath: m_SpotAngle
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004887584679254105, guid: 74b13df08c4d74b44a0da8d6b50b5136, type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 7.8
       objectReference: {fileID: 0}
     - target: {fileID: 8211335687939132998, guid: 74b13df08c4d74b44a0da8d6b50b5136, type: 3}
       propertyPath: m_Name
@@ -587,6 +603,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UICanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7748900841667012153, guid: cf18eb76bda2e504db14e0d89aeb829c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7841638008280323831, guid: cf18eb76bda2e504db14e0d89aeb829c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -902,6 +922,14 @@ PrefabInstance:
       propertyPath: prefab
       value: 
       objectReference: {fileID: 7220607363382080639, guid: 65cdfa21e689d574287593ea2d54da9d, type: 3}
+    - target: {fileID: 842491944677315986, guid: 65cdfa21e689d574287593ea2d54da9d, type: 3}
+      propertyPath: flashlight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2435783516568185593, guid: 65cdfa21e689d574287593ea2d54da9d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1613782146, guid: 173232fa05e2af24cb8b95957de12dc4, type: 3}
     - target: {fileID: 2828027673051809199, guid: 65cdfa21e689d574287593ea2d54da9d, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -1039,6 +1067,10 @@ PrefabInstance:
       propertyPath: prefab
       value: 
       objectReference: {fileID: 8053476212628338985, guid: 73266af204291d843a7516653012feea, type: 3}
+    - target: {fileID: 2641878062273183700, guid: 73266af204291d843a7516653012feea, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 138513289, guid: 173232fa05e2af24cb8b95957de12dc4, type: 3}
     - target: {fileID: 7333522407203781301, guid: 73266af204291d843a7516653012feea, type: 3}
       propertyPath: m_Size.x
       value: 1.7915022
