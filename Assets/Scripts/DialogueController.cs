@@ -5,7 +5,7 @@ using System;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
-namespace Game 
+namespace game 
 {
 public class DialogueController : MonoBehaviour
 {
