@@ -1924,6 +1924,7 @@ MonoBehaviour:
   obj4: {fileID: 0}
   obj5: {fileID: 0}
   empty: {fileID: 0}
+  activeSlot: {fileID: 0}
   activeObj: {fileID: 0}
   highlight: {fileID: 5221629132746960466}
   index: 0
