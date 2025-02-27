@@ -5,7 +5,7 @@ using UnityEngine.Tilemaps;
 
 namespace game {
     public class TilemapAddon : MonoBehaviour {
-        private static readonly string RevealTextureId = "_RevealTex";
+        private static readonly string RevealTexId = "_RevealTex";
         [SerializeField] private GameObject _spritePrefab;
         [SerializeField] private Tilemap _baseTilemap;
         [SerializeField] private Tilemap _revealTilemap;
@@ -17,6 +17,9 @@ namespace game {
             BoundsInt baseBounds = _baseTilemap.cellBounds;
             BoundsInt revealBounds = _revealTilemap.cellBounds;
 
+            // Debug.Log($"[Base] Min: ({baseBounds.xMin}, {baseBounds.yMin}) | Max: ({baseBounds.xMax}, {baseBounds.yMax})");
+            // Debug.Log($"[Reveal] Min: ({revealBounds.xMin}, {revealBounds.yMin}) | Max: ({revealBounds.xMax}, {revealBounds.yMax})");
+
             int xMin = Math.Min(baseBounds.xMin, revealBounds.xMin);
             int yMin = Math.Min(baseBounds.yMin, revealBounds.yMin);
             int xMax = Math.Max(baseBounds.xMax, revealBounds.xMax);
@@ -24,24 +27,19 @@ namespace game {
 
             maxBounds = new BoundsInt(xMin, yMin, 0, xMax - xMin, yMax - yMin, 0);
 
-            Texture2D baseTexture = GenerateTilemapTexture(_baseTilemap);
-            Texture2D revealTexture = GenerateTilemapTexture(_revealTilemap);
+            Texture2D mainTex = GenerateTilemapTexture(_baseTilemap);
+            Texture2D revealTex = GenerateTilemapTexture(_revealTilemap);
 
-            GameObject sprite = Instantiate(_spritePrefab);
-            SpriteRenderer spriteRenderer = sprite.GetComponent<SpriteRenderer>();
+            GameObject mesh = Instantiate(_spritePrefab);
+            MeshRenderer meshRenderer = mesh.GetComponent<MeshRenderer>();
 
-            spriteRenderer.sprite = Sprite.Create(
-                baseTexture, 
-                new Rect(0, 0, baseTexture.width, baseTexture.height), 
-                new Vector2 (0.5f, 0.5f), 
-                _pixelsPerUnit
-            );
+            Material tempMaterial = new(meshRenderer.sharedMaterial);
 
-            Material tempMaterial = new(spriteRenderer.sharedMaterial);
+            tempMaterial.mainTexture = mainTex;
+            tempMaterial.SetTexture(RevealTexId, revealTex);
 
-            tempMaterial.SetTexture(RevealTextureId, revealTexture);
-
-            spriteRenderer.sharedMaterial = tempMaterial;
+            meshRenderer.sharedMaterial = tempMaterial;
+            mesh.transform.localScale = new Vector3(xMax - xMin, yMax - yMin, 0);
 
             gameObject.SetActive(false);
         }
