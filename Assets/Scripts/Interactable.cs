@@ -8,14 +8,19 @@ namespace game
     {
         public bool pickup;
         public GameObject prefab;
+
         public bool flashlight;
         public bool key;
+        public bool bed;
+
         public Material defaultMaterial;
         public Material outlineMaterial;
 
         public int flashlightMode;
 
         public GameObject lightObj;
+
+        
 
 
         // Start is called before the first frame update
@@ -40,6 +45,10 @@ namespace game
 
 
                 //allow object to be "used"
+            }
+            else
+            {
+                UseObject();
             }
         }
 
@@ -74,6 +83,10 @@ namespace game
             else if(key)
             {
                 //code to use key to unlock door
+            }
+            else if(bed)
+            {
+                //go to sleep
             }
 
             //other objects that need to be collected
