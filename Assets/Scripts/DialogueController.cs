@@ -32,6 +32,7 @@ namespace game
             dialogue.text = string.Empty;
             dialogueObj.gameObject.SetActive(false);
             Player.current.enabled = true;
+            OrbFollow.instance.enabled = true;
             choiceBox.gameObject.SetActive(false);
             choiceYes = false;
 
@@ -42,6 +43,7 @@ namespace game
             Debug.Log("yes");
             choiceYes = true;
             Player.current.enabled = true;
+            OrbFollow.instance.enabled = true;
             dialogueObj.gameObject.SetActive(false);
             FadeController.current.fadingToBlack = true;
             FadeController.current.fadingIntoScene = false;
@@ -52,6 +54,7 @@ namespace game
             Debug.Log("no");
             choiceYes = false;
             Player.current.enabled = true;
+            OrbFollow.instance.enabled = true;
             dialogueObj.gameObject.SetActive(false);
         }
 
@@ -62,6 +65,7 @@ namespace game
             {
                 startDialogue = false;
                 Player.current.enabled = false;
+                OrbFollow.instance.enabled = false;
                 StartCoroutine(NextLine());
             }
 
@@ -81,6 +85,7 @@ namespace game
                 {
                     dialogueObj.gameObject.SetActive(false);
                     Player.current.enabled = true;
+                    OrbFollow.instance.enabled = true;
                 }
             }
             else
@@ -126,7 +131,9 @@ namespace game
                     }    
                     skip = false;
                     endOfDialogue = true;
+                    // reset index?
                     Player.current.enabled = true;
+                    OrbFollow.instance.enabled = true;
                     yield return null;
                 }
             }
