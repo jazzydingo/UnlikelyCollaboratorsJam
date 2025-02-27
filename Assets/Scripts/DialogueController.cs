@@ -22,6 +22,7 @@ namespace game
         public GameObject choiceBox;
 
         public bool choiceYes;
+        public bool startDialogue; //starts dialogue on scene start
 
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -30,29 +31,40 @@ namespace game
             skip = false;
             dialogue.text = string.Empty;
             dialogueObj.gameObject.SetActive(false);
+            Player.current.enabled = true;
+            choiceBox.gameObject.SetActive(false);
             choiceYes = false;
-            StartCoroutine(NextLine());
+
         }
 
         public void Yes()
         {
+            Debug.Log("yes");
             choiceYes = true;
+            Player.current.enabled = true;
             dialogueObj.gameObject.SetActive(false);
-            FadeController.current.fadingIn = true;
-            FadeController.current.fadingOut = false;
+            FadeController.current.fadingToBlack = true;
+            FadeController.current.fadingIntoScene = false;
         }
 
         public void No()
         {
-            
+            Debug.Log("no");
             choiceYes = false;
+            Player.current.enabled = true;
             dialogueObj.gameObject.SetActive(false);
         }
 
         // Update is called once per frame
         void Update()
         {
-            
+            if(startDialogue)
+            {
+                startDialogue = false;
+                Player.current.enabled = false;
+                StartCoroutine(NextLine());
+            }
+
             if (Input.GetMouseButtonDown(0) && !endOfDialogue && !isPlaying)
             {
                 dialogueObj.gameObject.SetActive(true);
@@ -68,6 +80,7 @@ namespace game
                 if(!choice)
                 {
                     dialogueObj.gameObject.SetActive(false);
+                    Player.current.enabled = true;
                 }
             }
             else
@@ -113,6 +126,7 @@ namespace game
                     }    
                     skip = false;
                     endOfDialogue = true;
+                    Player.current.enabled = true;
                     yield return null;
                 }
             }

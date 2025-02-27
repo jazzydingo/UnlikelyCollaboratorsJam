@@ -91,6 +91,7 @@ namespace game
                 if(!dialogueBox.gameObject.GetComponentInParent<DialogueController>().choiceYes)
                 {
                     dialogueBox.gameObject.SetActive(true);
+                    dialogueBox.GetComponentInParent<DialogueController>().startDialogue = true;
                 }
                 
                 

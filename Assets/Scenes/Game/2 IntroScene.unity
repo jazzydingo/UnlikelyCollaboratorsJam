@@ -802,6 +802,10 @@ MonoBehaviour:
   endOfDialogue: 0
   dialogueObj: {fileID: 684834192}
   isPlaying: 0
+  choice: 0
+  choiceBox: {fileID: 0}
+  choiceYes: 0
+  startDialogue: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

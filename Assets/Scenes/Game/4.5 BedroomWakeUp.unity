@@ -401,8 +401,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -505,8 +505,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -0.8633, y: 5}
-  m_SizeDelta: {x: 797.1437, y: 40}
+  m_AnchoredPosition: {x: -0.8633, y: 13.057089}
+  m_SizeDelta: {x: 797.1437, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &476421577
 MonoBehaviour:
@@ -530,7 +530,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 0.80399513, b: 0, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -577,7 +577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.14901961}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -815,8 +815,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -919,8 +919,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -0.8633, y: 45}
-  m_SizeDelta: {x: 797.1437, y: 40}
+  m_AnchoredPosition: {x: -0.8633, y: 48.057076}
+  m_SizeDelta: {x: 797.1437, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &878352362
 MonoBehaviour:
@@ -944,7 +944,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 0.80399513, b: 0, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -991,7 +991,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.14901961}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1491,11 +1491,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3723992071723542964, guid: 9912d41fc373917419421fa868b7d63c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.39
+      value: -9.5
       objectReference: {fileID: 0}
     - target: {fileID: 3723992071723542964, guid: 9912d41fc373917419421fa868b7d63c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.61
+      value: -0.54
       objectReference: {fileID: 0}
     - target: {fileID: 3723992071723542964, guid: 9912d41fc373917419421fa868b7d63c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1573,37 +1573,50 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 813020558598098935, guid: cf18eb76bda2e504db14e0d89aeb829c, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2102886483883123841, guid: cf18eb76bda2e504db14e0d89aeb829c, type: 3}
       propertyPath: m_RaycastTarget
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2972669776187795483, guid: cf18eb76bda2e504db14e0d89aeb829c, type: 3}
       propertyPath: choice
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2972669776187795483, guid: cf18eb76bda2e504db14e0d89aeb829c, type: 3}
       propertyPath: choiceBox
       value: 
       objectReference: {fileID: 703344395}
     - target: {fileID: 2972669776187795483, guid: cf18eb76bda2e504db14e0d89aeb829c, type: 3}
-      propertyPath: dialogueLines.Array.size
+      propertyPath: startDialogue
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2972669776187795483, guid: cf18eb76bda2e504db14e0d89aeb829c, type: 3}
+      propertyPath: dialogueLines.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2972669776187795483, guid: cf18eb76bda2e504db14e0d89aeb829c, type: 3}
       propertyPath: dialogueLines.Array.data[0]
-      value: Go to sleep?
+      value: 'Leo wakes up from the pressure of his cat on his chest. '
       objectReference: {fileID: 0}
     - target: {fileID: 2972669776187795483, guid: cf18eb76bda2e504db14e0d89aeb829c, type: 3}
       propertyPath: dialogueLines.Array.data[1]
-      value: 
+      value: 'He looks around. The room is still dark. '
       objectReference: {fileID: 0}
     - target: {fileID: 2972669776187795483, guid: cf18eb76bda2e504db14e0d89aeb829c, type: 3}
       propertyPath: dialogueLines.Array.data[2]
-      value: 
+      value: 'The clock reads 3:00 AM. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2972669776187795483, guid: cf18eb76bda2e504db14e0d89aeb829c, type: 3}
+      propertyPath: dialogueLines.Array.data[3]
+      value: "Silky: \"Mom is really mad at you.\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2972669776187795483, guid: cf18eb76bda2e504db14e0d89aeb829c, type: 3}
+      propertyPath: dialogueLines.Array.data[4]
+      value: "Silky: \u201CI\u2019m sorry for leaving all of your toys out.\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2972669776187795483, guid: cf18eb76bda2e504db14e0d89aeb829c, type: 3}
+      propertyPath: dialogueLines.Array.data[5]
+      value: "Silky: \u201CYour mom left this letter for you; you mustn\u2019t read
+        it.\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 3792746220344875417, guid: cf18eb76bda2e504db14e0d89aeb829c, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1978,6 +1991,8 @@ MonoBehaviour:
   fadingIntoScene: 1
   fadeDuration: 1
   black: {fileID: 986078865}
+  startDialogue: 1
+  dialogueObj: {fileID: 1902133858}
 --- !u!1 &1902133858 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4013133513349580077, guid: cf18eb76bda2e504db14e0d89aeb829c, type: 3}

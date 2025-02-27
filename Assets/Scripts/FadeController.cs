@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace game
 {
@@ -11,11 +12,15 @@ namespace game
         public static FadeController current;
        
         public float elapsedTime;
-        public bool fadingIn;
-        public bool fadingOut;
+        public bool fadingToBlack;
+        public bool fadingIntoScene;
     
         public float fadeDuration;
         public Image black;
+
+        public bool startDialogue;
+        public GameObject dialogueObj;
+
 
         void Awake()
         {
@@ -43,7 +48,7 @@ namespace game
         {
             
 
-            if (fadingIn) //end of scene, fade to black
+            if (fadingToBlack) //end of scene, fade to black was fadingIn
             {
                 elapsedTime += Time.deltaTime;
                 float alpha = Mathf.Lerp(0f, 1f, elapsedTime / fadeDuration);
@@ -54,11 +59,12 @@ namespace game
 
                 if (alpha >= 1f)
                 {
-                    fadingIn = false; 
+                    fadingToBlack = false; 
                     elapsedTime = 0f;
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 }
             }
-            else if(fadingOut) //black fades out, start of scene
+            else if(fadingIntoScene) //black fades out, start of scene
             {
                 
                 elapsedTime += Time.deltaTime;
@@ -70,8 +76,12 @@ namespace game
 
                 if (alpha <= 0f)
                 {
-                    fadingOut = false;
+                    fadingIntoScene = false;
                     elapsedTime = 0f;
+                    if(startDialogue)
+                    {
+                        dialogueObj.gameObject.SetActive(true);
+                    }
                 }
             }
         }
