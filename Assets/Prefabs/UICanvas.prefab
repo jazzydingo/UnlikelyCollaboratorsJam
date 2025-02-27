@@ -1890,6 +1890,7 @@ MonoBehaviour:
   choice: 0
   choiceBox: {fileID: 0}
   choiceYes: 0
+  startDialogue: 0
 --- !u!114 &3057173190677522214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2011,8 +2012,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3a979b42f99a9584c96942a82ef14fa6, type: 2}
+  m_sharedMaterial: {fileID: -2244805500867798784, guid: 3a979b42f99a9584c96942a82ef14fa6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
