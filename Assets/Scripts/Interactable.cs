@@ -20,7 +20,8 @@ namespace game
 
         public GameObject lightObj;
 
-        
+        public GameObject dialogueBox;
+
 
 
         // Start is called before the first frame update
@@ -48,6 +49,7 @@ namespace game
             }
             else
             {
+                
                 UseObject();
             }
         }
@@ -86,7 +88,12 @@ namespace game
             }
             else if(bed)
             {
-                //go to sleep
+                if(!dialogueBox.gameObject.GetComponentInParent<DialogueController>().choiceYes)
+                {
+                    dialogueBox.gameObject.SetActive(true);
+                }
+                
+                
             }
 
             //other objects that need to be collected

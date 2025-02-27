@@ -7,87 +7,116 @@ using System.Collections.Generic;
 
 namespace game 
 {
-public class DialogueController : MonoBehaviour
-{
-    public TextMeshProUGUI dialogue;
-    public bool skip;
-    public string[] dialogueLines;
-    public int index;
-    public float textSpeed;
-    public bool endOfDialogue;
-    public GameObject dialogueObj;
-    public bool isPlaying;
-
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public class DialogueController : MonoBehaviour
     {
-        skip = false;
-        dialogue.text = string.Empty;
-        dialogueObj.gameObject.SetActive(false);
-    }
+        public TextMeshProUGUI dialogue;
+        public bool skip;
+        public string[] dialogueLines;
+        public int index;
+        public float textSpeed;
+        public bool endOfDialogue;
+        public GameObject dialogueObj;
+        public bool isPlaying;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0) && !endOfDialogue && !isPlaying)
+        public bool choice;
+        public GameObject choiceBox;
+
+        public bool choiceYes;
+
+
+        // Start is called once before the first execution of Update after the MonoBehaviour is created
+        void Start()
         {
-
-            dialogueObj.gameObject.SetActive(true);
-            skip = true;
+            skip = false;
+            dialogue.text = string.Empty;
+            dialogueObj.gameObject.SetActive(false);
+            choiceYes = false;
             StartCoroutine(NextLine());
         }
-        else if(Input.GetMouseButtonDown(0) && !endOfDialogue && isPlaying)
+
+        public void Yes()
         {
-            skip = true;
+            choiceYes = true;
+            dialogueObj.gameObject.SetActive(false);
+            FadeController.current.fadingIn = true;
+            FadeController.current.fadingOut = false;
         }
-        else if (Input.GetMouseButtonDown(0) && endOfDialogue && !isPlaying)
+
+        public void No()
         {
+            
+            choiceYes = false;
             dialogueObj.gameObject.SetActive(false);
         }
-        else
+
+        // Update is called once per frame
+        void Update()
         {
-
-        }
-    }
-
-    IEnumerator NextLine()
-    {
-        if (!endOfDialogue)
-        {
-            dialogue.text = string.Empty;
-            skip = false;
-            isPlaying = true;
-
-            foreach (char letter in dialogueLines[index])
+            
+            if (Input.GetMouseButtonDown(0) && !endOfDialogue && !isPlaying)
             {
-                dialogue.text += letter;
-
-                if (!skip)
-                {
-                    yield return new WaitForSeconds(textSpeed);
-                }
-                else
-                {
-                    break;
-                }
+                dialogueObj.gameObject.SetActive(true);
+                skip = true;
+                StartCoroutine(NextLine());
             }
-            isPlaying = false;
-            dialogue.text = dialogueLines[index];
-            if (index < dialogueLines.Length - 1)
+            else if(Input.GetMouseButtonDown(0) && !endOfDialogue && isPlaying)
             {
-                index++;
-                skip = false;
-                NextLine();
+                skip = true;
+            }
+            else if (Input.GetMouseButtonDown(0) && endOfDialogue && !isPlaying)
+            {
+                if(!choice)
+                {
+                    dialogueObj.gameObject.SetActive(false);
+                }
             }
             else
             {
-                skip = false;
-                endOfDialogue = true;
-                yield return null;
+
             }
         }
 
+        IEnumerator NextLine()
+        {
+            if (!endOfDialogue)
+            {
+                dialogue.text = string.Empty;
+                skip = false;
+                isPlaying = true;
+
+                foreach (char letter in dialogueLines[index])
+                {
+                    dialogue.text += letter;
+
+                    if (!skip)
+                    {
+                        yield return new WaitForSeconds(textSpeed);
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+                isPlaying = false;
+                dialogue.text = dialogueLines[index];
+                if (index < dialogueLines.Length - 1)
+                {
+                    index++;
+                    skip = false;
+                    NextLine();
+                }
+                else
+                {
+                    if(choice)
+                    {
+                        choiceBox.gameObject.SetActive(true);
+                    }    
+                    skip = false;
+                    endOfDialogue = true;
+                    yield return null;
+                }
+            }
+
+        }
     }
-}
 }

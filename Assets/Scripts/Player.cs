@@ -166,55 +166,6 @@ namespace game
             body.velocity = new Vector2(moveInput.x * speed, moveInput.y * speed);
         }
 
-        /*
-        void MovePlayer()
-        {
-            // Get player input from WASD
-            float moveX = Input.GetAxisRaw("Horizontal"); // A (-1) / D (1)
-            float moveY = Input.GetAxisRaw("Vertical");   // S (-1) / W (1)
-
-            // Get mouse position
-            Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            mouseWorldPos.z = 0;
-
-            // Determine the facing direction (same as ChangeSpriteDirection)
-            Vector2 direction = mouseWorldPos - transform.position;
-
-            Vector2 forward = Vector2.zero;
-            Vector2 right = Vector2.zero;
-
-            if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y)) // Horizontal priority
-            {
-                if (direction.x > 0) // Facing Right
-                {
-                    forward = Vector2.right;
-                    right = Vector2.down;
-                }
-                else // Facing Left
-                {
-                    forward = Vector2.left;
-                    right = Vector2.up;
-                }
-            }
-            else // Vertical priority
-            {
-                if (direction.y > 0) // Facing Up
-                {
-                    forward = Vector2.up;
-                    right = Vector2.right;
-                }
-                else // Facing Down
-                {
-                    forward = Vector2.down;
-                    right = Vector2.left;
-                }
-            }
-
-            // Move player relative to facing direction
-            Vector2 moveDirection = (forward * moveY + right * moveX).normalized;
-            body.velocity = moveDirection * speed;
-        }
-        */
 
 
         void InteractNearby()
