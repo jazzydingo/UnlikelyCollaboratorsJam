@@ -22,6 +22,8 @@ namespace game
 
         public GameObject dialogueBox;
 
+        public bool note;
+
 
 
         // Start is called before the first frame update

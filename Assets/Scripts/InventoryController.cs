@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace game 
 {
@@ -20,6 +21,8 @@ namespace game
         public GameObject obj3;
         public GameObject obj4;
         public GameObject obj5;
+
+        public bool nextScene;
 
         public Sprite empty;
 
@@ -73,6 +76,28 @@ namespace game
 
             UseSelected();
 
+
+
+            //check for next scene conditions
+            CheckIfNote();
+
+        }
+
+        void CheckIfNote()
+        {
+            if(objArray.Length == 5)
+            {
+                foreach(var item in objArray)
+                {
+                    if (item == null || !item.GetComponent<Interactable>().note)
+                    {
+                        return; // Exit if any object is missing or does not have note == true
+                    }
+                }
+
+                Debug.Log("g o next");
+                
+            }
         }
 
         void UseSelected()
@@ -88,7 +113,7 @@ namespace game
         void UpdateSprites()
         {
             //keep slot sprites updated
-            for (int i = 0; i < inventoryArray.Length - 1; i++)
+            for (int i = 0; i < inventoryArray.Length; i++)
             {
                 if (objArray[i] != null)
                 {

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3621326092864847599}
   - component: {fileID: 4255503402113586022}
   m_Layer: 0
-  m_Name: Object (3)
+  m_Name: Note 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 634054834, guid: 173232fa05e2af24cb8b95957de12dc4, type: 3}
+  m_Sprite: {fileID: 2336297973251578616, guid: df843f690dc2a3249b3d525222c880d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -165,5 +165,10 @@ MonoBehaviour:
   prefab: {fileID: 2798727722637010756}
   flashlight: 0
   key: 0
+  bed: 0
   defaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   outlineMaterial: {fileID: 2100000, guid: aafc359af38aca84990fa4ba6ee15a43, type: 2}
+  flashlightMode: 0
+  lightObj: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  note: 1
