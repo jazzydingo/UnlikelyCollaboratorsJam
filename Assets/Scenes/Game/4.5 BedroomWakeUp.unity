@@ -869,6 +869,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerObject
       objectReference: {fileID: 0}
+    - target: {fileID: 7584755149907085554, guid: 19e5bea1909ada84d92b581f44eac141, type: 3}
+      propertyPath: sfxObj
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7584755149907085554, guid: 19e5bea1909ada84d92b581f44eac141, type: 3}
+      propertyPath: footstepObj
+      value: 
+      objectReference: {fileID: 4103288665307870874, guid: 7369dbe91051e7c46b32ae5e8430f260, type: 3}
     - target: {fileID: 8973310220012550652, guid: 19e5bea1909ada84d92b581f44eac141, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.92893

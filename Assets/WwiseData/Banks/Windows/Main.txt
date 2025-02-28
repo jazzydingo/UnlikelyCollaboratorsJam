@@ -1,6 +1,13 @@
 Event	ID	Name			Wwise Object Path	Notes
 	3157003241	TEST			\Default Work Unit\TEST	
+	3854155799	Play_Footsteps			\Default Work Unit\Play_Footsteps	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	31436995	footsteps-001	C:\Users\Andrei\Documents\GitHub\UnlikelyCollaboratorsJam\UnlikelyCollaboratorsJam_WwiseProject\.cache\B8\{B80EE17A-CBCF-C91D-175F-12E923702618}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Leo\footsteps\footsteps-001		98448
+	149214790	footsteps-007	C:\Users\Andrei\Documents\GitHub\UnlikelyCollaboratorsJam\UnlikelyCollaboratorsJam_WwiseProject\.cache\6A\{6AC2CFF3-8EED-1FCB-684E-C128889A64A7}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Leo\footsteps\footsteps-007		87772
+	500027648	footsteps-003	C:\Users\Andrei\Documents\GitHub\UnlikelyCollaboratorsJam\UnlikelyCollaboratorsJam_WwiseProject\.cache\0D\{0D3D4C07-9EC4-EF12-52E9-48A7A04A059D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Leo\footsteps\footsteps-003		98988
+	507959905	footsteps-002	C:\Users\Andrei\Documents\GitHub\UnlikelyCollaboratorsJam\UnlikelyCollaboratorsJam_WwiseProject\.cache\42\{425D002C-7763-159F-6FDD-AE27F620E0C1}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Leo\footsteps\footsteps-002		85408
+	573993807	footsteps-005	C:\Users\Andrei\Documents\GitHub\UnlikelyCollaboratorsJam\UnlikelyCollaboratorsJam_WwiseProject\.cache\C7\{C71B6FB0-093A-D3AF-55F9-E9EA7D3EBEAE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Leo\footsteps\footsteps-005		86592
 	806454560	TEST	C:\Users\Andrei\Documents\GitHub\UnlikelyCollaboratorsJam\UnlikelyCollaboratorsJam_WwiseProject\.cache\AB\{ABFEFA6D-FC73-9FD5-A54A-DAE12B632454}.wem		\Actor-Mixer Hierarchy\Default Work Unit\TEST		459824
+	1069972352	footsteps-006	C:\Users\Andrei\Documents\GitHub\UnlikelyCollaboratorsJam\UnlikelyCollaboratorsJam_WwiseProject\.cache\D6\{D6FA23D1-5007-FB27-C674-6C9EDDBC1F06}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Leo\footsteps\footsteps-006		90132
 

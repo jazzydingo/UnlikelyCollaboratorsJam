@@ -1,4 +1,5 @@
 using UnityEngine;
+using AK.Wwise;
 
 namespace game 
 {
@@ -20,6 +21,11 @@ namespace game
 
         public Animator playerAnim;
         public bool noAnim;
+        public bool footstepSound;
+
+        public GameObject footstepObj;
+        private GameObject soundObj;
+
 
         //singleton
         private void Awake()
@@ -77,6 +83,30 @@ namespace game
             
             ControlLight();
 
+            PlayFootsteps();
+
+        }
+
+        void PlayFootsteps()
+        {
+            if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) && !footstepSound)
+            {
+                //moving, play footsteps
+                footstepSound = true;
+                if(soundObj == null)
+                {
+
+                    soundObj = Instantiate(footstepObj);
+                }
+
+
+            }
+            if(footstepSound && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D))
+            {
+                //stop sound
+                Destroy(soundObj);
+                footstepSound = false;
+            }
         }
 
         void SwitchLight()
