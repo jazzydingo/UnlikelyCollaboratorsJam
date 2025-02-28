@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace game {
@@ -23,8 +21,9 @@ namespace game {
 
         private void Update() {
             if (_lightOrbs.Length < 0) return;
-            Shader.SetGlobalFloat(LightRadiusId, (float)_lightOrbs[0].LightPixelRadius/16); // TODO: Change to int and get rid of constant
+            Shader.SetGlobalFloat(LightRadiusId, _lightOrbs[0].LightPixelRadius / 16f);
             Shader.SetGlobalVector(LightPosId, _lightOrbs[0].transform.position);
+            print(Shader.GetGlobalFloat(LightRadiusId));
         }
         
     }
