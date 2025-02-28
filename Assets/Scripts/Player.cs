@@ -64,8 +64,8 @@ namespace game
                 //else moving
                 ChangeSpriteDirection();
             }
-                
-            
+
+            SwitchLight();
 
 
             //MousePositionCaclulate();
@@ -77,6 +77,15 @@ namespace game
             
             ControlLight();
 
+        }
+
+        void SwitchLight()
+        {
+            if(Input.GetKeyUp(KeyCode.F))
+            {
+                //switch light mode
+                this.GetComponentInChildren<RevealLightOrb>()._shouldSwitchState = !this.GetComponentInChildren<RevealLightOrb>()._shouldSwitchState;
+            }
         }
 
         void StopAnim()
@@ -109,7 +118,7 @@ namespace game
 
         void ControlLight()
         {
-            if(spotlight.activeSelf)
+            if(spotlight.activeSelf && this.GetComponentInChildren<RevealLightOrb>().isOn)
             {
                 Vector3 mousePosition = Input.mousePosition;
                 Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(mousePosition);

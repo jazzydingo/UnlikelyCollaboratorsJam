@@ -24,17 +24,27 @@ namespace game
 
         void Update()
         {
-            Vector3 mousePosition = Input.mousePosition;
-            Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(new Vector3(mousePosition.x, mousePosition.y, Camera.main.transform.position.y));
+            if (!this.GetComponent<RevealLightOrb>().isOn)
+            {
+                //lock to player
+                Debug.Log("lock");
+                this.transform.position = Player.current.transform.position;
+            }
+            else
+            {
+                Vector3 mousePosition = Input.mousePosition;
+                Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(new Vector3(mousePosition.x, mousePosition.y, Camera.main.transform.position.y));
 
-            
-            Vector3 direction = (mouseWorldPos - player.position).normalized;
 
-            
-            Vector3 targetPosition = player.position + direction * Mathf.Min(Vector3.Distance(mouseWorldPos, player.position), maxDistance);
+                Vector3 direction = (mouseWorldPos - player.position).normalized;
 
+
+                Vector3 targetPosition = player.position + direction * Mathf.Min(Vector3.Distance(mouseWorldPos, player.position), maxDistance);
+
+
+                transform.position = targetPosition;
+            }
             
-            transform.position = targetPosition;
 
             
         }

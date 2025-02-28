@@ -232,13 +232,14 @@ PrefabInstance:
       value: Player (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2520184763918485842, guid: 9912d41fc373917419421fa868b7d63c, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 3723992071723542964, guid: 9912d41fc373917419421fa868b7d63c, type: 3}
       insertIndex: 0
       addedObject: {fileID: 1122750802}
     - targetCorrespondingSourceObject: {fileID: 6141829831044904354, guid: 9912d41fc373917419421fa868b7d63c, type: 3}
-      insertIndex: 0
+      insertIndex: -1
       addedObject: {fileID: 1085672520}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8211335687939132998, guid: 9912d41fc373917419421fa868b7d63c, type: 3}
@@ -336,7 +337,7 @@ Transform:
   m_GameObject: {fileID: 1085672519}
   serializedVersion: 2
   m_LocalRotation: {x: 0.21780361, y: -0.672727, z: -0.21780361, w: 0.672727}
-  m_LocalPosition: {x: 0, y: 0.04, z: 10.11}
+  m_LocalPosition: {x: 0, y: -0.12, z: -0.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -372,6 +373,7 @@ MonoBehaviour:
   _lightState: 0
   _turnOffLightTimeSeconds: 1
   _turnOnLightTimeSeconds: 1
+  isOn: 0
   LightPixelRadius: 16
   _shouldSwitchState: 0
 --- !u!212 &1085672523
@@ -415,7 +417,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 1842534644, guid: 173232fa05e2af24cb8b95957de12dc4, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -423,7 +425,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1122750801
