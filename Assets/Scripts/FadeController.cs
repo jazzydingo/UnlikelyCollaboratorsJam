@@ -27,7 +27,7 @@ namespace game
             if (current == null)
             {
                 current = this;
-                DontDestroyOnLoad(this.gameObject);
+                //DontDestroyOnLoad(this.gameObject);
             }
             else
             {
