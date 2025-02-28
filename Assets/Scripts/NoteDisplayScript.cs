@@ -54,6 +54,7 @@ namespace game
                     fadingIn = false;
                     hasFadedIn = true;
                     //startDialogue
+                    dialogueObj.SetActive(true);
                     dialogueObj.GetComponentInChildren<DialogueController>().startDialogue = true;
                 }
             }
