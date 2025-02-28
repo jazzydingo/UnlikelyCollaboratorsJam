@@ -18,6 +18,8 @@ namespace game
 
         public bool hasKey;
 
+        public Animator playerAnim;
+        public bool noAnim;
 
         //singleton
         private void Awake()
@@ -35,24 +37,74 @@ namespace game
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
-
+            noAnim = true;
         }
 
         // Update is called once per frame
         void Update()
         {
+            Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+
+
             MovePlayer();
 
+            StopAnim();
+             
+            if(moveInput.x == 0 && moveInput.y == 0 && noAnim)
+            {
+                noAnim = true;
+                //not moving, control direction accordingto light
+                ChangeSpriteDirection2();
+                playerAnim.enabled = false;
+            }
+            else if (moveInput.x != 0 || moveInput.y != 0 && noAnim)
+            {
+                playerAnim.enabled = true;
+                noAnim = false;
+                //else moving
+                ChangeSpriteDirection();
+            }
+                
+            
 
-            ChangeSpriteDirection();
+
             //MousePositionCaclulate();
 
 
 
             InteractNearby();
 
+            
             ControlLight();
 
+        }
+
+        void StopAnim()
+        {
+            if (Input.GetKeyUp(KeyCode.W))
+            {
+                playerAnim.SetBool("Up", false);
+                GetComponent<SpriteRenderer>().sprite = facingUp;
+                noAnim = true;
+            }
+            else if(Input.GetKeyUp(KeyCode.A))
+            {
+                playerAnim.SetBool("Left", false);
+                GetComponent<SpriteRenderer>().sprite = facingLeft;
+                noAnim = true;
+            }
+            else if (Input.GetKeyUp(KeyCode.S))
+            {
+                playerAnim.SetBool("Down", false);
+                GetComponent<SpriteRenderer>().sprite = facingDown;
+                noAnim = true;
+            }
+            else if (Input.GetKeyUp(KeyCode.D))
+            {
+                playerAnim.SetBool("Right", false);
+                GetComponent<SpriteRenderer>().sprite = facingRight;
+                noAnim = true;
+            }
         }
 
         void ControlLight()
@@ -77,23 +129,47 @@ namespace game
             if (moveInput.x > 0)
             {
                 GetComponent<SpriteRenderer>().sprite = facingRight;
+                //play anim
+                playerAnim.SetBool("Right", true);
+                playerAnim.SetBool("Left", false);
+                playerAnim.SetBool("Up", false);
+                playerAnim.SetBool("Down", false);
+                Debug.Log("right");
             }
             else if (moveInput.x < 0)
             {
                 GetComponent<SpriteRenderer>().sprite = facingLeft;
+                //play anim
+                playerAnim.SetBool("Left", true);
+                playerAnim.SetBool("Right", false);
+                playerAnim.SetBool("Up", false);
+                playerAnim.SetBool("Down", false);
+
+                Debug.Log("left");
             }
 
 
             if (moveInput.y > 0)
             {
                 GetComponent<SpriteRenderer>().sprite = facingUp;
+                //play anim
+                playerAnim.SetBool("Right", false);
+                playerAnim.SetBool("Left", false);
+                playerAnim.SetBool("Up", true);
+                playerAnim.SetBool("Down", false);
             }
             else if (moveInput.y < 0)
             {
                 GetComponent<SpriteRenderer>().sprite = facingDown;
+                //play anim
+                playerAnim.SetBool("Right", false);
+                playerAnim.SetBool("Left", false);
+                playerAnim.SetBool("Up", false);
+                playerAnim.SetBool("Down", true);
             }
+            
 
-            ChangeSpriteDirection2();
+
         }
 
     
