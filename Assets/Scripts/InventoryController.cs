@@ -91,11 +91,12 @@ namespace game
                 {
                     if (item == null || !item.GetComponent<Interactable>().note)
                     {
-                        return; // Exit if any object is missing or does not have note == true
+                        return; 
                     }
                 }
 
                 Debug.Log("g o next");
+                SceneController.instance.goNext = true;
                 
             }
         }

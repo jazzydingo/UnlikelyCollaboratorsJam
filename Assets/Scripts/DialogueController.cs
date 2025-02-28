@@ -24,6 +24,8 @@ namespace game
         public bool choiceYes;
         public bool startDialogue; //starts dialogue on scene start
 
+        public bool endAfterDialogue;
+
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
@@ -39,8 +41,11 @@ namespace game
             {
                 OrbFollow.instance.enabled = true;
             }
+            if(choiceBox != null)
+            {
+                choiceBox.gameObject.SetActive(false);
+            }
             
-            choiceBox.gameObject.SetActive(false);
             choiceYes = false;
             isPlaying = true;
         }
@@ -121,6 +126,11 @@ namespace game
                     if (OrbFollow.instance != null)
                     {
                         OrbFollow.instance.enabled = true;
+                    }
+                    //next scene
+                    if(endAfterDialogue)
+                    {
+                        SceneController.instance.goNext = true;
                     }
                 }
             }

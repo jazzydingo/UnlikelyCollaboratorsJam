@@ -1398,6 +1398,11 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_SortAtRoot: 0
+--- !u!1 &1292234442 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7748900841667012153, guid: cf18eb76bda2e504db14e0d89aeb829c, type: 3}
+  m_PrefabInstance: {fileID: 1548458010}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1540766769
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1409,6 +1414,10 @@ PrefabInstance:
     - target: {fileID: 181689785035265350, guid: 9912d41fc373917419421fa868b7d63c, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3376543641487890325, guid: 9912d41fc373917419421fa868b7d63c, type: 3}
+      propertyPath: _maxLightPixelRadius
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3723992071723542964, guid: 9912d41fc373917419421fa868b7d63c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1465,6 +1474,14 @@ PrefabInstance:
     - target: {fileID: 5827870922010009181, guid: 9912d41fc373917419421fa868b7d63c, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7550409512705839571, guid: 9912d41fc373917419421fa868b7d63c, type: 3}
+      propertyPath: m_Radius
+      value: 1.5487552
+      objectReference: {fileID: 0}
+    - target: {fileID: 7550409512705839571, guid: 9912d41fc373917419421fa868b7d63c, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.01930666
       objectReference: {fileID: 0}
     - target: {fileID: 8211335687939132998, guid: 9912d41fc373917419421fa868b7d63c, type: 3}
       propertyPath: m_Name
@@ -1774,7 +1791,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2972669776187795483, guid: cf18eb76bda2e504db14e0d89aeb829c, type: 3}
   m_PrefabInstance: {fileID: 1548458010}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1292234442}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb1fcfc5dc1efc14e908172cf1cbdb5f, type: 3}
@@ -1912,11 +1929,6 @@ MonoBehaviour:
   black: {fileID: 986078865}
   startDialogue: 0
   dialogueObj: {fileID: 0}
---- !u!1 &1902133858 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4013133513349580077, guid: cf18eb76bda2e504db14e0d89aeb829c, type: 3}
-  m_PrefabInstance: {fileID: 1548458010}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1919374056
 GameObject:
   m_ObjectHideFlags: 0
@@ -4212,8 +4224,8 @@ MonoBehaviour:
   defaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   outlineMaterial: {fileID: 2100000, guid: aafc359af38aca84990fa4ba6ee15a43, type: 2}
   flashlightMode: 0
-  lightObj: {fileID: 0}
-  dialogueBox: {fileID: 1902133858}
+  lightObj: {fileID: 448305790}
+  dialogueBox: {fileID: 1292234442}
   note: 0
 --- !u!210 &2036933863
 SortingGroup:

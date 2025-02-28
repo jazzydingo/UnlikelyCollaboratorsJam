@@ -6,10 +6,49 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/WwiseBuild.unity
-    guid: b04c0262c77cd0c4db68e4af5fe7c98a
-  - enabled: 0
-    path: Assets/Scenes/CharacterTest.unity
-    guid: 525f2c20b819b084aa36727b5811f0aa
+    path: Assets/Scenes/Game/1 MainMenu.unity
+    guid: ca3646af24bd40946b64a9a2315d35cd
+  - enabled: 1
+    path: Assets/Scenes/Game/2 IntroScene.unity
+    guid: b1a0f752b227c164d8d5290e85189f51
+  - enabled: 1
+    path: Assets/Scenes/Game/3 HallwayToRoom.unity
+    guid: d274360fedd94074b8361cca8f293901
+  - enabled: 1
+    path: Assets/Scenes/Game/4 Bedroom.unity
+    guid: 0868914b1b739cd43b74b45277551792
+  - enabled: 1
+    path: Assets/Scenes/Game/4.5 BedroomWakeUp.unity
+    guid: 71fbe22f77c2caa40b51278083c991ee
+  - enabled: 1
+    path: Assets/Scenes/Game/5 NotePuzzle.unity
+    guid: 153dd9fa2fed85748ac5e86fe5ebeab3
+  - enabled: 1
+    path: Assets/Scenes/Game/6 NoteAndDialogue.unity
+    guid: f70a1444a13698642979644cdf48e33a
+  - enabled: 1
+    path: Assets/Scenes/Game/7 LeaveRoom.unity
+    guid: 0eb392ebf7c33d740ba4b24e939cbe07
+  - enabled: 1
+    path: Assets/Scenes/Game/8 Hallway.unity
+    guid: 882bf8a58b2900242b9e051d4ea50e5e
+  - enabled: 1
+    path: Assets/Scenes/Game/9 Kitchen.unity
+    guid: 70299da840d36a1468c2a377d4c8cbee
+  - enabled: 1
+    path: Assets/Scenes/Game/10 Hallway.unity
+    guid: 4bac04804b87de04bbc954620766394c
+  - enabled: 1
+    path: Assets/Scenes/Game/11 LivingRoom.unity
+    guid: 36fcd819d790c244f8571ba11b137c55
+  - enabled: 1
+    path: Assets/Scenes/Game/12 BackDoor.unity
+    guid: d8ae31400710db54e9783b9fd638eaa3
+  - enabled: 1
+    path: Assets/Scenes/Game/13 EndDialogue.unity
+    guid: 3748fd721e8eef54193993e510df5e01
+  - enabled: 1
+    path: Assets/Scenes/Game/14 CutScene.unity
+    guid: 1d683b625e22b51498b96452a1d347d3
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 08793b94be16648478e578d858524075, type: 2}
