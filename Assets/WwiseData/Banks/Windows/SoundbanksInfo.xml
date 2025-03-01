@@ -23,30 +23,30 @@
 				<Bus Id="3803692087" Name="Master Audio Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus" GUID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" GUID="{88305422-A641-4F8F-950F-A4F6BF65F496}" Language="SFX" Hash="{0F260858-40A3-A18A-974E-02C7C83F6F4E}">
+		<SoundBank Id="3161908922" Type="User" GUID="{88305422-A641-4F8F-950F-A4F6BF65F496}" Language="SFX" Hash="{78DBA191-44E5-E73E-806D-EB45DC1ADBF3}">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
 				<File Id="31436995" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footsteps-001.wav</ShortName>
-					<CachePath>B8/{B80EE17A-CBCF-C91D-175F-12E923702618}.wem</CachePath>
+					<CachePath>26/{26945494-BF4F-CD2D-2D15-A28DFEE7DB7E}.wem</CachePath>
 				</File>
-				<File Id="149214790" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>footsteps-007.wav</ShortName>
-					<CachePath>6A/{6AC2CFF3-8EED-1FCB-684E-C128889A64A7}.wem</CachePath>
+				<File Id="348500461" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footsteps-004.wav</ShortName>
+					<CachePath>B4/{B4D5D6A9-669B-402A-FBDA-14B609D9275B}.wem</CachePath>
 				</File>
 				<File Id="500027648" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footsteps-003.wav</ShortName>
-					<CachePath>0D/{0D3D4C07-9EC4-EF12-52E9-48A7A04A059D}.wem</CachePath>
+					<CachePath>0A/{0AADB678-870D-C378-3466-DA1B58D4FBBC}.wem</CachePath>
 				</File>
 				<File Id="507959905" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footsteps-002.wav</ShortName>
-					<CachePath>42/{425D002C-7763-159F-6FDD-AE27F620E0C1}.wem</CachePath>
+					<CachePath>08/{08674905-D950-BD31-49B4-492532624CEB}.wem</CachePath>
 				</File>
 				<File Id="573993807" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footsteps-005.wav</ShortName>
-					<CachePath>C7/{C71B6FB0-093A-D3AF-55F9-E9EA7D3EBEAE}.wem</CachePath>
+					<CachePath>A3/{A3D71BB5-5D57-1381-E9AB-154F3BEE4EFC}.wem</CachePath>
 				</File>
 				<File Id="806454560" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>R16-05-Children Laughing.wav</ShortName>
@@ -54,14 +54,14 @@
 				</File>
 				<File Id="1069972352" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footsteps-006.wav</ShortName>
-					<CachePath>D6/{D6FA23D1-5007-FB27-C674-6C9EDDBC1F06}.wem</CachePath>
+					<CachePath>68/{68E45B28-ACE5-234C-85ED-912F8730FC8F}.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3854155799" Name="Play_Footsteps" ObjectPath="\Events\Default Work Unit\Play_Footsteps" GUID="{A10B211A-605D-4DD3-8E93-8D0DE9AEF27D}" DurationType="OneShot" DurationMin="3.0992846" DurationMax="3.0992846">
+				<Event Id="3854155799" Name="Play_Footsteps" ObjectPath="\Events\Default Work Unit\Play_Footsteps" GUID="{A10B211A-605D-4DD3-8E93-8D0DE9AEF27D}" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="31436995"/>
-						<MediaRef Id="149214790"/>
+						<MediaRef Id="348500461"/>
 						<MediaRef Id="500027648"/>
 						<MediaRef Id="507959905"/>
 						<MediaRef Id="573993807"/>
@@ -76,5 +76,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BB359E9E-38FB-6881-B3FD-3800FC0BBAD6}</FileHash>
+	<FileHash>{04D52AA1-3A87-88BE-C699-343FAA2E7C98}</FileHash>
 </SoundBanksInfo>

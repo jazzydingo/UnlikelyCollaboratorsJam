@@ -111,8 +111,8 @@ MonoBehaviour:
         guid: 1a210ba15d60d34d8e938d0de9aef27d
       Path: Events\Default Work Unit\Play_Footsteps
       maxAttenuation: 0
-      maxDuration: 3.0992846
-      minDuration: 3.0992846
+      maxDuration: 0
+      minDuration: 0
     - name: TEST
       guid: d13b7b84769424449a7f487c1941de2c
       id: 3157003241
