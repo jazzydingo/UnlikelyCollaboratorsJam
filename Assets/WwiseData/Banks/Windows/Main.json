@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{88305422-A641-4F8F-950F-A4F6BF65F496}",
     "Language": "SFX",
-    "Hash": "{78DBA191-44E5-E73E-806D-EB45DC1ADBF3}",
+    "Hash": "{F94C2461-3024-29FC-4471-A0403E8B633E}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -24,12 +24,20 @@
       "CachePath": "26/{26945494-BF4F-CD2D-2D15-A28DFEE7DB7E}.wem"
      },
      {
+      "Id": "83449892",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "note_revealed.wav",
+      "CachePath": "B4/{B4D7B7C1-F7B5-0EA7-7ADD-114B402EB5F7}.wem"
+     },
+     {
       "Id": "348500461",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "footsteps-004.wav",
-      "CachePath": "B4/{B4D5D6A9-669B-402A-FBDA-14B609D9275B}.wem"
+      "CachePath": "6F/{6FC8F036-18C6-24AC-F273-BF22D581E9E6}.wem"
      },
      {
       "Id": "500027648",
@@ -37,7 +45,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "footsteps-003.wav",
-      "CachePath": "0A/{0AADB678-870D-C378-3466-DA1B58D4FBBC}.wem"
+      "CachePath": "18/{18E31065-8CBF-A2C0-50AC-29923B756D38}.wem"
      },
      {
       "Id": "507959905",
@@ -45,7 +53,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "footsteps-002.wav",
-      "CachePath": "08/{08674905-D950-BD31-49B4-492532624CEB}.wem"
+      "CachePath": "C9/{C94EDDF3-0DBC-184B-D07C-7DDB0162F96E}.wem"
      },
      {
       "Id": "573993807",
@@ -56,6 +64,14 @@
       "CachePath": "A3/{A3D71BB5-5D57-1381-E9AB-154F3BEE4EFC}.wem"
      },
      {
+      "Id": "598942815",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "paper.wav",
+      "CachePath": "5A/{5A241858-1F84-E3B5-076C-CF7B220C8A46}.wem"
+     },
+     {
       "Id": "806454560",
       "Language": "SFX",
       "Streaming": "false",
@@ -64,12 +80,20 @@
       "CachePath": "AB/{ABFEFA6D-FC73-9FD5-A54A-DAE12B632454}.wem"
      },
      {
+      "Id": "859402632",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "leo_pick_up.wav",
+      "CachePath": "8E/{8E403253-DFF7-41C5-EBEE-AFFB2E1C2020}.wem"
+     },
+     {
       "Id": "1069972352",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "footsteps-006.wav",
-      "CachePath": "68/{68E45B28-ACE5-234C-85ED-912F8730FC8F}.wem"
+      "CachePath": "C1/{C115F0D8-55B6-3110-6EB0-D3F638BDBC1E}.wem"
      }
     ],
     "Events": [
@@ -101,6 +125,48 @@
       ]
      },
      {
+      "Id": "3751761369",
+      "Name": "Play_Note_Revealed",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Note_Revealed",
+      "GUID": "{869EDF28-6A7C-45BC-8B87-53F4B74F05E8}",
+      "DurationType": "OneShot",
+      "DurationMin": "7.04",
+      "DurationMax": "7.04",
+      "MediaRefs": [
+       {
+        "Id": "83449892"
+       }
+      ]
+     },
+     {
+      "Id": "441377128",
+      "Name": "Play_Paper",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Paper",
+      "GUID": "{F43E8D24-D557-41BA-A9D5-E1BACA1AACA9}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.7000079",
+      "DurationMax": "0.7000079",
+      "MediaRefs": [
+       {
+        "Id": "598942815"
+       }
+      ]
+     },
+     {
+      "Id": "964566375",
+      "Name": "Play_Pick_Up",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Pick_Up",
+      "GUID": "{0B39547D-ECC2-4CD4-A433-E628D3326572}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.4389796",
+      "DurationMax": "1.4389796",
+      "MediaRefs": [
+       {
+        "Id": "859402632"
+       }
+      ]
+     },
+     {
       "Id": "3157003241",
       "Name": "TEST",
       "ObjectPath": "\\Events\\Default Work Unit\\TEST",
@@ -117,6 +183,6 @@
     ]
    }
   ],
-  "FileHash": "{C193ED95-E5A8-1FD2-CC0F-46C339998B18}"
+  "FileHash": "{64531FB7-B3B8-64F0-C189-B04D0D9316CA}"
  }
 }

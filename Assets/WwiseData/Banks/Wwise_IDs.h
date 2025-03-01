@@ -14,6 +14,9 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
+        static const AkUniqueID PLAY_NOTE_REVEALED = 3751761369U;
+        static const AkUniqueID PLAY_PAPER = 441377128U;
+        static const AkUniqueID PLAY_PICK_UP = 964566375U;
         static const AkUniqueID TEST = 3157003241U;
     } // namespace EVENTS
 
