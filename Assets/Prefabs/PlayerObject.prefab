@@ -252,6 +252,10 @@ PrefabInstance:
       propertyPath: facingRight
       value: 
       objectReference: {fileID: 2128229867, guid: 46178228377cef84198fb2915a401373, type: 3}
+    - target: {fileID: 2768495008310876346, guid: 9912d41fc373917419421fa868b7d63c, type: 3}
+      propertyPath: footstepObj
+      value: 
+      objectReference: {fileID: 4103288665307870874, guid: 7369dbe91051e7c46b32ae5e8430f260, type: 3}
     - target: {fileID: 3723992071723542964, guid: 9912d41fc373917419421fa868b7d63c, type: 3}
       propertyPath: m_LocalScale.x
       value: 1

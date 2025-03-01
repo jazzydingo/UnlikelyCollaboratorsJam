@@ -92,7 +92,16 @@ namespace game
             PlayFootsteps();
 
 
+            if(SceneManager.GetActiveScene().buildIndex > 6)
+            {
+                KeepLightLow();
+            }
+            
 
+        }
+
+        void KeepLightLow()
+        {
             if (this.GetComponentInChildren<RevealLightOrb>().isOn)
             {
                 bar.gameObject.SetActive(true);
@@ -109,7 +118,6 @@ namespace game
 
                 bar.sizeDelta = new Vector2(500, bar.sizeDelta.y);
             }
-
         }
 
         void LightCountDown()
