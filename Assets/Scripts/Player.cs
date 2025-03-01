@@ -1,5 +1,7 @@
 using UnityEngine;
 using AK.Wwise;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace game 
 {
@@ -25,6 +27,10 @@ namespace game
 
         public GameObject footstepObj;
         private GameObject soundObj;
+
+        public RectTransform bar;
+
+        private float elapsedTime;
 
 
         //singleton
@@ -85,7 +91,49 @@ namespace game
 
             PlayFootsteps();
 
+
+
+            if (this.GetComponentInChildren<RevealLightOrb>().isOn)
+            {
+                bar.gameObject.SetActive(true);
+                bar.gameObject.GetComponent<Image>().color = Color.red;
+                LightCountDown();
+            }
+            else
+            {
+                //reset image width
+                //set to green
+                elapsedTime = 0;
+
+                bar.gameObject.GetComponent<Image>().color = Color.green;
+
+                bar.sizeDelta = new Vector2(500, bar.sizeDelta.y);
+            }
+
         }
+
+        void LightCountDown()
+        {
+            
+            elapsedTime += Time.deltaTime;
+            float newWidth = Mathf.Lerp(500, 1, elapsedTime / 8f); //divide by total time
+
+            bar.sizeDelta = new Vector2(newWidth, bar.sizeDelta.y);
+
+            if (elapsedTime >= 8f)
+            {
+                elapsedTime = 0;
+                bar.gameObject.SetActive(false); 
+            }
+
+            if(bar.sizeDelta.x == 1)
+            {
+                Debug.Log("lose");
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
+        }
+
+        
 
         void PlayFootsteps()
         {

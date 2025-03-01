@@ -27,8 +27,8 @@ namespace game
             if (this.GetComponent<RevealLightOrb>().isOn)
             {
                 //lock to player
-                Debug.Log("lock");
-                this.transform.position = Player.current.transform.position;
+                Debug.Log("lock"); 
+                this.transform.position = Vector3.MoveTowards(this.transform.position, Player.current.transform.position, Time.deltaTime * 3f);
             }
             else
             {
@@ -41,7 +41,7 @@ namespace game
 
                 Vector3 targetPosition = player.position + direction * Mathf.Min(Vector3.Distance(mouseWorldPos, player.position), maxDistance);
 
-
+                //tried to lerp to this but was buggy
                 transform.position = targetPosition;
             }
             
