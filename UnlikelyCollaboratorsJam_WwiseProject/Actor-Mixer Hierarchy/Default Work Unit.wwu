@@ -225,6 +225,117 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<Sound Name="leo_pick_up" ID="{C15F44D5-8F91-46A2-B216-0098039ADFA8}" ShortID="510000010">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33B1D9EB-EF8C-4132-A246-584A4FB13536}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1312DD4B-C7BD-4C96-BBC5-02C2403F8FA5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="leo_pick_up" ID="{0A5F56C2-36A4-4FA4-B5AD-EC0FBF501C42}">
+									<Language>SFX</Language>
+									<AudioFile>leo_pick_up.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="859402632"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="leo_pick_up" ID="{0A5F56C2-36A4-4FA4-B5AD-EC0FBF501C42}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Puzzle" ID="{91A850E5-3B1D-4324-9E53-7B0CC2DA7E41}" ShortID="864925708">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33B1D9EB-EF8C-4132-A246-584A4FB13536}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1312DD4B-C7BD-4C96-BBC5-02C2403F8FA5}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="note_revealed" ID="{57962DB0-19D8-4FD7-AE20-2C2A89AAACB7}" ShortID="218623237">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33B1D9EB-EF8C-4132-A246-584A4FB13536}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1312DD4B-C7BD-4C96-BBC5-02C2403F8FA5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="note_revealed" ID="{581F9439-8296-44BA-8791-5BBD095804DA}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.82574392932509"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>note_revealed.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="83449892"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="note_revealed" ID="{581F9439-8296-44BA-8791-5BBD095804DA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="paper" ID="{F761FEEA-FDAB-4D91-887A-35B30F6F3D88}" ShortID="865429481">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33B1D9EB-EF8C-4132-A246-584A4FB13536}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1312DD4B-C7BD-4C96-BBC5-02C2403F8FA5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="paper" ID="{5A141DA1-CB77-4C13-89FB-5370728A6251}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.140512547828472"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.367887397950908"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.033212056759457"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.733219975940363"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>paper.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="598942815"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="paper" ID="{5A141DA1-CB77-4C13-89FB-5370728A6251}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

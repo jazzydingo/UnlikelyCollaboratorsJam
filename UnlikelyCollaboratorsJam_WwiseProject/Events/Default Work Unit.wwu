@@ -25,6 +25,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Pick_Up" ID="{0B39547D-ECC2-4CD4-A433-E628D3326572}">
+					<ChildrenList>
+						<Action Name="" ID="{E26F5405-F007-4058-B439-649B39FC0BA1}" ShortID="8163967">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="leo_pick_up" ID="{C15F44D5-8F91-46A2-B216-0098039ADFA8}" WorkUnitID="{4C241ED4-F104-487B-8AD7-32D3D42B0A85}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Note_Revealed" ID="{869EDF28-6A7C-45BC-8B87-53F4B74F05E8}">
+					<ChildrenList>
+						<Action Name="" ID="{09D90C32-7B6A-4FE9-844C-5852DA3F4303}" ShortID="122958059">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="note_revealed" ID="{57962DB0-19D8-4FD7-AE20-2C2A89AAACB7}" WorkUnitID="{4C241ED4-F104-487B-8AD7-32D3D42B0A85}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Paper" ID="{F43E8D24-D557-41BA-A9D5-E1BACA1AACA9}">
+					<ChildrenList>
+						<Action Name="" ID="{AC7DF3AD-F1F9-44B1-A8DC-8FA4A9FB3108}" ShortID="297426977">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="paper" ID="{F761FEEA-FDAB-4D91-887A-35B30F6F3D88}" WorkUnitID="{4C241ED4-F104-487B-8AD7-32D3D42B0A85}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
