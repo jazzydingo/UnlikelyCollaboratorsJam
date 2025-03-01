@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using AK.Wwise;
 
 namespace game
 {
@@ -15,6 +16,7 @@ namespace game
         public GameObject paper;
         public GameObject dialogueObj;
         public bool hasFadedIn;
+        public GameObject sfxObj;
         
         void Update()
         {
@@ -42,6 +44,7 @@ namespace game
 
             if (fadingIn)
             {
+                AkSoundEngine.PostEvent("Play_Note_Revealed", sfxObj);
                 elapsedTime += Time.deltaTime;
                 float alpha = Mathf.Lerp(0f, 1f, elapsedTime / fadeDuration);
 

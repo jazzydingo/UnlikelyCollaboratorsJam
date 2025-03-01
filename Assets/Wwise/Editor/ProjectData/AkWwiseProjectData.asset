@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 7c60ada056d966489f713485b9df9770
     GuidInternal: 
-    m_lastTime: -8584607996492465834
+    m_lastTime: -8584607416618046026
     List:
     - name: Main
       guid: 2254308841a68f4f950fa4f6bf65f496
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 0eddee210983d747b67176fbdabafa78
     GuidInternal: 
-    m_lastTime: -8584607996492465834
+    m_lastTime: -8584607416618056023
     List:
     - name: Play_Footsteps
       guid: 1a210ba15d60d34d8e938d0de9aef27d
@@ -113,6 +113,57 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Play_Note_Revealed
+      guid: 28df9e867c6abc458b8753f4b74f05e8
+      id: 3751761369
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0eddee210983d747b67176fbdabafa78
+      - ElementName: Play_Note_Revealed
+        ObjectType: 3
+        guid: 28df9e867c6abc458b8753f4b74f05e8
+      Path: Events\Default Work Unit\Play_Note_Revealed
+      maxAttenuation: 0
+      maxDuration: 7.04
+      minDuration: 7.04
+    - name: Play_Paper
+      guid: 248d3ef457d5ba41a9d5e1baca1aaca9
+      id: 441377128
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0eddee210983d747b67176fbdabafa78
+      - ElementName: Play_Paper
+        ObjectType: 3
+        guid: 248d3ef457d5ba41a9d5e1baca1aaca9
+      Path: Events\Default Work Unit\Play_Paper
+      maxAttenuation: 0
+      maxDuration: 0.7000079
+      minDuration: 0.7000079
+    - name: Play_Pick_Up
+      guid: 7d54390bc2ecd44ca433e628d3326572
+      id: 964566375
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0eddee210983d747b67176fbdabafa78
+      - ElementName: Play_Pick_Up
+        ObjectType: 3
+        guid: 7d54390bc2ecd44ca433e628d3326572
+      Path: Events\Default Work Unit\Play_Pick_Up
+      maxAttenuation: 0
+      maxDuration: 1.4389796
+      minDuration: 1.4389796
     - name: TEST
       guid: d13b7b84769424449a7f487c1941de2c
       id: 3157003241
@@ -186,7 +237,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8584613220129103071
     List: []
-  ExpandedFileSystemItemIds: 02000000030000000a0000000b0000000d000000
+  ExpandedFileSystemItemIds: 02000000030000000400000007000000080000000a0000000b0000000c0000000d000000
   ExpandedWaapiItemIds: 020000000d000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1

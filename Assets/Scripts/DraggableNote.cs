@@ -11,6 +11,10 @@ namespace game
         private Camera mainCamera;
         public Transform targetObject;
 
+        public GameObject sfxObj;
+
+        public GameObject paperSound;
+
         private void Start()
         {
             mainCamera = Camera.main;
@@ -36,9 +40,11 @@ namespace game
 
         private void OnMouseUp()
         {
-            if (Vector3.Distance(transform.position, targetObject.position) < 1f)
+            if (Vector3.Distance(transform.position, targetObject.position) < 1f && transform.parent == null)
             {
                 transform.SetParent(targetObject);
+                //GameObject paperSFX = Instantiate(paperSound);
+                AkSoundEngine.PostEvent("Play_Paper", sfxObj);
             }
         }
 
