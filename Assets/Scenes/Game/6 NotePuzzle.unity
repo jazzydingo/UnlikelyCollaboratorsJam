@@ -275,6 +275,67 @@ PolygonCollider2D:
       - {x: 1.1731138, y: 4.258712}
       - {x: 1.3125, y: 4.625}
   m_UseDelaunayMesh: 0
+--- !u!1001 &129374171
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3206887652383241385, guid: 1035e2de38fbc2243b4677e2c0ab3317, type: 3}
+      propertyPath: index
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7874479075748083412, guid: 1035e2de38fbc2243b4677e2c0ab3317, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.516996
+      objectReference: {fileID: 0}
+    - target: {fileID: 7874479075748083412, guid: 1035e2de38fbc2243b4677e2c0ab3317, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.783651
+      objectReference: {fileID: 0}
+    - target: {fileID: 7874479075748083412, guid: 1035e2de38fbc2243b4677e2c0ab3317, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0009882376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7874479075748083412, guid: 1035e2de38fbc2243b4677e2c0ab3317, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7874479075748083412, guid: 1035e2de38fbc2243b4677e2c0ab3317, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7874479075748083412, guid: 1035e2de38fbc2243b4677e2c0ab3317, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7874479075748083412, guid: 1035e2de38fbc2243b4677e2c0ab3317, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7874479075748083412, guid: 1035e2de38fbc2243b4677e2c0ab3317, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7874479075748083412, guid: 1035e2de38fbc2243b4677e2c0ab3317, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7874479075748083412, guid: 1035e2de38fbc2243b4677e2c0ab3317, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8502664561804216863, guid: 1035e2de38fbc2243b4677e2c0ab3317, type: 3}
+      propertyPath: m_Name
+      value: SceneController
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1035e2de38fbc2243b4677e2c0ab3317, type: 3}
 --- !u!1 &223049446
 GameObject:
   m_ObjectHideFlags: 0
@@ -1246,6 +1307,10 @@ PrefabInstance:
     - target: {fileID: 2972669776187795483, guid: cf18eb76bda2e504db14e0d89aeb829c, type: 3}
       propertyPath: startDialogue
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2972669776187795483, guid: cf18eb76bda2e504db14e0d89aeb829c, type: 3}
+      propertyPath: endAfterDialogue
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2972669776187795483, guid: cf18eb76bda2e504db14e0d89aeb829c, type: 3}
       propertyPath: dialogueLines.Array.data[0]
@@ -3055,3 +3120,4 @@ SceneRoots:
   - {fileID: 1212949444}
   - {fileID: 1397763543}
   - {fileID: 956287302}
+  - {fileID: 129374171}
