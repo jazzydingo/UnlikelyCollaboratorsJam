@@ -319,6 +319,7 @@ MonoBehaviour:
   _lightState: 0
   _turnOffLightTimeSeconds: 1
   _turnOnLightTimeSeconds: 1
+  isOn: 0
   LightPixelRadius: 16
   _shouldSwitchState: 0
 --- !u!58 &7550409512705839571
@@ -471,6 +472,9 @@ MonoBehaviour:
   hasKey: 0
   playerAnim: {fileID: 4902955123857395876}
   noAnim: 0
+  footstepSound: 0
+  footstepObj: {fileID: 0}
+  bar: {fileID: 0}
 --- !u!50 &7670803979667574390
 Rigidbody2D:
   serializedVersion: 4
@@ -543,7 +547,7 @@ SortingGroup:
   m_Enabled: 1
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_SortAtRoot: 0
 --- !u!70 &3956475669528677567
 CapsuleCollider2D:

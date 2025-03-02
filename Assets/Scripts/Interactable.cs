@@ -106,7 +106,9 @@ namespace game
         {
             if(other.gameObject.GetComponent<Player>() != null)
             {
-                this.gameObject.GetComponent<SpriteRenderer>().material = outlineMaterial;
+                //this.gameObject.GetComponent<SpriteRenderer>().material = outlineMaterial;
+                //exclamation mark above players head
+                Player.current.GetComponentInChildren<ExclamationController>().exclamation = true;
             }
 
 
@@ -117,7 +119,7 @@ namespace game
         {
             if (other.gameObject.GetComponent<Player>() != null)
             {
-                this.gameObject.GetComponent<SpriteRenderer>().material = defaultMaterial;
+                //this.gameObject.GetComponent<SpriteRenderer>().material = defaultMaterial;
             }
 
         }

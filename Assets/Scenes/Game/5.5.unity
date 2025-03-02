@@ -815,7 +815,7 @@ GameObject:
   - component: {fileID: 2042661602}
   m_Layer: 0
   m_Name: SceneController
-  m_TagString: Untagged
+  m_TagString: scene
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -847,7 +847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 646c609b200c8db4cb1b97c40688bf4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 7
+  index: 6
   goNext: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

@@ -20,7 +20,7 @@ namespace game
             }
             else
             {
-                Destroy(this);
+
             }
         }
 
@@ -33,10 +33,13 @@ namespace game
         // Update is called once per frame
         void Update()
         {
+            
             if(goNext)
             {
-                goNext = false;
-                NextScene();
+                
+                    goNext = false;
+                    NextScene();
+                
             }
         }
 
@@ -44,5 +47,7 @@ namespace game
         {
             SceneManager.LoadScene(index);
         }
+
     }
+
 }

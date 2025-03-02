@@ -130,7 +130,7 @@ namespace game
                     //next scene
                     if(endAfterDialogue)
                     {
-                        SceneController.instance.goNext = true;
+                        GameObject.FindWithTag("scene").GetComponent<SceneController>().goNext = true;
                     }
                 }
             }

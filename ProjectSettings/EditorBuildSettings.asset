@@ -21,11 +21,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Game/5 BedroomWakeUp.unity
     guid: 71fbe22f77c2caa40b51278083c991ee
   - enabled: 1
+    path: Assets/Scenes/Game/5.5.unity
+    guid: f34f213a8c1e92145bb2878f0c818f2b
+  - enabled: 1
+    path: Assets/Scenes/Game/6 BedroomWakeUp 1.unity
+    guid: 8c6db920630494d4fba82a0cbe8edcc1
+  - enabled: 1
     path: Assets/Scenes/Game/6 NotePuzzle.unity
     guid: 153dd9fa2fed85748ac5e86fe5ebeab3
-  - enabled: 1
-    path: Assets/Scenes/Game/6.5 ParentsCheck.unity
-    guid: f34f213a8c1e92145bb2878f0c818f2b
   - enabled: 1
     path: Assets/Scenes/Game/7 LeaveRoom.unity
     guid: 0eb392ebf7c33d740ba4b24e939cbe07

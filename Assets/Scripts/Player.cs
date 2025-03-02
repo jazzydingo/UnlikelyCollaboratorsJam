@@ -92,7 +92,7 @@ namespace game
             PlayFootsteps();
 
 
-            if(SceneManager.GetActiveScene().buildIndex > 6)
+            if(SceneManager.GetActiveScene().buildIndex > 5)
             {
                 KeepLightLow();
             }
@@ -124,7 +124,7 @@ namespace game
         {
             
             elapsedTime += Time.deltaTime;
-            float newWidth = Mathf.Lerp(500, 1, elapsedTime / 8f); //divide by total time
+            float newWidth = Mathf.Lerp(500, 1, elapsedTime / 4f); //divide by total time
 
             bar.sizeDelta = new Vector2(newWidth, bar.sizeDelta.y);
 
