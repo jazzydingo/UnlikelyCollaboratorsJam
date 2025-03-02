@@ -4,48 +4,55 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 
 namespace game {
-    public class TilemapAddon : MonoBehaviour {
+    public class MapGenerator : MonoBehaviour {
         private static readonly string RevealTexId = "_RevealTex";
-        [SerializeField] private GameObject _spritePrefab;
+        [SerializeField] private GameObject _mapPrefab;
         [SerializeField] private Tilemap _baseTilemap;
         [SerializeField] private Tilemap _revealTilemap;
+        [SerializeField] private GameObject _colliderObject;
         [SerializeField] private int _pixelsPerUnit = 16;
 
-        private BoundsInt maxBounds;
-
         private void Start() {
+            BoundsInt maxBounds = GetMaxBounds();
+            GameObject mapObject = Instantiate(_mapPrefab);
+
+            SetUpTilemapGraphic(mapObject, maxBounds);
+            SetUpCollider(mapObject);
+
+            gameObject.SetActive(false);
+        }
+
+        private BoundsInt GetMaxBounds() {
             BoundsInt baseBounds = _baseTilemap.cellBounds;
             BoundsInt revealBounds = _revealTilemap.cellBounds;
-
-            // Debug.Log($"[Base] Min: ({baseBounds.xMin}, {baseBounds.yMin}) | Max: ({baseBounds.xMax}, {baseBounds.yMax})");
-            // Debug.Log($"[Reveal] Min: ({revealBounds.xMin}, {revealBounds.yMin}) | Max: ({revealBounds.xMax}, {revealBounds.yMax})");
 
             int xMin = Math.Min(baseBounds.xMin, revealBounds.xMin);
             int yMin = Math.Min(baseBounds.yMin, revealBounds.yMin);
             int xMax = Math.Max(baseBounds.xMax, revealBounds.xMax);
             int yMax = Math.Max(baseBounds.yMax, revealBounds.yMax);
 
-            maxBounds = new BoundsInt(xMin, yMin, 0, xMax - xMin, yMax - yMin, 0);
+            return new BoundsInt(xMin, yMin, 0, xMax - xMin, yMax - yMin, 0);
+        }
 
-            Texture2D mainTex = GenerateTilemapTexture(_baseTilemap);
-            Texture2D revealTex = GenerateTilemapTexture(_revealTilemap);
+        private void SetUpTilemapGraphic(GameObject mapObject, BoundsInt maxBounds) {
+            Transform mapGraphic = mapObject.transform.GetChild(0);
 
-            GameObject mesh = Instantiate(_spritePrefab);
-            MeshRenderer meshRenderer = mesh.GetComponent<MeshRenderer>();
+            Texture2D mainTex = GenerateTilemapTexture(_baseTilemap, maxBounds);
+            Texture2D revealTex = GenerateTilemapTexture(_revealTilemap, maxBounds);
 
+            MeshRenderer meshRenderer = mapGraphic.GetComponent<MeshRenderer>();
             Material tempMaterial = new(meshRenderer.sharedMaterial);
 
             tempMaterial.mainTexture = mainTex;
             tempMaterial.SetTexture(RevealTexId, revealTex);
-
             meshRenderer.sharedMaterial = tempMaterial;
-            mesh.transform.localScale = new Vector3(xMax - xMin, yMax - yMin, 0);
 
-            gameObject.SetActive(false);
+            mapGraphic.localPosition = maxBounds.center;
+            mapGraphic.localScale = new Vector3(maxBounds.size.x, maxBounds.size.y, 0);
         }
 
-        
-        private Texture2D GenerateTilemapTexture(Tilemap tilemap) {
+        // TODO: Clean code smells and Inefficiencies here
+        private Texture2D GenerateTilemapTexture(Tilemap tilemap, BoundsInt maxBounds) {
             int cellSize = _pixelsPerUnit;
 
             int width = cellSize * maxBounds.size.x;
@@ -99,6 +106,12 @@ namespace game {
             
             tex.Apply();
             return tex;
+        }
+
+        private void SetUpCollider(GameObject mapObject) {
+            Transform tilemapGrid = mapObject.transform.GetChild(1);
+            _colliderObject.transform.SetParent(tilemapGrid);
+            _colliderObject.GetComponent<TilemapRenderer>().enabled = false;
         }
 
     }
