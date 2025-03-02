@@ -19,6 +19,7 @@ Shader "Custom/Sprites-Lit" {
             "RenderType"="Transparent"
             "PreviewType"="Plane"
             "CanUseSpriteAtlas"="True"
+            "LightMode" = "ForwardBase"
         }
 
         Cull Off
@@ -28,13 +29,13 @@ Shader "Custom/Sprites-Lit" {
 
         Pass {
             CGPROGRAM
-            #pragma vertex VertexProgram
-            #pragma fragment FragmentProgram
-            #pragma target 2.0
-            #pragma multi_compile_instancing
-            #pragma multi_compile_local _ PIXELSNAP_ON
-            #pragma multi_compile _ ETC1_EXTERNAL_ALPHA
-            #include "SpritesLit.cginc"
+                #pragma vertex VertexProgram
+                #pragma fragment FragmentProgram
+                #pragma target 2.0
+                #pragma multi_compile_instancing
+                #pragma multi_compile_local _ PIXELSNAP_ON
+                #pragma multi_compile _ ETC1_EXTERNAL_ALPHA
+                #include "SpritesLit.cginc"
             ENDCG
         }
     }

@@ -5,6 +5,7 @@
 #define UNITY_SPRITES_INCLUDED
 
 #include "UnityCG.cginc"
+#include "Lighting.cginc"
 
 #ifdef UNITY_INSTANCING_ENABLED
 
@@ -33,15 +34,18 @@ fixed4 _Color;
 
 struct VertexData {
     float4 vertex   : POSITION;
+    float3 normal   : NORMAL;
     float4 color    : COLOR;
     float2 texcoord : TEXCOORD0;
     UNITY_VERTEX_INPUT_INSTANCE_ID
 };
 
 struct Interpolators {
-    float4 vertex   : SV_POSITION;
-    fixed4 color    : COLOR;
-    float2 texcoord : TEXCOORD0;
+    float4 vertex      : SV_POSITION;
+    fixed4 color       : COLOR;
+    float2 texcoord    : TEXCOORD0;
+    float3 worldPos    : TEXCOORD1;
+    float3 worldNormal : TEXCOORD2;
     UNITY_VERTEX_OUTPUT_STEREO
 };
 
@@ -57,6 +61,9 @@ Interpolators VertexProgram(VertexData IN) {
 
     OUT.vertex = UnityFlipSprite(IN.vertex, _Flip);
     OUT.vertex = UnityObjectToClipPos(OUT.vertex);
+    OUT.worldPos = mul(unity_ObjectToWorld, IN.vertex);
+    OUT.worldNormal = UnityObjectToWorldNormal(IN.normal);
+
     OUT.texcoord = IN.texcoord;
     OUT.color = IN.color * _Color * _RendererColor;
 
@@ -82,8 +89,13 @@ fixed4 SampleSpriteTexture (float2 uv) {
 }
 
 fixed4 FragmentProgram(Interpolators IN) : SV_Target {
+    IN.worldNormal = normalize(IN.worldNormal);
+
+    float3 lightDir = _WorldSpaceLightPos0.xyz;
+    float diffuse = max(dot(IN.worldNormal, lightDir), 0);
+
     fixed4 c = SampleSpriteTexture (IN.texcoord) * IN.color;
-    c.rgb *= c.a;
+    c.rgb *= c.a * _LightColor0.rgb * diffuse;
     return c;
 }
 
