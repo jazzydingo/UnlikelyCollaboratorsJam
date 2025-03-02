@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3b49c13afa43606419a044184cc3129e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _mapPrefab: {fileID: 6064981532619509767, guid: 7af43d7c3283a404dace944cabadff1c, type: 3}
+  - _baseTilemap: {instanceID: 0}
+  - _revealTilemap: {instanceID: 0}
+  - _colliderObject: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

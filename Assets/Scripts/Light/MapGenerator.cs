@@ -4,11 +4,12 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 
 namespace game {
-    public class TilemapAddon : MonoBehaviour {
+    public class MapGenerator : MonoBehaviour {
         private static readonly string RevealTexId = "_RevealTex";
-        [SerializeField] private GameObject _spritePrefab;
+        [SerializeField] private GameObject _mapPrefab;
         [SerializeField] private Tilemap _baseTilemap;
         [SerializeField] private Tilemap _revealTilemap;
+        [SerializeField] private GameObject _colliderObject;
         [SerializeField] private int _pixelsPerUnit = 16;
 
         private BoundsInt maxBounds;
@@ -30,8 +31,11 @@ namespace game {
             Texture2D mainTex = GenerateTilemapTexture(_baseTilemap);
             Texture2D revealTex = GenerateTilemapTexture(_revealTilemap);
 
-            GameObject mesh = Instantiate(_spritePrefab);
-            MeshRenderer meshRenderer = mesh.GetComponent<MeshRenderer>();
+            GameObject mapObject = Instantiate(_mapPrefab);
+            Transform mapGraphic = mapObject.transform.GetChild(0);
+            Transform tilemapGrid = mapObject.transform.GetChild(1);
+
+            MeshRenderer meshRenderer = mapGraphic.GetComponent<MeshRenderer>();
 
             Material tempMaterial = new(meshRenderer.sharedMaterial);
 
@@ -39,7 +43,11 @@ namespace game {
             tempMaterial.SetTexture(RevealTexId, revealTex);
 
             meshRenderer.sharedMaterial = tempMaterial;
-            mesh.transform.localScale = new Vector3(xMax - xMin, yMax - yMin, 0);
+            mapGraphic.localPosition = maxBounds.center;
+            mapGraphic.localScale = new Vector3(xMax - xMin, yMax - yMin, 0);
+
+            _colliderObject.transform.SetParent(tilemapGrid);
+            _colliderObject.GetComponent<TilemapRenderer>().enabled = false;
 
             gameObject.SetActive(false);
         }
