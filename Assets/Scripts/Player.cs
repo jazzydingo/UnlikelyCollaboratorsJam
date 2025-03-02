@@ -32,6 +32,8 @@ namespace game
 
         private float elapsedTime;
 
+        public GameObject sfxObj;
+
 
         //singleton
         private void Awake()
@@ -360,6 +362,7 @@ namespace game
                             if (collider.gameObject.TryGetComponent(out Interactable otherIsInteractable))
                             {
                                 otherIsInteractable.Interact();
+                                AkSoundEngine.PostEvent("Play_Pick_Up", sfxObj); //interact sound
                             }
                         }
                     }
