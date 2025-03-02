@@ -1963,11 +1963,14 @@ MonoBehaviour:
   endOfDialogue: 0
   dialogueObj: {fileID: 4013133513349580077}
   isPlaying: 0
+  npcTalk: {fileID: 7660630068264317811, guid: 23d7134d3e6f9a544be4f89baee0d60f, type: 3}
+  talkSound: {fileID: 0}
   choice: 0
   choiceBox: {fileID: 0}
   choiceYes: 0
   startDialogue: 0
   endAfterDialogue: 0
+  sound: 0
 --- !u!114 &3057173190677522214
 MonoBehaviour:
   m_ObjectHideFlags: 0

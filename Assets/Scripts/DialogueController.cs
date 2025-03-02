@@ -151,7 +151,15 @@ namespace game
                     //next scene
                     if(endAfterDialogue)
                     {
-                        GameObject.FindWithTag("scene").GetComponent<SceneController>().goNext = true;
+                        if (GameObject.FindWithTag("scene") != null)
+                        {
+                            GameObject.FindWithTag("scene").GetComponent<SceneController>().goNext = true;
+                        }
+                        else
+                        {
+                            SceneController.instance.goNext = true;
+                        }
+
                     }
                 }
             }

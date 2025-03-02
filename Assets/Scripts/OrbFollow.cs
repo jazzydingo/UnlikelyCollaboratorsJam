@@ -33,8 +33,8 @@ namespace game
             else
             {
                 Vector3 mousePosition = Input.mousePosition;
-                Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(new Vector3(mousePosition.x, mousePosition.y, Camera.main.transform.position.y));
-
+                Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(new Vector3(mousePosition.x, mousePosition.y, Camera.main.nearClipPlane));
+                mouseWorldPos.z = 0;
 
                 Vector3 direction = (mouseWorldPos - player.position).normalized;
 
