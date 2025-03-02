@@ -338,6 +338,214 @@
 						</Sound>
 					</ChildrenList>
 				</ActorMixer>
+				<ActorMixer Name="Speech" ID="{6AD64D50-9AAD-41E9-ACBE-673993703011}" ShortID="658115494">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33B1D9EB-EF8C-4132-A246-584A4FB13536}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1312DD4B-C7BD-4C96-BBC5-02C2403F8FA5}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="NPC_Talk" ID="{36F7BEBB-33A7-4D9E-B2CB-3055678F4E18}" ShortID="849599337">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0E511A10-A522-465A-934C-53C7CA685448}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="30"/>
+													<Property Name="Min" Type="Real64" Value="-30"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33B1D9EB-EF8C-4132-A246-584A4FB13536}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1312DD4B-C7BD-4C96-BBC5-02C2403F8FA5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="talk 1_02" ID="{FA27FCD0-F319-4636-9860-AF8ECEBC72F9}" ShortID="186768770">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33B1D9EB-EF8C-4132-A246-584A4FB13536}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1312DD4B-C7BD-4C96-BBC5-02C2403F8FA5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="leo_talk" ID="{17880DA5-A33F-4CF2-A11A-0CB7D0979BC4}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.061868512506716"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.166701260273019"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>leo_talk.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="912424192"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="leo_talk" ID="{17880DA5-A33F-4CF2-A11A-0CB7D0979BC4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="talk 1_05" ID="{45A65498-B17D-4DEB-9185-528FE6F05F3C}" ShortID="467893653">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33B1D9EB-EF8C-4132-A246-584A4FB13536}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1312DD4B-C7BD-4C96-BBC5-02C2403F8FA5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="leo_talk" ID="{16EEBF2D-AC69-4536-AA85-6D04149DB03C}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.061868512506716"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.166701260273019"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>leo_talk.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="912424192"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="leo_talk" ID="{16EEBF2D-AC69-4536-AA85-6D04149DB03C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="talk 1_04" ID="{EE784F1B-5818-44EB-832C-C9BB227BDD1A}" ShortID="157667190">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33B1D9EB-EF8C-4132-A246-584A4FB13536}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1312DD4B-C7BD-4C96-BBC5-02C2403F8FA5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="leo_talk" ID="{EBF3B1EA-150B-4248-A0B1-4E6E7D8B2F79}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.061868512506716"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.166701260273019"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>leo_talk.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="912424192"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="leo_talk" ID="{EBF3B1EA-150B-4248-A0B1-4E6E7D8B2F79}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="talk 1_03" ID="{8BA0F77B-3077-4EF2-AB73-57284AC39E88}" ShortID="43907648">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33B1D9EB-EF8C-4132-A246-584A4FB13536}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1312DD4B-C7BD-4C96-BBC5-02C2403F8FA5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="leo_talk" ID="{A7E0931A-F70C-4E44-906E-CE7E87B031D2}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.061868512506716"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.166701260273019"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>leo_talk.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="912424192"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="leo_talk" ID="{A7E0931A-F70C-4E44-906E-CE7E87B031D2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="talk 1" ID="{FCFEC808-6ACF-4AF8-93EE-956C1538B3C8}" ShortID="484386610">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33B1D9EB-EF8C-4132-A246-584A4FB13536}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1312DD4B-C7BD-4C96-BBC5-02C2403F8FA5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="leo_talk" ID="{33696405-F60B-495B-81F8-8FA1B307BE83}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.061868512506716"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.166701260273019"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>leo_talk.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="912424192"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="leo_talk" ID="{33696405-F60B-495B-81F8-8FA1B307BE83}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="talk 1_01" ID="{6C897A46-FBC3-453B-B6E2-9CF6F1313C62}" ShortID="602974050">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{33B1D9EB-EF8C-4132-A246-584A4FB13536}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1312DD4B-C7BD-4C96-BBC5-02C2403F8FA5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="leo_talk" ID="{E8B48F94-CE9A-4D82-AA22-0F4D4BE6D8F4}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.061868512506716"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.166701260273019"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>leo_talk.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="912424192"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="leo_talk" ID="{E8B48F94-CE9A-4D82-AA22-0F4D4BE6D8F4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

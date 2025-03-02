@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Web" BasePlatform="Web" SchemaVersion="16" SoundBankVersion="154">
 	<SoundBanks>
-		<SoundBank Id="3161908922" Type="User" GUID="{88305422-A641-4F8F-950F-A4F6BF65F496}" Language="SFX" Hash="{F94C2461-3024-29FC-4471-A0403E8B633E}">
+		<SoundBank Id="3161908922" Type="User" GUID="{88305422-A641-4F8F-950F-A4F6BF65F496}" Language="SFX" Hash="{BEC48B6A-090D-9114-79D1-F4FB4927437A}">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -12,7 +12,7 @@
 				</File>
 				<File Id="83449892" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>note_revealed.wav</ShortName>
-					<CachePath>B4/{B4D7B7C1-F7B5-0EA7-7ADD-114B402EB5F7}.wem</CachePath>
+					<CachePath>72/{7211A1EC-CBF5-DF5B-DA13-3D598A041576}.wem</CachePath>
 				</File>
 				<File Id="348500461" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footsteps-004.wav</ShortName>
@@ -32,7 +32,7 @@
 				</File>
 				<File Id="598942815" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>paper.wav</ShortName>
-					<CachePath>5A/{5A241858-1F84-E3B5-076C-CF7B220C8A46}.wem</CachePath>
+					<CachePath>9D/{9DC1BF1F-ADB9-D3F4-8C14-F0034715B0EC}.wem</CachePath>
 				</File>
 				<File Id="806454560" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>R16-05-Children Laughing.wav</ShortName>
@@ -41,6 +41,10 @@
 				<File Id="859402632" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>leo_pick_up.wav</ShortName>
 					<CachePath>8E/{8E403253-DFF7-41C5-EBEE-AFFB2E1C2020}.wem</CachePath>
+				</File>
+				<File Id="912424192" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>leo_talk.wav</ShortName>
+					<CachePath>10/{10F84AAE-5482-A485-6D64-2818BF1677AB}.wem</CachePath>
 				</File>
 				<File Id="1069972352" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footsteps-006.wav</ShortName>
@@ -63,6 +67,11 @@
 						<MediaRef Id="83449892"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2134431836" Name="Play_NPC_Talk" ObjectPath="\Events\Default Work Unit\Play_NPC_Talk" GUID="{BA78C965-0EBA-46DE-93E4-CD6915F0A1B4}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="912424192"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="441377128" Name="Play_Paper" ObjectPath="\Events\Default Work Unit\Play_Paper" GUID="{F43E8D24-D557-41BA-A9D5-E1BACA1AACA9}" DurationType="OneShot" DurationMin="0.7000079" DurationMax="0.7000079">
 					<MediaRefs>
 						<MediaRef Id="598942815"/>
@@ -81,5 +90,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6D570752-2AE5-ECF8-E6B6-EAE67AF2A099}</FileHash>
+	<FileHash>{D6FD05AD-0365-25DB-89AD-8D88E3A179CF}</FileHash>
 </SoundBanksInfo>

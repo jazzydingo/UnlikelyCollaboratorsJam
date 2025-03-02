@@ -802,11 +802,14 @@ MonoBehaviour:
   endOfDialogue: 0
   dialogueObj: {fileID: 684834192}
   isPlaying: 0
+  npcTalk: {fileID: 7660630068264317811, guid: 23d7134d3e6f9a544be4f89baee0d60f, type: 3}
+  talkSound: {fileID: 0}
   choice: 0
   choiceBox: {fileID: 0}
   choiceYes: 0
   startDialogue: 1
   endAfterDialogue: 1
+  sound: 0
 --- !u!1 &2042661600
 GameObject:
   m_ObjectHideFlags: 0
@@ -819,7 +822,7 @@ GameObject:
   - component: {fileID: 2042661602}
   m_Layer: 0
   m_Name: SceneController
-  m_TagString: Untagged
+  m_TagString: scene
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

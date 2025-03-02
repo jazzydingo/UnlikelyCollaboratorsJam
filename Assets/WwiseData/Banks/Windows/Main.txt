@@ -1,19 +1,21 @@
 Event	ID	Name			Wwise Object Path	Notes
 	441377128	Play_Paper			\Default Work Unit\Play_Paper	
 	964566375	Play_Pick_Up			\Default Work Unit\Play_Pick_Up	
+	2134431836	Play_NPC_Talk			\Default Work Unit\Play_NPC_Talk	
 	3157003241	TEST			\Default Work Unit\TEST	
 	3751761369	Play_Note_Revealed			\Default Work Unit\Play_Note_Revealed	
 	3854155799	Play_Footsteps			\Default Work Unit\Play_Footsteps	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	31436995	footsteps-001	C:\Users\Andrei\Documents\GitHub\UnlikelyCollaboratorsJam\UnlikelyCollaboratorsJam_WwiseProject\.cache\26\{26945494-BF4F-CD2D-2D15-A28DFEE7DB7E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Leo\footsteps\footsteps-001		53000
-	83449892	note_revealed	C:\Users\Andrei\Documents\GitHub\UnlikelyCollaboratorsJam\UnlikelyCollaboratorsJam_WwiseProject\.cache\B4\{B4D7B7C1-F7B5-0EA7-7ADD-114B402EB5F7}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Puzzle\note_revealed		1241952
+	83449892	note_revealed	C:\Users\Andrei\Documents\GitHub\UnlikelyCollaboratorsJam\UnlikelyCollaboratorsJam_WwiseProject\.cache\72\{7211A1EC-CBF5-DF5B-DA13-3D598A041576}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Puzzle\note_revealed		1241952
 	348500461	footsteps-004	C:\Users\Andrei\Documents\GitHub\UnlikelyCollaboratorsJam\UnlikelyCollaboratorsJam_WwiseProject\.cache\6F\{6FC8F036-18C6-24AC-F273-BF22D581E9E6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Leo\footsteps\footsteps-004		53000
 	500027648	footsteps-003	C:\Users\Andrei\Documents\GitHub\UnlikelyCollaboratorsJam\UnlikelyCollaboratorsJam_WwiseProject\.cache\18\{18E31065-8CBF-A2C0-50AC-29923B756D38}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Leo\footsteps\footsteps-003		59812
 	507959905	footsteps-002	C:\Users\Andrei\Documents\GitHub\UnlikelyCollaboratorsJam\UnlikelyCollaboratorsJam_WwiseProject\.cache\C9\{C94EDDF3-0DBC-184B-D07C-7DDB0162F96E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Leo\footsteps\footsteps-002		58904
 	573993807	footsteps-005	C:\Users\Andrei\Documents\GitHub\UnlikelyCollaboratorsJam\UnlikelyCollaboratorsJam_WwiseProject\.cache\A3\{A3D71BB5-5D57-1381-E9AB-154F3BEE4EFC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Leo\footsteps\footsteps-005		53452
-	598942815	paper	C:\Users\Andrei\Documents\GitHub\UnlikelyCollaboratorsJam\UnlikelyCollaboratorsJam_WwiseProject\.cache\5A\{5A241858-1F84-E3B5-076C-CF7B220C8A46}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Puzzle\paper		123576
+	598942815	paper	C:\Users\Andrei\Documents\GitHub\UnlikelyCollaboratorsJam\UnlikelyCollaboratorsJam_WwiseProject\.cache\9D\{9DC1BF1F-ADB9-D3F4-8C14-F0034715B0EC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Puzzle\paper		123576
 	806454560	TEST	C:\Users\Andrei\Documents\GitHub\UnlikelyCollaboratorsJam\UnlikelyCollaboratorsJam_WwiseProject\.cache\AB\{ABFEFA6D-FC73-9FD5-A54A-DAE12B632454}.wem		\Actor-Mixer Hierarchy\Default Work Unit\TEST		459824
 	859402632	leo_pick_up	C:\Users\Andrei\Documents\GitHub\UnlikelyCollaboratorsJam\UnlikelyCollaboratorsJam_WwiseProject\.cache\8E\{8E403253-DFF7-41C5-EBEE-AFFB2E1C2020}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Leo\leo_pick_up		253932
+	912424192	talk 1_04	C:\Users\Andrei\Documents\GitHub\UnlikelyCollaboratorsJam\UnlikelyCollaboratorsJam_WwiseProject\.cache\10\{10F84AAE-5482-A485-6D64-2818BF1677AB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Speech\NPC_Talk\talk 1_04		18592
 	1069972352	footsteps-006	C:\Users\Andrei\Documents\GitHub\UnlikelyCollaboratorsJam\UnlikelyCollaboratorsJam_WwiseProject\.cache\C1\{C115F0D8-55B6-3110-6EB0-D3F638BDBC1E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Leo\footsteps\footsteps-006		53452
 

@@ -18,6 +18,9 @@ namespace game
         public GameObject dialogueObj;
         public bool isPlaying;
 
+        public GameObject npcTalk;
+        public GameObject talkSound;
+
         public bool choice;
         public GameObject choiceBox;
 
@@ -25,6 +28,8 @@ namespace game
         public bool startDialogue; //starts dialogue on scene start
 
         public bool endAfterDialogue;
+
+        public bool sound;
 
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -104,15 +109,31 @@ namespace game
                 StartCoroutine(NextLine());
             }
 
+            if(isPlaying && !sound)
+            {
+                sound = true;
+                if(talkSound == null)
+                {
+                    talkSound = Instantiate(npcTalk);
+                }
+                
+            }
+
             if (Input.GetMouseButtonDown(0) && !endOfDialogue && !isPlaying)
             {
                 dialogueObj.gameObject.SetActive(true);
                 skip = true;
+                Destroy(talkSound);
+                sound = false;
+                
                 StartCoroutine(NextLine());
             }
             else if(Input.GetMouseButtonDown(0) && !endOfDialogue && isPlaying)
             {
                 skip = true;
+                Destroy(talkSound);
+                sound = false;
+
             }
             else if (Input.GetMouseButtonDown(0) && endOfDialogue && !isPlaying)
             {
@@ -162,6 +183,8 @@ namespace game
                     }
                 }
                 isPlaying = false;
+                Destroy(talkSound);
+                sound = false;
                 dialogue.text = dialogueLines[index];
                 if (index < dialogueLines.Length - 1)
                 {
