@@ -17,6 +17,7 @@ namespace game
         public GameObject dialogueObj;
         public bool hasFadedIn;
         public GameObject sfxObj;
+        private bool fadeSound;
         
         void Update()
         {
@@ -33,18 +34,18 @@ namespace game
             }
 
 
-            if (!isAnyDragEnabled && !hasFadedIn)
+            if (!isAnyDragEnabled && !hasFadedIn && !fadeSound)
             {
 
                 fadingIn = true;
-                
-                    
-                
+                AkSoundEngine.PostEvent("Play_Note_Revealed", sfxObj);
+                fadeSound = true;
+
             }
 
             if (fadingIn)
             {
-                AkSoundEngine.PostEvent("Play_Note_Revealed", sfxObj);
+                
                 elapsedTime += Time.deltaTime;
                 float alpha = Mathf.Lerp(0f, 1f, elapsedTime / fadeDuration);
 
