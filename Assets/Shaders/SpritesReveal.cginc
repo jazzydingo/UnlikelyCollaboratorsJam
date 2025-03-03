@@ -32,6 +32,9 @@ CBUFFER_END
 // Material Color.
 fixed4 _Color;
 
+sampler2D _MainTex;
+sampler2D _AlphaTex;
+
 struct VertexData {
     float4 vertex   : POSITION;
     float3 normal   : NORMAL;
@@ -74,9 +77,6 @@ Interpolators VertexProgram(VertexData IN) {
     return OUT;
 }
 
-sampler2D _MainTex;
-sampler2D _AlphaTex;
-
 fixed4 SampleSpriteTexture (float2 uv) {
     fixed4 color = tex2D (_MainTex, uv);
 
@@ -92,11 +92,13 @@ fixed4 FragmentProgram(Interpolators IN) : SV_Target {
     IN.worldNormal = normalize(IN.worldNormal);
 
     float3 lightDir = _WorldSpaceLightPos0.xyz;
-    float diffuse = max(dot(IN.worldNormal, lightDir), 0);
+    float3 lightColor = _LightColor0.rgb;
 
-    fixed4 c = SampleSpriteTexture (IN.texcoord) * IN.color;
-    c.rgb *= c.a * _LightColor0.rgb * diffuse;
-    return c;
+    fixed4 albedo = SampleSpriteTexture (IN.texcoord) * IN.color;
+    albedo.rgb *= albedo.a;
+
+    fixed3 diffuse = albedo.rgb * lightColor * DotClamped(lightDir, IN.worldNormal);
+    return fixed4(diffuse, albedo.a);
 }
 
 #endif // UNITY_SPRITES_INCLUDED

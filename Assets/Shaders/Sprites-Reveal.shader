@@ -1,7 +1,7 @@
 // Based off of Unity's default sprite shaders:
 // - https://github.com/TwoTailsGames/Unity-Built-in-Shaders/blob/master/DefaultResourcesExtra/Sprites-Default.shader
 
-Shader "Custom/Sprites-Lit" {
+Shader "Custom/Sprites-Reveal" {
     Properties {
         [PerRendererData] _MainTex ("Sprite Texture", 2D) = "white" {}
         _Color ("Tint", Color) = (1,1,1,1)
@@ -10,6 +10,8 @@ Shader "Custom/Sprites-Lit" {
         [HideInInspector] _Flip ("Flip", Vector) = (1,1,1,1)
         [PerRendererData] _AlphaTex ("External Alpha", 2D) = "white" {}
         [PerRendererData] _EnableExternalAlpha ("Enable External Alpha", Float) = 0
+
+        [PerRendererData] _RevealTex ("Sprite Reveal Texture", 2D) = "white" {}
     }
 
     SubShader {
@@ -35,7 +37,7 @@ Shader "Custom/Sprites-Lit" {
                 #pragma multi_compile_instancing
                 #pragma multi_compile_local _ PIXELSNAP_ON
                 #pragma multi_compile _ ETC1_EXTERNAL_ALPHA
-                #include "SpritesLit.cginc"
+                #include "SpritesReveal.cginc"
             ENDCG
         }
     }
