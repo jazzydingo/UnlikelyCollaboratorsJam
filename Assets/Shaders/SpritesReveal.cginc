@@ -33,7 +33,11 @@ CBUFFER_END
 fixed4 _Color;
 
 sampler2D _MainTex;
+sampler2D _RevealTex;
 sampler2D _AlphaTex;
+
+StructuredBuffer<float4> _RevealLights;
+int _RevealLightCount;
 
 struct VertexData {
     float4 vertex   : POSITION;
@@ -77,8 +81,8 @@ Interpolators VertexProgram(VertexData IN) {
     return OUT;
 }
 
-fixed4 SampleSpriteTexture (float2 uv) {
-    fixed4 color = tex2D (_MainTex, uv);
+fixed4 SampleSpriteTexture (float2 uv, sampler2D tex) {
+    fixed4 color = tex2D (tex, uv);
 
     #if ETC1_EXTERNAL_ALPHA
         fixed4 alpha = tex2D (_AlphaTex, uv);
@@ -94,7 +98,20 @@ fixed4 FragmentProgram(Interpolators IN) : SV_Target {
     float3 lightDir = _WorldSpaceLightPos0.xyz;
     float3 lightColor = _LightColor0.rgb;
 
-    fixed4 albedo = SampleSpriteTexture (IN.texcoord) * IN.color;
+    fixed4 albedo = SampleSpriteTexture(IN.texcoord, _MainTex) * IN.color;
+
+    [loop]
+    for (int i = 0; i < _RevealLightCount; i++) {
+        float3 revealLightPos = _RevealLights[i].xyz;
+        float revealLightRadius = _RevealLights[i].w;
+
+        float distSquared = dot(IN.worldPos - revealLightPos, IN.worldPos - revealLightPos);
+        if (distSquared <= revealLightRadius * revealLightRadius) {
+            albedo = SampleSpriteTexture(IN.texcoord, _RevealTex) * IN.color;
+            break;
+        }
+    }
+
     albedo.rgb *= albedo.a;
 
     fixed3 diffuse = albedo.rgb * lightColor * DotClamped(lightDir, IN.worldNormal);

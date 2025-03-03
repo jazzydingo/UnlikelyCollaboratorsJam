@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 
 namespace game {
-    public class RevealLightOrb : MonoBehaviour {
+    public class RevealLight : MonoBehaviour {
         private enum ELightState : byte { On, Off, TurningOn, TurningOff }
         [SerializeField] private float _maxLightPixelRadius = 60;
         [SerializeField] private ELightState _lightState = ELightState.On;
@@ -13,7 +13,11 @@ namespace game {
         [SerializeField] private bool _shouldSwitchState = false; // TODO: remove serialize field when done testing
 
         private void Awake() {
-            LightPixelRadius = _maxLightPixelRadius;
+            if (_lightState == ELightState.On) {
+                LightPixelRadius = _maxLightPixelRadius;
+            } else if (_lightState == ELightState.Off) {
+                LightPixelRadius = 0f;
+            }
         }
 
         private void Update() {

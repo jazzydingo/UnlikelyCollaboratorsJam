@@ -11,7 +11,7 @@ Shader "Custom/Sprites-Reveal" {
         [PerRendererData] _AlphaTex ("External Alpha", 2D) = "white" {}
         [PerRendererData] _EnableExternalAlpha ("Enable External Alpha", Float) = 0
 
-        [PerRendererData] _RevealTex ("Sprite Reveal Texture", 2D) = "white" {}
+        _RevealTex ("Sprite Reveal Texture", 2D) = "white" {}
     }
 
     SubShader {
