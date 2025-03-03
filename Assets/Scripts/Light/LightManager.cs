@@ -34,16 +34,13 @@ namespace game {
                     light.transform.position.x, 
                     light.transform.position.y,
                     light.transform.position.z,
-                    light.LightPixelRadius
+                    light.Radius
                 );
                 spheres[i] = sphere;
             }
 
             _revealLightsBuffer.SetData(spheres);
             _revealMaterial.SetBuffer(RevealLightsId, _revealLightsBuffer);
-            // if (_lightOrbs.Length < 0) return;
-            // Shader.SetGlobalFloat(LightRadiusId, _lightOrbs[0].LightPixelRadius / 16f);
-            // Shader.SetGlobalVector(LightPosId, _lightOrbs[0].transform.position);
         }
 
         private void OnDisable() {
