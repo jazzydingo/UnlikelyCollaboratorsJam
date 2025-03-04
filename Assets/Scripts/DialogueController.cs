@@ -90,26 +90,28 @@ namespace game
         // Update is called once per frame
         void Update()
         {
-            if(dialogueObj.activeSelf)
+            if (startDialogue)
             {
-                if (startDialogue)
+                startDialogue = false;
+                isPlaying = false;
+
+                dialogueObj.gameObject.SetActive(true);
+
+                if (Player.current != null)
                 {
-                    startDialogue = false;
-                    isPlaying = false;
-
-                    dialogueObj.gameObject.SetActive(true);
-
-                    if (Player.current != null)
-                    {
-                        Player.current.enabled = false;
-                    }
-                    if (OrbFollow.instance != null)
-                    {
-                        OrbFollow.instance.enabled = false;
-                    }
-
-                    StartCoroutine(NextLine());
+                    Player.current.enabled = false;
                 }
+                if (OrbFollow.instance != null)
+                {
+                    OrbFollow.instance.enabled = false;
+                }
+
+                StartCoroutine(NextLine());
+            }
+
+            if (dialogueObj.activeSelf)
+            {
+                
 
                 if (isPlaying && !sound)
                 {

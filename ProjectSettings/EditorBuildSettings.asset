@@ -32,5 +32,20 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game/7 LeaveRoom.unity
     guid: 0eb392ebf7c33d740ba4b24e939cbe07
+  - enabled: 1
+    path: Assets/Scenes/Game/8 HallwayScary.unity
+    guid: c500932d8eb51d1448856662b9e9848f
+  - enabled: 1
+    path: Assets/Scenes/Game/8.5 HallwayMaze.unity
+    guid: 74ce86a51001e414d8ef582e56cb20b3
+  - enabled: 1
+    path: Assets/Scenes/Game/9 PlayRoom.unity
+    guid: ffb83922abcbaf34387ea249d48227f3
+  - enabled: 1
+    path: Assets/Scenes/Game/9.5 Kitchen.unity
+    guid: f950b0b5c64869d4180230880515084d
+  - enabled: 1
+    path: Assets/Scenes/Game/9.8 Fridge.unity
+    guid: 0418c8cd0d104ad4b99f05ced6f43c36
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 08793b94be16648478e578d858524075, type: 2}

@@ -133,6 +133,8 @@ GameObject:
   m_Component:
   - component: {fileID: 143920425}
   - component: {fileID: 143920426}
+  - component: {fileID: 143920427}
+  - component: {fileID: 143920428}
   m_Layer: 0
   m_Name: leofurniture_2
   m_TagString: Untagged
@@ -207,6 +209,85 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &143920427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143920424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9de85fba0bdf4148ad1265420ebfcf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickup: 0
+  prefab: {fileID: 0}
+  flashlight: 0
+  key: 0
+  bed: 0
+  defaultMaterial: {fileID: 0}
+  outlineMaterial: {fileID: 0}
+  flashlightMode: 0
+  lightObj: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  note: 0
+  dialogue: 1
+  line: 'It''s the lamp Grandma bought you for your birthday. It keeps the monsters
+    away. '
+  lineDialogue: {fileID: 4416022458702709520, guid: b884c369fa226c74882942a798f4d43a, type: 3}
+  lineObj: {fileID: 0}
+  endOfDialogue: 0
+  isPlaying: 0
+  sound: 0
+  skip: 0
+  talkSound: {fileID: 0}
+  npcTalk: {fileID: 7660630068264317811, guid: 23d7134d3e6f9a544be4f89baee0d60f, type: 3}
+--- !u!61 &143920428
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143920424}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.2434187, y: 0.19660729}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.0625, y: 1.1875}
+    newSize: {x: 1.0625, y: 1.1875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5756626, y: 0.7942854}
+  m_EdgeRadius: 0
 --- !u!1 &156019680
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,6 +446,8 @@ GameObject:
   m_Component:
   - component: {fileID: 274357321}
   - component: {fileID: 274357322}
+  - component: {fileID: 274357323}
+  - component: {fileID: 274357324}
   m_Layer: 0
   m_Name: leofurniture_2 (2)
   m_TagString: Untagged
@@ -439,6 +522,84 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &274357323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274357320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9de85fba0bdf4148ad1265420ebfcf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickup: 0
+  prefab: {fileID: 0}
+  flashlight: 0
+  key: 0
+  bed: 0
+  defaultMaterial: {fileID: 0}
+  outlineMaterial: {fileID: 0}
+  flashlightMode: 0
+  lightObj: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  note: 0
+  dialogue: 1
+  line: Clear desktop. Someone hasn't been doing their homework...
+  lineDialogue: {fileID: 4416022458702709520, guid: b884c369fa226c74882942a798f4d43a, type: 3}
+  lineObj: {fileID: 0}
+  endOfDialogue: 0
+  isPlaying: 0
+  sound: 0
+  skip: 0
+  talkSound: {fileID: 0}
+  npcTalk: {fileID: 7660630068264317811, guid: 23d7134d3e6f9a544be4f89baee0d60f, type: 3}
+--- !u!61 &274357324
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274357320}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.0625, y: 1.1875}
+    newSize: {x: 1.0625, y: 1.1875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0625, y: 1.1875}
+  m_EdgeRadius: 0
 --- !u!1 &282710673
 GameObject:
   m_ObjectHideFlags: 0
@@ -11241,6 +11402,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 316310277}
+  - component: {fileID: 316310278}
   m_Layer: 0
   m_Name: BEDROOM FURNITURE
   m_TagString: Untagged
@@ -11267,6 +11429,18 @@ Transform:
   - {fileID: 215238355}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!210 &316310278
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316310276}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_SortAtRoot: 0
 --- !u!1 &414896762
 GameObject:
   m_ObjectHideFlags: 0
@@ -23243,6 +23417,8 @@ GameObject:
   m_Component:
   - component: {fileID: 864557183}
   - component: {fileID: 864557184}
+  - component: {fileID: 864557185}
+  - component: {fileID: 864557186}
   m_Layer: 0
   m_Name: leofurniture_1
   m_TagString: Untagged
@@ -23259,7 +23435,7 @@ Transform:
   m_GameObject: {fileID: 864557182}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.752688, y: 2.5300002, z: 0}
+  m_LocalPosition: {x: 7.752688, y: 1.78, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23317,6 +23493,74 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &864557185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864557182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9de85fba0bdf4148ad1265420ebfcf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickup: 0
+  prefab: {fileID: 0}
+  flashlight: 0
+  key: 0
+  bed: 0
+  defaultMaterial: {fileID: 0}
+  outlineMaterial: {fileID: 0}
+  flashlightMode: 0
+  lightObj: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  note: 0
+  dialogue: 1
+  line: 'Your cat, Silky, sleeps here. '
+  lineDialogue: {fileID: 4416022458702709520, guid: b884c369fa226c74882942a798f4d43a, type: 3}
+  lineObj: {fileID: 0}
+  endOfDialogue: 0
+  isPlaying: 0
+  sound: 0
+  skip: 0
+  talkSound: {fileID: 0}
+  npcTalk: {fileID: 7660630068264317811, guid: 23d7134d3e6f9a544be4f89baee0d60f, type: 3}
+--- !u!58 &864557186
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864557182}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &877740592
 GameObject:
   m_ObjectHideFlags: 0
@@ -23807,7 +24051,7 @@ Transform:
   m_GameObject: {fileID: 1132391379}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.27, y: 5.61, z: 0}
+  m_LocalPosition: {x: 5.28, y: 5.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -24149,6 +24393,7 @@ GameObject:
   - component: {fileID: 1413316354}
   - component: {fileID: 1413316356}
   - component: {fileID: 1413316355}
+  - component: {fileID: 1413316357}
   m_Layer: 0
   m_Name: leofurniture_4 (1)
   m_TagString: Untagged
@@ -24268,6 +24513,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1413316357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413316353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9de85fba0bdf4148ad1265420ebfcf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickup: 0
+  prefab: {fileID: 0}
+  flashlight: 0
+  key: 0
+  bed: 0
+  defaultMaterial: {fileID: 0}
+  outlineMaterial: {fileID: 0}
+  flashlightMode: 0
+  lightObj: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  note: 0
+  dialogue: 1
+  line: More books about lions...
+  lineDialogue: {fileID: 4416022458702709520, guid: b884c369fa226c74882942a798f4d43a, type: 3}
+  lineObj: {fileID: 0}
+  endOfDialogue: 0
+  isPlaying: 0
+  sound: 0
+  skip: 0
+  talkSound: {fileID: 0}
+  npcTalk: {fileID: 7660630068264317811, guid: 23d7134d3e6f9a544be4f89baee0d60f, type: 3}
 --- !u!1001 &1548458010
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24705,6 +24983,7 @@ GameObject:
   - component: {fileID: 1832048569}
   - component: {fileID: 1832048571}
   - component: {fileID: 1832048570}
+  - component: {fileID: 1832048572}
   m_Layer: 0
   m_Name: leofurniture_4 (2)
   m_TagString: Untagged
@@ -24824,6 +25103,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1832048572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832048568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9de85fba0bdf4148ad1265420ebfcf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickup: 0
+  prefab: {fileID: 0}
+  flashlight: 0
+  key: 0
+  bed: 0
+  defaultMaterial: {fileID: 0}
+  outlineMaterial: {fileID: 0}
+  flashlightMode: 0
+  lightObj: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  note: 0
+  dialogue: 1
+  line: Some of your favorite books. You just finished "The Lion's Day at Work."
+  lineDialogue: {fileID: 4416022458702709520, guid: b884c369fa226c74882942a798f4d43a, type: 3}
+  lineObj: {fileID: 0}
+  endOfDialogue: 0
+  isPlaying: 0
+  sound: 0
+  skip: 0
+  talkSound: {fileID: 0}
+  npcTalk: {fileID: 7660630068264317811, guid: 23d7134d3e6f9a544be4f89baee0d60f, type: 3}
 --- !u!1001 &1852982925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24835,6 +25147,18 @@ PrefabInstance:
     - target: {fileID: 4529877234882747918, guid: 19e5bea1909ada84d92b581f44eac141, type: 3}
       propertyPath: m_Name
       value: PlayerObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 7584755149907085554, guid: 19e5bea1909ada84d92b581f44eac141, type: 3}
+      propertyPath: sfxObj
+      value: 
+      objectReference: {fileID: 2105133889}
+    - target: {fileID: 8773545051691326711, guid: 19e5bea1909ada84d92b581f44eac141, type: 3}
+      propertyPath: m_Size.y
+      value: 1.3980513
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773545051691326711, guid: 19e5bea1909ada84d92b581f44eac141, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.15947843
       objectReference: {fileID: 0}
     - target: {fileID: 8973310220012550652, guid: 19e5bea1909ada84d92b581f44eac141, type: 3}
       propertyPath: m_LocalPosition.x
@@ -36602,7 +36926,7 @@ Transform:
   m_GameObject: {fileID: 2036933858}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.01, y: 1.36, z: 0}
+  m_LocalPosition: {x: -5.96, y: 1.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -36631,6 +36955,16 @@ MonoBehaviour:
   lightObj: {fileID: 0}
   dialogueBox: {fileID: 1292234442}
   note: 0
+  dialogue: 0
+  line: 
+  lineDialogue: {fileID: 0}
+  lineObj: {fileID: 0}
+  endOfDialogue: 0
+  isPlaying: 0
+  sound: 0
+  skip: 0
+  talkSound: {fileID: 0}
+  npcTalk: {fileID: 0}
 --- !u!210 &2036933863
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -36672,10 +37006,10 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.019400597, y: -0.023280501}
+  m_Offset: {x: -0.019400597, y: -0.6880005}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -36686,7 +37020,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.737217, y: 2.7537997}
+  m_Size: {x: 1.737217, y: 1.4243597}
   m_EdgeRadius: 0
 --- !u!1 &2095629795
 GameObject:
@@ -36699,6 +37033,7 @@ GameObject:
   - component: {fileID: 2095629796}
   - component: {fileID: 2095629798}
   - component: {fileID: 2095629797}
+  - component: {fileID: 2095629799}
   m_Layer: 0
   m_Name: leofurniture_4
   m_TagString: Untagged
@@ -36818,6 +37153,150 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2095629799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095629795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9de85fba0bdf4148ad1265420ebfcf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickup: 0
+  prefab: {fileID: 0}
+  flashlight: 0
+  key: 0
+  bed: 0
+  defaultMaterial: {fileID: 0}
+  outlineMaterial: {fileID: 0}
+  flashlightMode: 0
+  lightObj: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  note: 0
+  dialogue: 1
+  line: 'Looks like you took after Mom... Some anagram books are on this shelf. '
+  lineDialogue: {fileID: 4416022458702709520, guid: b884c369fa226c74882942a798f4d43a, type: 3}
+  lineObj: {fileID: 0}
+  endOfDialogue: 0
+  isPlaying: 0
+  sound: 0
+  skip: 0
+  talkSound: {fileID: 0}
+  npcTalk: {fileID: 7660630068264317811, guid: 23d7134d3e6f9a544be4f89baee0d60f, type: 3}
+--- !u!1 &2105133889
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2105133893}
+  - component: {fileID: 2105133892}
+  - component: {fileID: 2105133891}
+  - component: {fileID: 2105133890}
+  m_Layer: 0
+  m_Name: SFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2105133890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105133889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ba8db69f1279f04eb47d12abaa546c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: 
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e4e0ac2fcc301bf4a9ea0aa4ce09fb09, type: 2}
+  useCallbacks: 0
+  stopSoundOnDestroy: 1
+  Callbacks: []
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &2105133891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105133889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8986dafeb596d94eb64d4406b81f1aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  usePositionOffsetData: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
+--- !u!114 &2105133892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105133889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1d572a52debfda498028db99f90e9a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 1b2ee4fbbcd9abd4789fc2632cb925b0, type: 2}
+  decodeBank: 0
+  overrideLoadSetting: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
+--- !u!4 &2105133893
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105133889}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12.263749, y: 0.38686174, z: 1.098098}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -36832,3 +37311,4 @@ SceneRoots:
   - {fileID: 1548458010}
   - {fileID: 1852982925}
   - {fileID: 316310277}
+  - {fileID: 2105133893}
