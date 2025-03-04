@@ -10,6 +10,13 @@ namespace game.lights {
 
         private void OnValidate() {
             SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+
+            if (spriteRenderer.sharedMaterial == null)
+            {
+                Debug.LogWarning("sharedMaterial is null. Assigning default material.");
+                spriteRenderer.sharedMaterial = new Material(Shader.Find("Custom/SpriteRevealShader"));
+            }
+
             Material tempMaterial = new(spriteRenderer.sharedMaterial);
             Texture2D spriteTexture = GetSpriteTexture();
             
