@@ -11,7 +11,7 @@ namespace game {
 
 
         [HideInInspector] public float Radius;
-        [SerializeField] private bool _shouldSwitchState = false; // TODO: remove serialize field when done testing
+        [SerializeField] public bool _shouldSwitchState = false; // TODO: remove serialize field when done testing
         public bool isOn;
 
         private void Awake() {

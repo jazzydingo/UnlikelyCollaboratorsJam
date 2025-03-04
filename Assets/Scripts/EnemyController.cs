@@ -25,7 +25,7 @@ namespace game
 
         void OnTriggerEnter2D(Collider2D other)
         {
-            if(other.gameObject.TryGetComponent(out RevealLightOrb otherIsLight))
+            if(other.gameObject.TryGetComponent(out RevealLight otherIsLight))
             {
                 //light is on this obj
                 //stop moving 
@@ -41,7 +41,7 @@ namespace game
 
         void OnTriggerExit2D(Collider2D other)
         {
-            if (other.gameObject.TryGetComponent(out RevealLightOrb otherIsLight))
+            if (other.gameObject.TryGetComponent(out RevealLight otherIsLight))
             {
                 //light is not on this obj
                 //chase player

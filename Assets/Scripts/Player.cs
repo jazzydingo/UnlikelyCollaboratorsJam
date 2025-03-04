@@ -104,7 +104,7 @@ namespace game
 
         void KeepLightLow()
         {
-            if (this.GetComponentInChildren<RevealLightOrb>().isOn)
+            if (this.GetComponentInChildren<RevealLight>().isOn)
             {
                 bar.gameObject.SetActive(true);
                 bar.gameObject.GetComponent<Image>().color = Color.red;
@@ -172,7 +172,7 @@ namespace game
             if(Input.GetKeyUp(KeyCode.F))
             {
                 //switch light mode
-                this.GetComponentInChildren<RevealLightOrb>()._shouldSwitchState = !this.GetComponentInChildren<RevealLightOrb>()._shouldSwitchState;
+                this.GetComponentInChildren<RevealLight>()._shouldSwitchState = !this.GetComponentInChildren<RevealLight>()._shouldSwitchState;
             }
         }
 
@@ -206,7 +206,7 @@ namespace game
 
         void ControlLight()
         {
-            if(spotlight.activeSelf && this.GetComponentInChildren<RevealLightOrb>().isOn)
+            if(spotlight.activeSelf && this.GetComponentInChildren<RevealLight>().isOn)
             {
                 Vector3 mousePosition = Input.mousePosition;
                 Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(mousePosition);
