@@ -11883,15 +11883,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2972669776187795483, guid: cf18eb76bda2e504db14e0d89aeb829c, type: 3}
       propertyPath: dialogueLines.Array.data[0]
-      value: 'Silky: "Wha-"'
+      value: 'Silky: "What the..."'
       objectReference: {fileID: 0}
     - target: {fileID: 2972669776187795483, guid: cf18eb76bda2e504db14e0d89aeb829c, type: 3}
       propertyPath: dialogueLines.Array.data[1]
-      value: 'Silky: "It''s time. Let''s get out of this place."'
+      value: 'Silky: "We''ve gotta get out of this place."'
       objectReference: {fileID: 0}
     - target: {fileID: 2972669776187795483, guid: cf18eb76bda2e504db14e0d89aeb829c, type: 3}
       propertyPath: dialogueLines.Array.data[2]
-      value: 'Silky: "Come on, grab all your stuff for the trip."'
+      value: 'Silky: "Hurry, let''s go. Grab some snacks from the kitchen if you''re
+        hungry."'
       objectReference: {fileID: 0}
     - target: {fileID: 2972669776187795483, guid: cf18eb76bda2e504db14e0d89aeb829c, type: 3}
       propertyPath: dialogueLines.Array.data[3]
@@ -12890,6 +12891,16 @@ MonoBehaviour:
   lightObj: {fileID: 0}
   dialogueBox: {fileID: 1292234442}
   note: 0
+  dialogue: 0
+  line: 
+  lineDialogue: {fileID: 0}
+  lineObj: {fileID: 0}
+  endOfDialogue: 0
+  isPlaying: 0
+  sound: 0
+  skip: 0
+  talkSound: {fileID: 0}
+  npcTalk: {fileID: 0}
 --- !u!210 &2036933863
 SortingGroup:
   m_ObjectHideFlags: 0
