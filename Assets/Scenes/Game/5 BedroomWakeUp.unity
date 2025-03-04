@@ -154,7 +154,7 @@ PrefabInstance:
     - target: {fileID: 2455369281519731035, guid: bbc7bd20844b46642a30fc0f63b893b3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 891805962}
+      objectReference: {fileID: 836577971}
     - target: {fileID: 2798727722637010756, guid: bbc7bd20844b46642a30fc0f63b893b3, type: 3}
       propertyPath: m_Name
       value: Object (13)
@@ -265,6 +265,7 @@ GameObject:
   - component: {fileID: 30935073}
   - component: {fileID: 30935075}
   - component: {fileID: 30935074}
+  - component: {fileID: 30935076}
   m_Layer: 0
   m_Name: leofurniture_4 (1)
   m_TagString: Untagged
@@ -374,7 +375,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -1205683984, guid: 07767c6ad71451444b3271c27ef49716, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.54901963, g: 0.54901963, b: 0.54901963, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -384,99 +385,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!21 &82217907
-Material:
-  serializedVersion: 8
+--- !u!114 &30935076
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Sprites-Dimension
-  m_Shader: {fileID: 4800000, guid: 0c3ee9183dee771428efcd87155b4736, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailAlbedoMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailMask:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailNormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ParallaxMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _RevealTex:
-        m_Texture: {fileID: 1504401136}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - PixelSnap: 0
-    - _BumpScale: 1
-    - _Cutoff: 0.5
-    - _DetailNormalMapScale: 1
-    - _DstBlend: 0
-    - _EnableExternalAlpha: 0
-    - _GlossMapScale: 1
-    - _Glossiness: 0.5
-    - _GlossyReflections: 1
-    - _Metallic: 0
-    - _Mode: 0
-    - _OcclusionStrength: 1
-    - _Parallax: 0.02
-    - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _UVSec: 0
-    - _ZWrite: 1
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
+  m_GameObject: {fileID: 30935072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee201a929f403b46a1d05ef5e2da9fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  darkColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &96632374
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -548,6 +469,8 @@ GameObject:
   m_Component:
   - component: {fileID: 109155310}
   - component: {fileID: 109155311}
+  - component: {fileID: 109155313}
+  - component: {fileID: 109155312}
   m_Layer: 0
   m_Name: leofurniture_2 (3)
   m_TagString: Untagged
@@ -612,7 +535,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -1237118392, guid: 07767c6ad71451444b3271c27ef49716, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.54901963, g: 0.54901963, b: 0.54901963, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -622,6 +545,64 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &109155312
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109155309}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.0625, y: 1.1875}
+    newSize: {x: 1.0625, y: 1.1875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0625, y: 1.1875}
+  m_EdgeRadius: 0
+--- !u!114 &109155313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109155309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee201a929f403b46a1d05ef5e2da9fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  darkColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &156019680
 GameObject:
   m_ObjectHideFlags: 0
@@ -731,6 +712,7 @@ GameObject:
   - component: {fileID: 206076235}
   - component: {fileID: 206076237}
   - component: {fileID: 206076236}
+  - component: {fileID: 206076238}
   m_Layer: 0
   m_Name: leofurniture_4
   m_TagString: Untagged
@@ -840,7 +822,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -1205683984, guid: 07767c6ad71451444b3271c27ef49716, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.54901963, g: 0.54901963, b: 0.54901963, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -850,6 +832,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &206076238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206076234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee201a929f403b46a1d05ef5e2da9fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  darkColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &222283455
 GameObject:
   m_ObjectHideFlags: 0
@@ -860,6 +855,8 @@ GameObject:
   m_Component:
   - component: {fileID: 222283456}
   - component: {fileID: 222283457}
+  - component: {fileID: 222283459}
+  - component: {fileID: 222283458}
   m_Layer: 0
   m_Name: leofurniture_1
   m_TagString: Untagged
@@ -924,7 +921,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -349176708, guid: 07767c6ad71451444b3271c27ef49716, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.54901963, g: 0.54901963, b: 0.54901963, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -934,6 +931,112 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &222283458
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222283455}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &222283459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222283455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee201a929f403b46a1d05ef5e2da9fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  darkColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!28 &314234150
+Texture2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 2
+  m_Width: 30
+  m_Height: 41
+  m_CompleteImageSize: 6472
+  m_MipsStripped: 0
+  m_TextureFormat: 4
+  m_MipCount: 6
+  m_IsReadable: 1
+  m_IsPreProcessed: 0
+  m_IgnoreMipmapLimit: 0
+  m_MipmapLimitGroupName: 
+  m_StreamingMipmaps: 0
+  m_StreamingMipmapsPriority: 0
+  m_VTOnly: 0
+  m_AlphaIsTransparency: 0
+  m_ImageCount: 1
+  m_TextureDimension: 2
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 0
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 0
+    m_WrapV: 0
+    m_WrapW: 0
+  m_LightmapFormat: 0
+  m_ColorSpace: 1
+  m_PlatformBlob: 
+  image data: 6472
+  _typelessdata: e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e942e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e97fe9e9e9ffe9e9e9c8e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e94ee9e9e9ffe9e9e9ffe9e9e9ffe9e9e9cee9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9d5e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e97fe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9dbe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e95be9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e962e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9e2e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9e8e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9eee9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e97fe9e9e900e9e9e900e9e9e97fe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e975e9e9e97be9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9fbe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9fce9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e975e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e97fe9e9e900e9e9e97fe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9e9e9e9e900e9e9e900e9e9e97fe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e962e9e9e900e9e9e900e9e9e97fe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e97fe9e9e900e9e9e900e9e9e900e9e9e97fe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e97fe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e97fe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e949e9e9e900e9e9e900e9e9e900e9e9e900e9e9e97fe9e9e9ffe9e9e9ffe9e9e986e9e9e986e9e9e986e9e9e986e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9fee9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e97ce9e9e9ffe9e9e9cfe9e9e900e9e9e900e9e9e900e9e9e922e9e9e9fce9e9e9ffe9e9e9ffe9e9e971e9e9e900e9e9e900e9e9e9d7e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9fbe9e9e924e9e9e987e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9e0e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9e0e9e9e9e3e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9fbe9e9e924e9e9e9c8e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e996e9e9e900e9e9e9c8e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e9c8e9e9e9d3e9e9e9c2e9e9e97fe9e9e972e9e9e900e9e9e900e9e9e900e9e9e9fde9e9e900e9e9e952e9e9e9fee9e9e97fe9e9e9eae9e9e9ffe9e9e9f4e9e9e9f0e9e9e9ffe9e9e98be9e9e9dde9e9e9bfe9e9e900e9e9e9fde9e9e9efe9e9e9f6
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &414896762
 GameObject:
   m_ObjectHideFlags: 0
@@ -6573,6 +6676,99 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476421575}
   m_CullTransparentMesh: 1
+--- !u!21 &479776323
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sprites-Dimension
+  m_Shader: {fileID: 4800000, guid: 0c3ee9183dee771428efcd87155b4736, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RevealTex:
+        m_Texture: {fileID: 1188823664}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - PixelSnap: 0
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _EnableExternalAlpha: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &523957831 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2798727722637010756, guid: bbc7bd20844b46642a30fc0f63b893b3, type: 3}
@@ -6714,6 +6910,7 @@ GameObject:
   - component: {fileID: 563771349}
   - component: {fileID: 563771351}
   - component: {fileID: 563771350}
+  - component: {fileID: 563771352}
   m_Layer: 0
   m_Name: leofurniture_4 (2)
   m_TagString: Untagged
@@ -6823,7 +7020,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -1205683984, guid: 07767c6ad71451444b3271c27ef49716, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.54901963, g: 0.54901963, b: 0.54901963, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6833,99 +7030,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!21 &577406790
-Material:
-  serializedVersion: 8
+--- !u!114 &563771352
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Sprites-Dimension
-  m_Shader: {fileID: 4800000, guid: 0c3ee9183dee771428efcd87155b4736, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailAlbedoMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailMask:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailNormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ParallaxMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _RevealTex:
-        m_Texture: {fileID: 1537568023}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - PixelSnap: 0
-    - _BumpScale: 1
-    - _Cutoff: 0.5
-    - _DetailNormalMapScale: 1
-    - _DstBlend: 0
-    - _EnableExternalAlpha: 0
-    - _GlossMapScale: 1
-    - _Glossiness: 0.5
-    - _GlossyReflections: 1
-    - _Metallic: 0
-    - _Mode: 0
-    - _OcclusionStrength: 1
-    - _Parallax: 0.02
-    - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _UVSec: 0
-    - _ZWrite: 1
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
+  m_GameObject: {fileID: 563771348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee201a929f403b46a1d05ef5e2da9fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  darkColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &610528851
 GameObject:
   m_ObjectHideFlags: 0
@@ -7129,6 +7246,99 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_SortAtRoot: 0
+--- !u!21 &836577971
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sprites-Dimension
+  m_Shader: {fileID: 4800000, guid: 0c3ee9183dee771428efcd87155b4736, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RevealTex:
+        m_Texture: {fileID: 314234150}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - PixelSnap: 0
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _EnableExternalAlpha: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &870471022
 GameObject:
   m_ObjectHideFlags: 0
@@ -7139,6 +7349,8 @@ GameObject:
   m_Component:
   - component: {fileID: 870471023}
   - component: {fileID: 870471024}
+  - component: {fileID: 870471026}
+  - component: {fileID: 870471025}
   m_Layer: 0
   m_Name: leofurniture_2 (2)
   m_TagString: Untagged
@@ -7203,7 +7415,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -1237118392, guid: 07767c6ad71451444b3271c27ef49716, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.54901963, g: 0.54901963, b: 0.54901963, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7213,6 +7425,64 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &870471025
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870471022}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.0625, y: 1.1875}
+    newSize: {x: 1.0625, y: 1.1875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0625, y: 1.1875}
+  m_EdgeRadius: 0
+--- !u!114 &870471026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870471022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee201a929f403b46a1d05ef5e2da9fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  darkColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &877740592
 GameObject:
   m_ObjectHideFlags: 0
@@ -7526,7 +7796,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &891805962
+--- !u!21 &880982306
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -7590,7 +7860,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RevealTex:
-        m_Texture: {fileID: 1709560049}
+        m_Texture: {fileID: 1893030257}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -7768,7 +8038,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 986078863}
   m_CullTransparentMesh: 1
---- !u!28 &998038930
+--- !u!28 &1030896486
 Texture2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7782,12 +8052,12 @@ Texture2D:
   m_DownscaleFallback: 0
   m_IsAlphaChannelOptional: 0
   serializedVersion: 2
-  m_Width: 29
-  m_Height: 56
-  m_CompleteImageSize: 8556
+  m_Width: 19
+  m_Height: 18
+  m_CompleteImageSize: 1776
   m_MipsStripped: 0
   m_TextureFormat: 4
-  m_MipCount: 6
+  m_MipCount: 5
   m_IsReadable: 1
   m_IsPreProcessed: 0
   m_IgnoreMipmapLimit: 0
@@ -7809,8 +8079,8 @@ Texture2D:
   m_LightmapFormat: 0
   m_ColorSpace: 1
   m_PlatformBlob: 
-  image data: 8556
-  _typelessdata: e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e9d1e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e95fe9e9e9ffe9e9e90de9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9dee9e9e9ffe9e9e91be9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ace9e9e9ffe9e9e9ffe9e9e98de9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e94de9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9cce9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e931e9e9e900e9e9e988e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e904e9e9e900e9e9e900e9e9e900e9e9e97fe9e9e9ffe9e9e9ffe9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e909e9e9e900e9e9e90de9e9e995e9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e944e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e983e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e99ae9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e9d5e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e9dee9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e95fe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9d1e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9f1e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9fae9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e97ae9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e904e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e90de9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e989e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e916e9e9e9ffe9e9e9ffe9e9e9ffe9e9e989e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e91fe9e9e9ffe9e9e9ffe9e9e989e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9a8e9e9e9ffe9e9e989e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e928e9e9e9ffe9e9e989e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9b1e9e9e9c4e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e931e9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e975e9e9e900e9e9e917e9e9e977e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9a2e9e9e9a9e9e9e900e9e9e900e9e9e900e9e9e900e9e9e946e9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e90ce9e9e9e1e9e9e9ffe9e9e9ffe9e9e903e9e9e928e9e9e9dfe9e9e97fe9e9e977e9e9e9ffe9e9e9ffe9e9e9e0e9e9e9ffe9e9e9ffe9e9e97fe9e9e900e9e9e9ace9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e97fe9e9e900e9e9e917e9e9e9f3e9e9e9ffe9e9e9ffe9e9e9ffe9e9e97fe9e9e900e9e9e900e9e9e93ce9e9e9fde9e9e9ffe9e9e9ffe9e9e97fe9e9e900e9e9e900e9e9e900e9e9e99de9e9e9ffe9e9e9ffe9e9e97fe9e9e900e9e9e900e9e9e900e9e9e901e9e9e9c2e9e9e9ffe9e9e9a1e9e9e900e9e9e900e9e9e900e9e9e900e9e9e905e9e9e9c7e9e9e9c4e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e934e9e9e9c4e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9a9e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e95ce9e9e93de9e9e900e9e9e900e9e9e9dae9e9e901e9e9e961e9e9e9a1e9e9e9efe9e9e9d4e9e9e907e9e9e9fde9e9e9d4e9e9e900e9e9e94ee9e9e9d9e9e9e900e9e9e900e9e9e994e9e9e900e9e9e900e9e9e92be9e9e900e9e9e9fce9e9e900e9e9e9fc
+  image data: 1776
+  _typelessdata: e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9c6e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e98de9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e98ee9e9e946e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e98ee9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e947e9e9e900e9e9e9d4e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e9a9e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e9a9e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e97fe9e9e955e9e9e900e9e9e900e9e9e954e9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e97fe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9dbe9e9e9ffe9e9e9ffe9e9e9e4e9e9e9a2e9e9e9ffe9e9e9ffe9e9e9bde9e9e969e9e9e9ffe9e9e9fde9e9e991e9e9e920e9e9e9d5e9e9e900e9e9e900e9e9e9dee9e9e9e7e9e9e997e9e9e963e9e9e9af
   m_StreamData:
     serializedVersion: 2
     offset: 0
@@ -7905,6 +8175,8 @@ GameObject:
   - component: {fileID: 1135376847}
   - component: {fileID: 1135376848}
   - component: {fileID: 1135376849}
+  - component: {fileID: 1135376851}
+  - component: {fileID: 1135376850}
   m_Layer: 0
   m_Name: leofurniture_0
   m_TagString: Untagged
@@ -7969,7 +8241,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 1411886601, guid: 07767c6ad71451444b3271c27ef49716, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.54901963, g: 0.54901963, b: 0.54901963, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7991,6 +8263,157 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_SortAtRoot: 0
+--- !u!61 &1135376850
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135376846}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.8125, y: 0.9375}
+    newSize: {x: 0.8125, y: 0.9375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.8125, y: 0.9375}
+  m_EdgeRadius: 0
+--- !u!114 &1135376851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135376846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee201a929f403b46a1d05ef5e2da9fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  darkColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!21 &1160630844
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sprites-Dimension
+  m_Shader: {fileID: 4800000, guid: 0c3ee9183dee771428efcd87155b4736, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RevealTex:
+        m_Texture: {fileID: 1030896486}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - PixelSnap: 0
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _EnableExternalAlpha: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &1166118207
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8022,7 +8445,7 @@ PrefabInstance:
     - target: {fileID: 2455369281519731035, guid: bbc7bd20844b46642a30fc0f63b893b3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 82217907}
+      objectReference: {fileID: 479776323}
     - target: {fileID: 2798727722637010756, guid: bbc7bd20844b46642a30fc0f63b893b3, type: 3}
       propertyPath: m_Name
       value: Object (6)
@@ -8193,6 +8616,54 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!28 &1188823664
+Texture2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 2
+  m_Width: 26
+  m_Height: 40
+  m_CompleteImageSize: 5512
+  m_MipsStripped: 0
+  m_TextureFormat: 4
+  m_MipCount: 6
+  m_IsReadable: 1
+  m_IsPreProcessed: 0
+  m_IgnoreMipmapLimit: 0
+  m_MipmapLimitGroupName: 
+  m_StreamingMipmaps: 0
+  m_StreamingMipmapsPriority: 0
+  m_VTOnly: 0
+  m_AlphaIsTransparency: 0
+  m_ImageCount: 1
+  m_TextureDimension: 2
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 0
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 0
+    m_WrapV: 0
+    m_WrapW: 0
+  m_LightmapFormat: 0
+  m_ColorSpace: 1
+  m_PlatformBlob: 
+  image data: 5512
+  _typelessdata: e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e93fe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9bfe9e9e97fe9e9e97fe9e9e97fe9e9e93fe9e9e900e9e9e900e9e9e900e9e9e900e9e9e97fe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9bfe9e9e97fe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e9bfe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e93fe9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9bfe9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e93fe9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9bfe9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e97fe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e93fe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9bfe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e93fe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e97fe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9bfe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e93fe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9bfe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9bfe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e97fe9e9e93fe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9bbe9e9e9ffe9e9e9c1e9e9e9bce9e9e97fe9e9e972e9e9e9d6e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e95ce9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9d7e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9fce9e9e917e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9afe9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e91ce9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9c4e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e908e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e94fe9e9e900e9e9e900e9e9e900e9e9e900e9e9e999e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9e3e9e9e9dee9e9e992e9e9e9ffe9e9e9fee9e9e93be9e9e9ffe9e9e9b2e9e9e900e9e9e9ffe9e9e933e9e9e900e9e9e979e9e9e900e9e9e900e9e9e9f6e9e9e926e9e9e98e
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1001 &1226188112
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8224,7 +8695,7 @@ PrefabInstance:
     - target: {fileID: 2455369281519731035, guid: bbc7bd20844b46642a30fc0f63b893b3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2103220841}
+      objectReference: {fileID: 2018091151}
     - target: {fileID: 2798727722637010756, guid: bbc7bd20844b46642a30fc0f63b893b3, type: 3}
       propertyPath: m_Name
       value: Object (12)
@@ -8334,6 +8805,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1228444846}
   - component: {fileID: 1228444847}
+  - component: {fileID: 1228444849}
+  - component: {fileID: 1228444848}
   m_Layer: 0
   m_Name: leofurniture_2
   m_TagString: Untagged
@@ -8398,7 +8871,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -1237118392, guid: 07767c6ad71451444b3271c27ef49716, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.54901963, g: 0.54901963, b: 0.54901963, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8408,6 +8881,64 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1228444848
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228444845}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.0625, y: 1.1875}
+    newSize: {x: 1.0625, y: 1.1875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0625, y: 1.1875}
+  m_EdgeRadius: 0
+--- !u!114 &1228444849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228444845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee201a929f403b46a1d05ef5e2da9fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  darkColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1363012958
 GameObject:
   m_ObjectHideFlags: 0
@@ -12990,6 +13521,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1500411334}
   - component: {fileID: 1500411335}
+  - component: {fileID: 1500411337}
+  - component: {fileID: 1500411336}
   m_Layer: 0
   m_Name: leofurniture_2 (1)
   m_TagString: Untagged
@@ -13054,7 +13587,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -1237118392, guid: 07767c6ad71451444b3271c27ef49716, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.54901963, g: 0.54901963, b: 0.54901963, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13064,6 +13597,64 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1500411336
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500411333}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.0625, y: 1.1875}
+    newSize: {x: 1.0625, y: 1.1875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0625, y: 1.1875}
+  m_EdgeRadius: 0
+--- !u!114 &1500411337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500411333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee201a929f403b46a1d05ef5e2da9fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  darkColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1503117642 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2798727722637010756, guid: bbc7bd20844b46642a30fc0f63b893b3, type: 3}
@@ -13094,54 +13685,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _revealSprite: {fileID: 7132627024521723737, guid: df843f690dc2a3249b3d525222c880d6, type: 3}
---- !u!28 &1504401136
-Texture2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 2
-  m_Width: 26
-  m_Height: 40
-  m_CompleteImageSize: 5512
-  m_MipsStripped: 0
-  m_TextureFormat: 4
-  m_MipCount: 6
-  m_IsReadable: 1
-  m_IsPreProcessed: 0
-  m_IgnoreMipmapLimit: 0
-  m_MipmapLimitGroupName: 
-  m_StreamingMipmaps: 0
-  m_StreamingMipmapsPriority: 0
-  m_VTOnly: 0
-  m_AlphaIsTransparency: 0
-  m_ImageCount: 1
-  m_TextureDimension: 2
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 0
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 0
-    m_WrapV: 0
-    m_WrapW: 0
-  m_LightmapFormat: 0
-  m_ColorSpace: 1
-  m_PlatformBlob: 
-  image data: 5512
-  _typelessdata: e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e93fe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9bfe9e9e97fe9e9e97fe9e9e97fe9e9e93fe9e9e900e9e9e900e9e9e900e9e9e900e9e9e97fe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9bfe9e9e97fe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e9bfe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e93fe9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9bfe9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e93fe9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9bfe9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e97fe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e93fe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9bfe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e93fe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e97fe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9bfe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e93fe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9bfe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9bfe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e97fe9e9e93fe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9bbe9e9e9ffe9e9e9c1e9e9e9bce9e9e97fe9e9e972e9e9e9d6e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e95ce9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9d7e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9fce9e9e917e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9afe9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e91ce9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9c4e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e908e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e94fe9e9e900e9e9e900e9e9e900e9e9e900e9e9e999e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9e3e9e9e9dee9e9e992e9e9e9ffe9e9e9fee9e9e93be9e9e9ffe9e9e9b2e9e9e900e9e9e9ffe9e9e933e9e9e900e9e9e979e9e9e900e9e9e900e9e9e9f6e9e9e926e9e9e98e
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
 --- !u!1001 &1509059728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13173,7 +13716,7 @@ PrefabInstance:
     - target: {fileID: 2455369281519731035, guid: bbc7bd20844b46642a30fc0f63b893b3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 577406790}
+      objectReference: {fileID: 1160630844}
     - target: {fileID: 2798727722637010756, guid: bbc7bd20844b46642a30fc0f63b893b3, type: 3}
       propertyPath: m_Name
       value: Object (10)
@@ -13273,54 +13816,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2017519008}
   m_SourcePrefab: {fileID: 100100000, guid: bbc7bd20844b46642a30fc0f63b893b3, type: 3}
---- !u!28 &1537568023
-Texture2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 2
-  m_Width: 19
-  m_Height: 18
-  m_CompleteImageSize: 1776
-  m_MipsStripped: 0
-  m_TextureFormat: 4
-  m_MipCount: 5
-  m_IsReadable: 1
-  m_IsPreProcessed: 0
-  m_IgnoreMipmapLimit: 0
-  m_MipmapLimitGroupName: 
-  m_StreamingMipmaps: 0
-  m_StreamingMipmapsPriority: 0
-  m_VTOnly: 0
-  m_AlphaIsTransparency: 0
-  m_ImageCount: 1
-  m_TextureDimension: 2
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 0
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 0
-    m_WrapV: 0
-    m_WrapW: 0
-  m_LightmapFormat: 0
-  m_ColorSpace: 1
-  m_PlatformBlob: 
-  image data: 1776
-  _typelessdata: e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9c6e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e98de9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e98ee9e9e946e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e98ee9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e947e9e9e900e9e9e9d4e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e9a9e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e9a9e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e97fe9e9e955e9e9e900e9e9e900e9e9e954e9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e97fe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9dbe9e9e9ffe9e9e9ffe9e9e9e4e9e9e9a2e9e9e9ffe9e9e9ffe9e9e9bde9e9e969e9e9e9ffe9e9e9fde9e9e991e9e9e920e9e9e9d5e9e9e900e9e9e900e9e9e9dee9e9e9e7e9e9e997e9e9e963e9e9e9af
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
 --- !u!1001 &1548458010
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13683,7 +14178,7 @@ PrefabInstance:
     - target: {fileID: 2455369281519731035, guid: bbc7bd20844b46642a30fc0f63b893b3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1893071137}
+      objectReference: {fileID: 880982306}
     - target: {fileID: 2798727722637010756, guid: bbc7bd20844b46642a30fc0f63b893b3, type: 3}
       propertyPath: m_Name
       value: Object (11)
@@ -13947,54 +14442,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9354229, y: 1.3491596}
   m_EdgeRadius: 0
---- !u!28 &1709560049
-Texture2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 2
-  m_Width: 30
-  m_Height: 41
-  m_CompleteImageSize: 6472
-  m_MipsStripped: 0
-  m_TextureFormat: 4
-  m_MipCount: 6
-  m_IsReadable: 1
-  m_IsPreProcessed: 0
-  m_IgnoreMipmapLimit: 0
-  m_MipmapLimitGroupName: 
-  m_StreamingMipmaps: 0
-  m_StreamingMipmapsPriority: 0
-  m_VTOnly: 0
-  m_AlphaIsTransparency: 0
-  m_ImageCount: 1
-  m_TextureDimension: 2
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 0
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 0
-    m_WrapV: 0
-    m_WrapW: 0
-  m_LightmapFormat: 0
-  m_ColorSpace: 1
-  m_PlatformBlob: 
-  image data: 6472
-  _typelessdata: e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e942e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e97fe9e9e9ffe9e9e9c8e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e94ee9e9e9ffe9e9e9ffe9e9e9ffe9e9e9cee9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9d5e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e97fe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9dbe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e95be9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e962e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9e2e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9e8e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9eee9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e97fe9e9e900e9e9e900e9e9e97fe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e975e9e9e97be9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9fbe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9fce9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e975e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e97fe9e9e900e9e9e97fe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9e9e9e9e900e9e9e900e9e9e97fe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e962e9e9e900e9e9e900e9e9e97fe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e97fe9e9e900e9e9e900e9e9e900e9e9e97fe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e97fe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e97fe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e949e9e9e900e9e9e900e9e9e900e9e9e900e9e9e97fe9e9e9ffe9e9e9ffe9e9e986e9e9e986e9e9e986e9e9e986e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9fee9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e97ce9e9e9ffe9e9e9cfe9e9e900e9e9e900e9e9e900e9e9e922e9e9e9fce9e9e9ffe9e9e9ffe9e9e971e9e9e900e9e9e900e9e9e9d7e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9fbe9e9e924e9e9e987e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9e0e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9e0e9e9e9e3e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9fbe9e9e924e9e9e9c8e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e996e9e9e900e9e9e9c8e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e9c8e9e9e9d3e9e9e9c2e9e9e97fe9e9e972e9e9e900e9e9e900e9e9e900e9e9e9fde9e9e900e9e9e952e9e9e9fee9e9e97fe9e9e9eae9e9e9ffe9e9e9f4e9e9e9f0e9e9e9ffe9e9e98be9e9e9dde9e9e9bfe9e9e900e9e9e9fde9e9e9efe9e9e9f6
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
 --- !u!1 &1815735917
 GameObject:
   m_ObjectHideFlags: 0
@@ -14117,99 +14564,102 @@ MonoBehaviour:
   black: {fileID: 986078865}
   startDialogue: 1
   dialogueObj: {fileID: 1902133858}
---- !u!21 &1893071137
-Material:
-  serializedVersion: 8
+--- !u!28 &1825738425
+Texture2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Sprites-Dimension
-  m_Shader: {fileID: 4800000, guid: 0c3ee9183dee771428efcd87155b4736, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailAlbedoMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailMask:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailNormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ParallaxMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _RevealTex:
-        m_Texture: {fileID: 998038930}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - PixelSnap: 0
-    - _BumpScale: 1
-    - _Cutoff: 0.5
-    - _DetailNormalMapScale: 1
-    - _DstBlend: 0
-    - _EnableExternalAlpha: 0
-    - _GlossMapScale: 1
-    - _Glossiness: 0.5
-    - _GlossyReflections: 1
-    - _Metallic: 0
-    - _Mode: 0
-    - _OcclusionStrength: 1
-    - _Parallax: 0.02
-    - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _UVSec: 0
-    - _ZWrite: 1
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 2
+  m_Width: 22
+  m_Height: 19
+  m_CompleteImageSize: 2168
+  m_MipsStripped: 0
+  m_TextureFormat: 4
+  m_MipCount: 5
+  m_IsReadable: 1
+  m_IsPreProcessed: 0
+  m_IgnoreMipmapLimit: 0
+  m_MipmapLimitGroupName: 
+  m_StreamingMipmaps: 0
+  m_StreamingMipmapsPriority: 0
+  m_VTOnly: 0
+  m_AlphaIsTransparency: 0
+  m_ImageCount: 1
+  m_TextureDimension: 2
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 0
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 0
+    m_WrapV: 0
+    m_WrapW: 0
+  m_LightmapFormat: 0
+  m_ColorSpace: 1
+  m_PlatformBlob: 
+  image data: 2168
+  _typelessdata: e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e946e9e9e9c6e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9d4e9e9e9ffe9e9e9d4e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e97fe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9e2e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e970e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e970e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9fee9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9fee9e9e900e9e9e900e9e9e900e9e9e98de9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e97fe9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e92ae9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e92ae9e9e98ee9e9e98ee9e9e98ee9e9e98ee9e9e98ee9e9e98ee9e9e98ee9e9e98ee9e9e9c6e9e9e9ffe9e9e9b7e9e9e900e9e9e900e9e9e9e8e9e9e900e9e9e900e9e9e900e9e9e9d1e9e9e9ffe9e9e9dce9e9e900e9e9e95ce9e9e9ffe9e9e9ffe9e9e9ffe9e9e955e9e9e99ee9e9e9d4e9e9e9d4e9e9e9d8e9e9e9bfe9e9e94ee9e9e952e9e9e9cee9e9e9d2e9e9e990
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
+--- !u!28 &1893030257
+Texture2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 2
+  m_Width: 29
+  m_Height: 56
+  m_CompleteImageSize: 8556
+  m_MipsStripped: 0
+  m_TextureFormat: 4
+  m_MipCount: 6
+  m_IsReadable: 1
+  m_IsPreProcessed: 0
+  m_IgnoreMipmapLimit: 0
+  m_MipmapLimitGroupName: 
+  m_StreamingMipmaps: 0
+  m_StreamingMipmapsPriority: 0
+  m_VTOnly: 0
+  m_AlphaIsTransparency: 0
+  m_ImageCount: 1
+  m_TextureDimension: 2
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 0
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 0
+    m_WrapV: 0
+    m_WrapW: 0
+  m_LightmapFormat: 0
+  m_ColorSpace: 1
+  m_PlatformBlob: 
+  image data: 8556
+  _typelessdata: e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e9d1e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e95fe9e9e9ffe9e9e90de9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9dee9e9e9ffe9e9e91be9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ace9e9e9ffe9e9e9ffe9e9e98de9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e94de9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9cce9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e931e9e9e900e9e9e988e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e904e9e9e900e9e9e900e9e9e900e9e9e97fe9e9e9ffe9e9e9ffe9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e909e9e9e900e9e9e90de9e9e995e9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e944e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e983e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e99ae9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e9d5e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e9dee9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e95fe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9d1e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9f1e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9fae9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e97ae9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e904e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e90de9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e989e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e916e9e9e9ffe9e9e9ffe9e9e9ffe9e9e989e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e91fe9e9e9ffe9e9e9ffe9e9e989e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9a8e9e9e9ffe9e9e989e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e928e9e9e9ffe9e9e989e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9b1e9e9e9c4e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e931e9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e975e9e9e900e9e9e917e9e9e977e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9a2e9e9e9a9e9e9e900e9e9e900e9e9e900e9e9e900e9e9e946e9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e90ce9e9e9e1e9e9e9ffe9e9e9ffe9e9e903e9e9e928e9e9e9dfe9e9e97fe9e9e977e9e9e9ffe9e9e9ffe9e9e9e0e9e9e9ffe9e9e9ffe9e9e97fe9e9e900e9e9e9ace9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e97fe9e9e900e9e9e917e9e9e9f3e9e9e9ffe9e9e9ffe9e9e9ffe9e9e97fe9e9e900e9e9e900e9e9e93ce9e9e9fde9e9e9ffe9e9e9ffe9e9e97fe9e9e900e9e9e900e9e9e900e9e9e99de9e9e9ffe9e9e9ffe9e9e97fe9e9e900e9e9e900e9e9e900e9e9e901e9e9e9c2e9e9e9ffe9e9e9a1e9e9e900e9e9e900e9e9e900e9e9e900e9e9e905e9e9e9c7e9e9e9c4e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e934e9e9e9c4e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9a9e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e95ce9e9e93de9e9e900e9e9e900e9e9e9dae9e9e901e9e9e961e9e9e9a1e9e9e9efe9e9e9d4e9e9e907e9e9e9fde9e9e9d4e9e9e900e9e9e94ee9e9e9d9e9e9e900e9e9e900e9e9e994e9e9e900e9e9e900e9e9e92be9e9e900e9e9e9fce9e9e900e9e9e9fc
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &1893243153
 GameObject:
   m_ObjectHideFlags: 0
@@ -14222,6 +14672,8 @@ GameObject:
   - component: {fileID: 1893243156}
   - component: {fileID: 1893243155}
   - component: {fileID: 1893243158}
+  - component: {fileID: 1893243160}
+  - component: {fileID: 1893243159}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -14236,7 +14688,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893243153}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -14343,6 +14795,96 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 139099886b7e61f49ab6363304ee64a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &1893243159
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893243153}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 2.3150818, y: -2.4127686}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.016251, y: 0.7209792}
+  m_EdgeRadius: 0
+--- !u!61 &1893243160
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893243153}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.20173931, y: -1.7924263}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5965214, y: 4.786015}
+  m_EdgeRadius: 0
 --- !u!1 &1902133858 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4013133513349580077, guid: cf18eb76bda2e504db14e0d89aeb829c, type: 3}
@@ -19750,6 +20292,99 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _revealSprite: {fileID: 5307519473454835978, guid: df843f690dc2a3249b3d525222c880d6, type: 3}
+--- !u!21 &2018091151
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sprites-Dimension
+  m_Shader: {fileID: 4800000, guid: 0c3ee9183dee771428efcd87155b4736, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RevealTex:
+        m_Texture: {fileID: 1825738425}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - PixelSnap: 0
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _EnableExternalAlpha: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &2036933858
 GameObject:
   m_ObjectHideFlags: 0
@@ -19763,6 +20398,7 @@ GameObject:
   - component: {fileID: 2036933862}
   - component: {fileID: 2036933863}
   - component: {fileID: 2036933864}
+  - component: {fileID: 2036933865}
   m_Layer: 0
   m_Name: Bed
   m_TagString: Untagged
@@ -19812,7 +20448,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -942199488, guid: 07767c6ad71451444b3271c27ef49716, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.54901963, g: 0.54901963, b: 0.54901963, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -19911,7 +20547,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.1850884}
@@ -19927,147 +20563,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7293196, y: 2.2968388}
   m_EdgeRadius: 0
---- !u!28 &2054187220
-Texture2D:
+--- !u!114 &2036933865
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036933858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee201a929f403b46a1d05ef5e2da9fa, type: 3}
   m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 2
-  m_Width: 22
-  m_Height: 19
-  m_CompleteImageSize: 2168
-  m_MipsStripped: 0
-  m_TextureFormat: 4
-  m_MipCount: 5
-  m_IsReadable: 1
-  m_IsPreProcessed: 0
-  m_IgnoreMipmapLimit: 0
-  m_MipmapLimitGroupName: 
-  m_StreamingMipmaps: 0
-  m_StreamingMipmapsPriority: 0
-  m_VTOnly: 0
-  m_AlphaIsTransparency: 0
-  m_ImageCount: 1
-  m_TextureDimension: 2
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 0
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 0
-    m_WrapV: 0
-    m_WrapW: 0
-  m_LightmapFormat: 0
-  m_ColorSpace: 1
-  m_PlatformBlob: 
-  image data: 2168
-  _typelessdata: e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e900e9e9e900e9e9e900e9e9e946e9e9e9c6e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9d4e9e9e9ffe9e9e9d4e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e97fe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9e2e9e9e900e9e9e900e9e9e900e9e9e900e9e9e900e9e9e970e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e970e9e9e900e9e9e900e9e9e900e9e9e900e9e9e9fee9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9fee9e9e900e9e9e900e9e9e900e9e9e98de9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e97fe9e9e900e9e9e900e9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e900e9e9e92ae9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e9ffe9e9e92ae9e9e98ee9e9e98ee9e9e98ee9e9e98ee9e9e98ee9e9e98ee9e9e98ee9e9e98ee9e9e9c6e9e9e9ffe9e9e9b7e9e9e900e9e9e900e9e9e9e8e9e9e900e9e9e900e9e9e900e9e9e9d1e9e9e9ffe9e9e9dce9e9e900e9e9e95ce9e9e9ffe9e9e9ffe9e9e9ffe9e9e955e9e9e99ee9e9e9d4e9e9e9d4e9e9e9d8e9e9e9bfe9e9e94ee9e9e952e9e9e9cee9e9e9d2e9e9e990
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
---- !u!21 &2103220841
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Sprites-Dimension
-  m_Shader: {fileID: 4800000, guid: 0c3ee9183dee771428efcd87155b4736, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailAlbedoMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailMask:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailNormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ParallaxMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _RevealTex:
-        m_Texture: {fileID: 2054187220}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - PixelSnap: 0
-    - _BumpScale: 1
-    - _Cutoff: 0.5
-    - _DetailNormalMapScale: 1
-    - _DstBlend: 0
-    - _EnableExternalAlpha: 0
-    - _GlossMapScale: 1
-    - _Glossiness: 0.5
-    - _GlossyReflections: 1
-    - _Metallic: 0
-    - _Mode: 0
-    - _OcclusionStrength: 1
-    - _Parallax: 0.02
-    - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _UVSec: 0
-    - _ZWrite: 1
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
+  m_EditorClassIdentifier: 
+  darkColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &2137602641
 GameObject:
   m_ObjectHideFlags: 0

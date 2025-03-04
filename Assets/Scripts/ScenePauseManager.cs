@@ -9,7 +9,11 @@ namespace game
         
         void OnTriggerEnter2D(Collider2D other)
         {
-            SceneController.instance.goNext = true;
+            if(other.gameObject.TryGetComponent(out Player otherIsPlayer))
+            {
+                SceneController.instance.goNext = true;
+            }
+            
         }
     }
 }
