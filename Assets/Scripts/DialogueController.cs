@@ -90,82 +90,85 @@ namespace game
         // Update is called once per frame
         void Update()
         {
-            if(startDialogue)
+            if(dialogueObj.activeSelf)
             {
-                startDialogue = false;
-                isPlaying = false;
-
-                dialogueObj.gameObject.SetActive(true);
-
-                if (Player.current != null)
+                if (startDialogue)
                 {
-                    Player.current.enabled = false;
-                }
-                if (OrbFollow.instance != null)
-                {
-                    OrbFollow.instance.enabled = false;
-                }
+                    startDialogue = false;
+                    isPlaying = false;
 
-                StartCoroutine(NextLine());
-            }
+                    dialogueObj.gameObject.SetActive(true);
 
-            if(isPlaying && !sound)
-            {
-                sound = true;
-                if(talkSound == null)
-                {
-                    talkSound = Instantiate(npcTalk);
-                }
-                
-            }
-
-            if (Input.GetMouseButtonDown(0) && !endOfDialogue && !isPlaying)
-            {
-                dialogueObj.gameObject.SetActive(true);
-                skip = true;
-                Destroy(talkSound);
-                sound = false;
-                
-                StartCoroutine(NextLine());
-            }
-            else if(Input.GetMouseButtonDown(0) && !endOfDialogue && isPlaying)
-            {
-                skip = true;
-                Destroy(talkSound);
-                sound = false;
-
-            }
-            else if (Input.GetMouseButtonDown(0) && endOfDialogue && !isPlaying)
-            {
-                if(!choice)
-                {
-                    dialogueObj.gameObject.SetActive(false);
                     if (Player.current != null)
                     {
-                        Player.current.enabled = true;
+                        Player.current.enabled = false;
                     }
                     if (OrbFollow.instance != null)
                     {
-                        OrbFollow.instance.enabled = true;
+                        OrbFollow.instance.enabled = false;
                     }
-                    //next scene
-                    if(endAfterDialogue)
-                    {
-                        if (GameObject.FindWithTag("scene") != null)
-                        {
-                            GameObject.FindWithTag("scene").GetComponent<SceneController>().goNext = true;
-                        }
-                        else
-                        {
-                            SceneController.instance.goNext = true;
-                        }
 
+                    StartCoroutine(NextLine());
+                }
+
+                if (isPlaying && !sound)
+                {
+                    sound = true;
+                    if (talkSound == null)
+                    {
+                        talkSound = Instantiate(npcTalk);
+                    }
+
+                }
+
+                if (Input.GetMouseButtonDown(0) && !endOfDialogue && !isPlaying)
+                {
+                    dialogueObj.gameObject.SetActive(true);
+                    skip = true;
+                    Destroy(talkSound);
+                    sound = false;
+
+                    StartCoroutine(NextLine());
+                }
+                else if (Input.GetMouseButtonDown(0) && !endOfDialogue && isPlaying)
+                {
+                    skip = true;
+                    Destroy(talkSound);
+                    sound = false;
+
+                }
+                else if (Input.GetMouseButtonDown(0) && endOfDialogue && !isPlaying)
+                {
+                    if (!choice)
+                    {
+                        dialogueObj.gameObject.SetActive(false);
+                        if (Player.current != null)
+                        {
+                            Player.current.enabled = true;
+                        }
+                        if (OrbFollow.instance != null)
+                        {
+                            OrbFollow.instance.enabled = true;
+                        }
+                        //next scene
+                        if (endAfterDialogue)
+                        {
+                            if (GameObject.FindWithTag("scene") != null)
+                            {
+                                GameObject.FindWithTag("scene").GetComponent<SceneController>().goNext = true;
+                            }
+                            else
+                            {
+                                SceneController.instance.goNext = true;
+                            }
+
+                        }
                     }
                 }
-            }
-            else
-            {
+                else
+                {
 
+                }
             }
         }
 

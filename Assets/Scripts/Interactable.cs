@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 namespace game 
 {
@@ -30,10 +31,13 @@ namespace game
 
         public GameObject lineDialogue;
         public GameObject lineObj;
-        private bool endOfDialogue;
-        private bool isPlaying;
-        private bool sound;
-        private bool skip;
+        public bool endOfDialogue;
+        public bool isPlaying;
+        public bool sound;
+        public bool skip;
+
+        public GameObject talkSound;
+        public GameObject npcTalk;
 
 
 
@@ -41,31 +45,33 @@ namespace game
         void Start()
         {
             flashlightMode = 0;
+            isPlaying = false;
+            sound = false;
         }
 
         // Update is called once per frame
         void Update()
         {
-            if (isPlaying && !sound)
+            if(lineObj != null && lineObj.activeSelf)
             {
-                sound = true;
-                if (talkSound == null)
+                if (isPlaying && !sound)
                 {
+                    sound = true;
+                    
                     talkSound = Instantiate(npcTalk);
+                    
                 }
 
-            }
+                else if (Input.GetMouseButtonDown(0) && !endOfDialogue && isPlaying)
+                {
+                    skip = true;
+                    Destroy(talkSound);
+                    sound = false;
 
-            else if (Input.GetMouseButtonDown(0) && !endOfDialogue && isPlaying)
-            {
-                skip = true;
-                Destroy(talkSound);
-                sound = false;
+                }
+                else if (Input.GetMouseButtonDown(0) && endOfDialogue && !isPlaying)
+                {
 
-            }
-            else if (Input.GetMouseButtonDown(0) && endOfDialogue && !isPlaying)
-            {
-                
                     lineObj.gameObject.SetActive(false);
                     if (Player.current != null)
                     {
@@ -75,8 +81,8 @@ namespace game
                     {
                         OrbFollow.instance.enabled = true;
                     }
-                    //next scene
-                    
+
+
                 }
             }
         }
@@ -92,26 +98,7 @@ namespace game
 
                 //allow object to be "used"
             }
-            else if(dialogue)
-            {
-                //pull up dialogue and display line
-                lineObj = Instantiate(lineDialogue);
-
-                isPlaying = false;
-
-                dialogueObj.gameObject.SetActive(true);
-
-                if (Player.current != null)
-                {
-                    Player.current.enabled = false;
-                }
-                if (OrbFollow.instance != null)
-                {
-                    OrbFollow.instance.enabled = false;
-                }
-
-                StartCoroutine(NextLine());
-            }
+            
             else
             {
                 
@@ -146,6 +133,26 @@ namespace game
                     Player.current.spotlight.gameObject.SetActive(false);
                     flashlightMode = 0;
                 }
+            }
+            else if (dialogue)
+            {
+                //pull up dialogue and display line
+                lineObj = Instantiate(lineDialogue);
+
+                isPlaying = false;
+
+                lineObj.gameObject.SetActive(true);
+
+                if (Player.current != null)
+                {
+                    Player.current.enabled = false;
+                }
+                if (OrbFollow.instance != null)
+                {
+                    OrbFollow.instance.enabled = false;
+                }
+
+                StartCoroutine(NextLine());
             }
             else if(key)
             {
@@ -225,7 +232,7 @@ namespace game
                         OrbFollow.instance.enabled = true;
                     }
                     yield return null;
-                }
+                
             
 
         }
