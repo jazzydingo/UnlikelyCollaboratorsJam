@@ -24,6 +24,17 @@ namespace game
 
         public bool note;
 
+        public bool dialogue;
+
+        public string line;
+
+        public GameObject lineDialogue;
+        public GameObject lineObj;
+        private bool endOfDialogue;
+        private bool isPlaying;
+        private bool sound;
+        private bool skip;
+
 
 
         // Start is called before the first frame update
@@ -35,7 +46,39 @@ namespace game
         // Update is called once per frame
         void Update()
         {
-        
+            if (isPlaying && !sound)
+            {
+                sound = true;
+                if (talkSound == null)
+                {
+                    talkSound = Instantiate(npcTalk);
+                }
+
+            }
+
+            else if (Input.GetMouseButtonDown(0) && !endOfDialogue && isPlaying)
+            {
+                skip = true;
+                Destroy(talkSound);
+                sound = false;
+
+            }
+            else if (Input.GetMouseButtonDown(0) && endOfDialogue && !isPlaying)
+            {
+                
+                    lineObj.gameObject.SetActive(false);
+                    if (Player.current != null)
+                    {
+                        Player.current.enabled = true;
+                    }
+                    if (OrbFollow.instance != null)
+                    {
+                        OrbFollow.instance.enabled = true;
+                    }
+                    //next scene
+                    
+                }
+            }
         }
 
         public void Interact()
@@ -48,6 +91,26 @@ namespace game
 
 
                 //allow object to be "used"
+            }
+            else if(dialogue)
+            {
+                //pull up dialogue and display line
+                lineObj = Instantiate(lineDialogue);
+
+                isPlaying = false;
+
+                dialogueObj.gameObject.SetActive(true);
+
+                if (Player.current != null)
+                {
+                    Player.current.enabled = false;
+                }
+                if (OrbFollow.instance != null)
+                {
+                    OrbFollow.instance.enabled = false;
+                }
+
+                StartCoroutine(NextLine());
             }
             else
             {
@@ -121,6 +184,49 @@ namespace game
             {
                 //this.gameObject.GetComponent<SpriteRenderer>().material = defaultMaterial;
             }
+
+        }
+
+        IEnumerator NextLine()
+        {
+            
+                lineObj.GetComponentInChildren<TextMeshProUGUI>().text = string.Empty;
+                skip = false;
+                isPlaying = true;
+
+                foreach (char letter in line)
+                {
+
+                    lineObj.GetComponentInChildren<TextMeshProUGUI>().text += letter;
+
+                    if (!skip)
+                    {
+                        yield return new WaitForSeconds(0.02f);
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+                isPlaying = false;
+                Destroy(talkSound);
+                sound = false;
+                lineObj.GetComponentInChildren<TextMeshProUGUI>().text = line;
+                
+                    skip = false;
+                    endOfDialogue = true;
+                    // reset index?
+                    if (Player.current != null)
+                    {
+                        Player.current.enabled = true;
+                    }
+                    if (OrbFollow.instance != null)
+                    {
+                        OrbFollow.instance.enabled = true;
+                    }
+                    yield return null;
+                }
+            
 
         }
     }

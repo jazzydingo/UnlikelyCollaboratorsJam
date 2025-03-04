@@ -11444,6 +11444,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1344198443}
+  - component: {fileID: 1344198444}
   m_Layer: 0
   m_Name: BEDROOM FURNITURE
   m_TagString: Untagged
@@ -11470,6 +11471,18 @@ Transform:
   - {fileID: 1135215765}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!210 &1344198444
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344198442}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_SortAtRoot: 0
 --- !u!1 &1411944498
 GameObject:
   m_ObjectHideFlags: 0
@@ -12921,7 +12934,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.028140306, y: 0.018760443}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -12932,7 +12945,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.731648, y: 2.80098}
   m_EdgeRadius: 0
 --- !u!1 &2099481239
 GameObject:
