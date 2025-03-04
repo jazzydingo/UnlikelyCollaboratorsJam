@@ -27,7 +27,7 @@ namespace game
             if (this.GetComponent<RevealLightOrb>().isOn)
             {
                 //lock to player
-                Debug.Log("lock"); 
+                //Debug.Log("lock"); 
                 this.transform.position = Vector3.MoveTowards(this.transform.position, Player.current.transform.position, Time.deltaTime * 3f);
             }
             else

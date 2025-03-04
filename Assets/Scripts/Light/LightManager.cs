@@ -23,7 +23,7 @@ namespace game {
             if (_lightOrbs.Length < 0) return;
             Shader.SetGlobalFloat(LightRadiusId, _lightOrbs[0].LightPixelRadius / 16f);
             Shader.SetGlobalVector(LightPosId, _lightOrbs[0].transform.position);
-            print(Shader.GetGlobalFloat(LightRadiusId));
+            //print(Shader.GetGlobalFloat(LightRadiusId));
         }
         
     }

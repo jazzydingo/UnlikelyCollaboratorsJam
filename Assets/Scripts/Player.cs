@@ -138,7 +138,7 @@ namespace game
 
             if(bar.sizeDelta.x == 1)
             {
-                Debug.Log("lose");
+                
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
         }
@@ -231,7 +231,7 @@ namespace game
                 playerAnim.SetBool("Left", false);
                 playerAnim.SetBool("Up", false);
                 playerAnim.SetBool("Down", false);
-                Debug.Log("right");
+                
             }
             else if (moveInput.x < 0)
             {
@@ -242,7 +242,7 @@ namespace game
                 playerAnim.SetBool("Up", false);
                 playerAnim.SetBool("Down", false);
 
-                Debug.Log("left");
+                
             }
 
 
@@ -358,7 +358,7 @@ namespace game
                         if (collider.gameObject != gameObject)
                         {
                             //if has interactable component, then call interact method
-                            Debug.Log("Overlap with " + collider.name);
+                            //Debug.Log("Overlap with " + collider.name);
                             if (collider.gameObject.TryGetComponent(out Interactable otherIsInteractable))
                             {
                                 otherIsInteractable.Interact();
