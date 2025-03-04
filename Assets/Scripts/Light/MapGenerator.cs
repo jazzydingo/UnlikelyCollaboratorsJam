@@ -19,6 +19,7 @@ namespace game {
             SetUpTilemapGraphic(mapObject, maxBounds);
             SetUpCollider(mapObject);
 
+            // TODO: After Testing is done, use destroy
             gameObject.SetActive(false);
         }
 

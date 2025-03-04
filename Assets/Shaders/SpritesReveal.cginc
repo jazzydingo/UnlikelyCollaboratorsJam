@@ -5,6 +5,7 @@
 #define UNITY_SPRITES_INCLUDED
 
 #include "UnityCG.cginc"
+#include "Lighting.cginc"
 
 #ifdef UNITY_INSTANCING_ENABLED
 
@@ -21,28 +22,37 @@
 #endif // instancing
 
 CBUFFER_START(UnityPerDrawSprite)
-#ifndef UNITY_INSTANCING_ENABLED
-    fixed4 _RendererColor;
-    fixed2 _Flip;
-#endif
-    float _EnableExternalAlpha;
+    #ifndef UNITY_INSTANCING_ENABLED
+        fixed4 _RendererColor;
+        fixed2 _Flip;
+    #endif
+        float _EnableExternalAlpha;
 CBUFFER_END
 
 // Material Color.
 fixed4 _Color;
 
-struct appdata_t {
+sampler2D _MainTex;
+sampler2D _RevealTex;
+sampler2D _AlphaTex;
+
+StructuredBuffer<float4> _RevealLights;
+int _RevealLightCount;
+
+struct VertexData {
     float4 vertex   : POSITION;
+    float3 normal   : NORMAL;
     float4 color    : COLOR;
     float2 texcoord : TEXCOORD0;
     UNITY_VERTEX_INPUT_INSTANCE_ID
 };
 
-struct v2f {
-    float4 vertex   : SV_POSITION;
-    fixed4 color    : COLOR;
-    float2 texcoord : TEXCOORD0;
-    float4 worldPos : TEXCOORD1;
+struct Interpolators {
+    float4 vertex      : SV_POSITION;
+    fixed4 color       : COLOR;
+    float2 texcoord    : TEXCOORD0;
+    float3 worldPos    : TEXCOORD1;
+    float3 worldNormal : TEXCOORD2;
     UNITY_VERTEX_OUTPUT_STEREO
 };
 
@@ -50,17 +60,19 @@ inline float4 UnityFlipSprite(in float3 pos, in fixed2 flip) {
     return float4(pos.xy * flip, pos.z, 1.0);
 }
 
-v2f SpriteVert(appdata_t IN) {
-    v2f OUT;
+Interpolators VertexProgram(VertexData IN) {
+    Interpolators OUT;
 
     UNITY_SETUP_INSTANCE_ID (IN);
     UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(OUT);
 
     OUT.vertex = UnityFlipSprite(IN.vertex, _Flip);
     OUT.vertex = UnityObjectToClipPos(OUT.vertex);
+    OUT.worldPos = mul(unity_ObjectToWorld, IN.vertex);
+    OUT.worldNormal = UnityObjectToWorldNormal(IN.normal);
+
     OUT.texcoord = IN.texcoord;
     OUT.color = IN.color * _Color * _RendererColor;
-    OUT.worldPos = mul(unity_ObjectToWorld, IN.vertex);
 
     #ifdef PIXELSNAP_ON
         OUT.vertex = UnityPixelSnap (OUT.vertex);
@@ -68,13 +80,6 @@ v2f SpriteVert(appdata_t IN) {
 
     return OUT;
 }
-
-sampler2D _MainTex;
-sampler2D _RevealTex;
-sampler2D _AlphaTex;
-
-float4 _LightPos;
-float _LightRadius;
 
 fixed4 SampleSpriteTexture (float2 uv, sampler2D tex) {
     fixed4 color = tex2D (tex, uv);
@@ -87,20 +92,30 @@ fixed4 SampleSpriteTexture (float2 uv, sampler2D tex) {
     return color;
 }
 
-fixed4 SpriteFrag(v2f IN) : SV_Target {
-    float3 lightDirection = (float3)_LightPos - IN.worldPos;
-    float distanceSq = dot(lightDirection.xy, lightDirection.xy); // Ignores Y for now
+fixed4 FragmentProgram(Interpolators IN) : SV_Target {
+    IN.worldNormal = normalize(IN.worldNormal);
 
-    float lightRadiusSq = _LightRadius * _LightRadius; 
-    float alpha = saturate(distanceSq - lightRadiusSq);
+    float3 lightDir = _WorldSpaceLightPos0.xyz;
+    float3 lightColor = _LightColor0.rgb;
 
-    fixed4 colorMain = SampleSpriteTexture(IN.texcoord, _MainTex) * IN.color;
-    fixed4 colorReveal = SampleSpriteTexture(IN.texcoord, _RevealTex) * IN.color;
+    fixed4 albedo = SampleSpriteTexture(IN.texcoord, _MainTex) * IN.color;
 
-    colorMain.rgb *= colorMain.a;
-    colorReveal.rgb *= colorReveal.a;
+    [loop]
+    for (int i = 0; i < _RevealLightCount; i++) {
+        float3 revealLightPos = _RevealLights[i].xyz;
+        float revealLightRadius = _RevealLights[i].w;
 
-    return lerp(colorReveal, colorMain, alpha);
+        float distSquared = dot(IN.worldPos - revealLightPos, IN.worldPos - revealLightPos);
+        if (distSquared <= revealLightRadius * revealLightRadius) {
+            albedo = SampleSpriteTexture(IN.texcoord, _RevealTex) * IN.color;
+            break;
+        }
+    }
+
+    albedo.rgb *= albedo.a;
+
+    fixed3 diffuse = albedo.rgb * lightColor * DotClamped(lightDir, IN.worldNormal);
+    return fixed4(diffuse, albedo.a);
 }
 
 #endif // UNITY_SPRITES_INCLUDED

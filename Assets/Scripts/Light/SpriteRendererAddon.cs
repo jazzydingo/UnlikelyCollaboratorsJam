@@ -11,10 +11,13 @@ namespace game.lights {
         private void OnValidate() {
             SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
             Material tempMaterial = new(spriteRenderer.sharedMaterial);
-            Texture2D spriteTexture = GetSpriteTexture();
+            Texture2D revealTex = GetSpriteTexture();
+
+            MaterialPropertyBlock block = new MaterialPropertyBlock();
+            spriteRenderer.GetPropertyBlock(block);
             
-            tempMaterial.SetTexture(RevealTexId, spriteTexture);
-            spriteRenderer.sharedMaterial = tempMaterial;
+            block.SetTexture(RevealTexId, revealTex);
+            spriteRenderer.SetPropertyBlock(block);
         }
 
         private Texture2D GetSpriteTexture() {

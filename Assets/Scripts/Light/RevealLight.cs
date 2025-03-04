@@ -2,21 +2,26 @@ using System.Collections;
 using UnityEngine;
 
 namespace game {
-    public class RevealLightOrb : MonoBehaviour {
+    public class RevealLight : MonoBehaviour {
         private enum ELightState : byte { On, Off, TurningOn, TurningOff }
-        [SerializeField] private float _maxLightPixelRadius = 60;
+        [SerializeField] private float _maxRadius = 1f;
         [SerializeField] private ELightState _lightState = ELightState.On;
         [SerializeField] private float _turnOffLightTimeSeconds = 1f;
         [SerializeField] private float _turnOnLightTimeSeconds = 1f;
 
+
+        [HideInInspector] public float Radius;
+        [SerializeField] private bool _shouldSwitchState = false; // TODO: remove serialize field when done testing
         public bool isOn;
 
-        [HideInInspector] public float LightPixelRadius;
-        [SerializeField] public bool _shouldSwitchState = false; // TODO: remove serialize field when done testing
-
         private void Awake() {
-            LightPixelRadius = _maxLightPixelRadius;
-            isOn = true;
+            if (_lightState == ELightState.On) {
+                Radius = _maxRadius;
+                isOn = true;
+            } else if (_lightState == ELightState.Off) {
+                Radius = 0f;
+            }
+
         }
 
         private void Update() {
@@ -47,12 +52,12 @@ namespace game {
             
             float timeTotal = _turnOffLightTimeSeconds;
             float radiusFinal = 0f;
-            float radiusInitial = LightPixelRadius;
+            float radiusInitial = Radius;
 
             yield return StartCoroutine(ChangeRadius(timeTotal, radiusInitial, radiusFinal));
             
             // The while loop doesn't guarantee that we get to the target radius
-            LightPixelRadius = radiusFinal;
+            Radius = radiusFinal;
             _lightState = ELightState.Off;
             isOn = false;
         }
@@ -62,13 +67,13 @@ namespace game {
             _lightState = ELightState.TurningOn;
             
             float timeTotal = _turnOnLightTimeSeconds;
-            float radiusFinal = _maxLightPixelRadius;
-            float radiusInitial = LightPixelRadius;
+            float radiusFinal = _maxRadius;
+            float radiusInitial = Radius;
 
             yield return StartCoroutine(ChangeRadius(timeTotal, radiusInitial, radiusFinal));
             
             // The while loop doesn't guarantee that we get to the target radius
-            LightPixelRadius = radiusFinal;
+            Radius = radiusFinal;
             _lightState = ELightState.On;
             isOn = true;
         }
@@ -79,7 +84,7 @@ namespace game {
             while (timeElapsed <= timeTotal) {
                 timeElapsed += Time.deltaTime;
                 float fractionComplete = timeElapsed / timeTotal;
-                LightPixelRadius = Mathf.Lerp(radiusInitial, radiusFinal, fractionComplete);
+                Radius = Mathf.Lerp(radiusInitial, radiusFinal, fractionComplete);
                 yield return null;
             }
         }

@@ -1,7 +1,7 @@
 // Based off of Unity's default sprite shaders:
 // - https://github.com/TwoTailsGames/Unity-Built-in-Shaders/blob/master/DefaultResourcesExtra/Sprites-Default.shader
 
-Shader "Custom/SpriteRevealShader" {
+Shader "Custom/Sprites-Reveal" {
     Properties {
         [PerRendererData] _MainTex ("Sprite Texture", 2D) = "white" {}
         _Color ("Tint", Color) = (1,1,1,1)
@@ -11,7 +11,7 @@ Shader "Custom/SpriteRevealShader" {
         [PerRendererData] _AlphaTex ("External Alpha", 2D) = "white" {}
         [PerRendererData] _EnableExternalAlpha ("Enable External Alpha", Float) = 0
 
-        [PerRendererData] _RevealTex ("Reveal Sprite Texture", 2D) = "white" {}
+        [PerRendererData] _RevealTex ("Sprite Reveal Texture", 2D) = "white" {}
     }
 
     SubShader {
@@ -21,6 +21,7 @@ Shader "Custom/SpriteRevealShader" {
             "RenderType"="Transparent"
             "PreviewType"="Plane"
             "CanUseSpriteAtlas"="True"
+            "LightMode" = "ForwardBase"
         }
 
         Cull Off
@@ -30,13 +31,13 @@ Shader "Custom/SpriteRevealShader" {
 
         Pass {
             CGPROGRAM
-                #pragma vertex SpriteVert
-                #pragma fragment SpriteFrag
+                #pragma vertex VertexProgram
+                #pragma fragment FragmentProgram
                 #pragma target 2.0
                 #pragma multi_compile_instancing
                 #pragma multi_compile_local _ PIXELSNAP_ON
                 #pragma multi_compile _ ETC1_EXTERNAL_ALPHA
-                #include "DimensionReveal.hlsl"
+                #include "SpritesReveal.cginc"
             ENDCG
         }
     }
