@@ -10,7 +10,6 @@ namespace game.lights {
 
         private void OnValidate() {
             SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
-            Material tempMaterial = new(spriteRenderer.sharedMaterial);
             Texture2D revealTex = GetSpriteTexture();
 
             MaterialPropertyBlock block = new MaterialPropertyBlock();

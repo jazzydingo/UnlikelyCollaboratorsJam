@@ -5,6 +5,7 @@ using UnityEngine.Tilemaps;
 
 namespace game {
     public class MapGenerator : MonoBehaviour {
+        private static readonly string MainTexId = "_MainTex";
         private static readonly string RevealTexId = "_RevealTex";
         [SerializeField] private GameObject _mapPrefab;
         [SerializeField] private Tilemap _baseTilemap;
@@ -36,20 +37,21 @@ namespace game {
         }
 
         private void SetUpTilemapGraphic(GameObject mapObject, BoundsInt maxBounds) {
-            Transform mapGraphic = mapObject.transform.GetChild(0);
-
             Texture2D mainTex = GenerateTilemapTexture(_baseTilemap, maxBounds);
             Texture2D revealTex = GenerateTilemapTexture(_revealTilemap, maxBounds);
 
+            Transform mapGraphic = mapObject.transform.GetChild(0);
             MeshRenderer meshRenderer = mapGraphic.GetComponent<MeshRenderer>();
-            Material tempMaterial = new(meshRenderer.sharedMaterial);
 
-            tempMaterial.mainTexture = mainTex;
-            tempMaterial.SetTexture(RevealTexId, revealTex);
-            meshRenderer.sharedMaterial = tempMaterial;
+            MaterialPropertyBlock block = new MaterialPropertyBlock();
+            meshRenderer.GetPropertyBlock(block);
+
+            block.SetTexture(MainTexId, mainTex);
+            block.SetTexture(RevealTexId, revealTex);
+            meshRenderer.SetPropertyBlock(block);
 
             mapGraphic.localPosition = maxBounds.center;
-            mapGraphic.localScale = new Vector3(maxBounds.size.x, maxBounds.size.y, 0);
+            mapGraphic.localScale = new Vector3(maxBounds.size.x / 10f, 1f, maxBounds.size.y / 10f);
         }
 
         // TODO: Clean code smells and Inefficiencies here
