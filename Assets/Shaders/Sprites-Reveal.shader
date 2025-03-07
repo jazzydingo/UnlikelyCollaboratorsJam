@@ -21,22 +21,48 @@ Shader "Custom/Sprites-Reveal" {
             "RenderType"="Transparent"
             "PreviewType"="Plane"
             "CanUseSpriteAtlas"="True"
-            "LightMode" = "ForwardBase"
         }
 
         Cull Off
         Lighting Off
         ZWrite Off
-        Blend One OneMinusSrcAlpha
 
         Pass {
+            Tags { "LightMode" = "ForwardBase" }
+
+            Blend One OneMinusSrcAlpha
+
             CGPROGRAM
                 #pragma vertex VertexProgram
                 #pragma fragment FragmentProgram
+
                 #pragma target 2.0
+
                 #pragma multi_compile_instancing
                 #pragma multi_compile_local _ PIXELSNAP_ON
                 #pragma multi_compile _ ETC1_EXTERNAL_ALPHA
+
+                #include "SpritesReveal.cginc"
+            ENDCG
+        }
+
+        Pass {
+            Tags { "LightMode" = "ForwardAdd" }
+
+            Blend One One
+
+            CGPROGRAM
+                #pragma vertex VertexProgram
+                #pragma fragment FragmentProgram
+
+                #pragma target 2.0
+
+                #pragma multi_compile_instancing
+                #pragma multi_compile_local _ PIXELSNAP_ON
+                #pragma multi_compile _ ETC1_EXTERNAL_ALPHA
+                #pragma multi_compile DIRECTIONAL DIRECTIONAL_COOKIE POINT SPOT
+                // #pragma multi_compile_fwdadd // This is the same as above
+
                 #include "SpritesReveal.cginc"
             ENDCG
         }

@@ -6,6 +6,7 @@
 
 #include "UnityCG.cginc"
 #include "Lighting.cginc"
+#include "AutoLight.cginc"
 
 #ifdef UNITY_INSTANCING_ENABLED
 
@@ -81,6 +82,21 @@ Interpolators VertexProgram(VertexData IN) {
     return OUT;
 }
 
+UnityLight CreateLight (Interpolators IN) {
+	UnityLight light;
+
+	#if defined(POINT) || defined(POINT_COOKIE) || defined(SPOT)
+		light.dir = normalize(_WorldSpaceLightPos0.xyz - IN.worldPos);
+	#else
+		light.dir = _WorldSpaceLightPos0.xyz;
+	#endif
+
+	UNITY_LIGHT_ATTENUATION(attenuation, 0, IN.worldPos);
+	light.color = _LightColor0.rgb * attenuation;
+	light.ndotl = DotClamped(IN.worldNormal, light.dir);
+	return light;
+}
+
 fixed4 SampleSpriteTexture (float2 uv, sampler2D tex) {
     fixed4 color = tex2D (tex, uv);
 
@@ -95,8 +111,7 @@ fixed4 SampleSpriteTexture (float2 uv, sampler2D tex) {
 fixed4 FragmentProgram(Interpolators IN) : SV_Target {
     IN.worldNormal = normalize(IN.worldNormal);
 
-    float3 lightDir = _WorldSpaceLightPos0.xyz;
-    float3 lightColor = _LightColor0.rgb;
+    UnityLight light = CreateLight(IN);
 
     fixed4 albedo = SampleSpriteTexture(IN.texcoord, _MainTex) * IN.color;
 
@@ -114,7 +129,7 @@ fixed4 FragmentProgram(Interpolators IN) : SV_Target {
 
     albedo.rgb *= albedo.a;
 
-    fixed3 diffuse = albedo.rgb * lightColor * DotClamped(lightDir, IN.worldNormal);
+    fixed3 diffuse = albedo.rgb * light.color * light.ndotl;
     return fixed4(diffuse, albedo.a);
 }
 
