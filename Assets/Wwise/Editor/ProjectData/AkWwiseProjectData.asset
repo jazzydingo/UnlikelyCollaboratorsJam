@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 7c60ada056d966489f713485b9df9770
     GuidInternal: 
-    m_lastTime: -8584604854228044514
+    m_lastTime: -8584602378654825749
     List:
     - name: Main
       guid: 2254308841a68f4f950fa4f6bf65f496
@@ -94,8 +94,42 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 0eddee210983d747b67176fbdabafa78
     GuidInternal: 
-    m_lastTime: -8584604854228054562
+    m_lastTime: -8584602378654837057
     List:
+    - name: Play_Bedroom_Music
+      guid: c7d49c9da041a4428b2ff7652bcb74c8
+      id: 2696493678
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0eddee210983d747b67176fbdabafa78
+      - ElementName: Play_Bedroom_Music
+        ObjectType: 3
+        guid: c7d49c9da041a4428b2ff7652bcb74c8
+      Path: Events\Default Work Unit\Play_Bedroom_Music
+      maxAttenuation: 0
+      maxDuration: 173.46533
+      minDuration: 173.46533
+    - name: Play_Corridor_Music
+      guid: 8de652f1b53f99459849ee6a1f1cece8
+      id: 1620709292
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0eddee210983d747b67176fbdabafa78
+      - ElementName: Play_Corridor_Music
+        ObjectType: 3
+        guid: 8de652f1b53f99459849ee6a1f1cece8
+      Path: Events\Default Work Unit\Play_Corridor_Music
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Play_Footsteps
       guid: 1a210ba15d60d34d8e938d0de9aef27d
       id: 3854155799
