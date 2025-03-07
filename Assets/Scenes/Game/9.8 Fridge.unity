@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 60582778}
   - component: {fileID: 60582780}
   - component: {fileID: 60582781}
+  - component: {fileID: 60582782}
   m_Layer: 0
   m_Name: fridgeanagram_Frame_3
   m_TagString: Untagged
@@ -269,6 +270,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
+--- !u!210 &60582782
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60582777}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_SortAtRoot: 0
 --- !u!1 &108517027
 GameObject:
   m_ObjectHideFlags: 0
@@ -281,6 +294,7 @@ GameObject:
   - component: {fileID: 108517028}
   - component: {fileID: 108517030}
   - component: {fileID: 108517031}
+  - component: {fileID: 108517032}
   m_Layer: 0
   m_Name: fridgeanagram_Frame_4
   m_TagString: Untagged
@@ -415,6 +429,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
+--- !u!210 &108517032
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108517027}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_SortAtRoot: 0
 --- !u!1 &112229335
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,6 +453,7 @@ GameObject:
   - component: {fileID: 112229336}
   - component: {fileID: 112229338}
   - component: {fileID: 112229339}
+  - component: {fileID: 112229340}
   m_Layer: 0
   m_Name: fridgeanagram_Frame_7
   m_TagString: Untagged
@@ -561,6 +588,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
+--- !u!210 &112229340
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112229335}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_SortAtRoot: 0
 --- !u!1001 &129374171
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -634,6 +673,7 @@ GameObject:
   - component: {fileID: 262776335}
   - component: {fileID: 262776337}
   - component: {fileID: 262776338}
+  - component: {fileID: 262776339}
   m_Layer: 0
   m_Name: fridgeanagram_Frame_5
   m_TagString: Untagged
@@ -768,6 +808,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
+--- !u!210 &262776339
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262776334}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_SortAtRoot: 0
 --- !u!1 &266389230
 GameObject:
   m_ObjectHideFlags: 0
@@ -780,6 +832,7 @@ GameObject:
   - component: {fileID: 266389231}
   - component: {fileID: 266389233}
   - component: {fileID: 266389234}
+  - component: {fileID: 266389235}
   m_Layer: 0
   m_Name: fridgeanagram_Frame_8
   m_TagString: Untagged
@@ -914,6 +967,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
+--- !u!210 &266389235
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266389230}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_SortAtRoot: 0
 --- !u!1 &285218415
 GameObject:
   m_ObjectHideFlags: 0
@@ -1083,6 +1148,7 @@ GameObject:
   - component: {fileID: 598790958}
   - component: {fileID: 598790960}
   - component: {fileID: 598790961}
+  - component: {fileID: 598790962}
   m_Layer: 0
   m_Name: fridgeanagram_Frame_6
   m_TagString: Untagged
@@ -1217,6 +1283,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
+--- !u!210 &598790962
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598790957}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_SortAtRoot: 0
 --- !u!1 &636521393 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 813020558598098935, guid: cf18eb76bda2e504db14e0d89aeb829c, type: 3}
@@ -1246,6 +1324,7 @@ GameObject:
   - component: {fileID: 638646685}
   - component: {fileID: 638646687}
   - component: {fileID: 638646688}
+  - component: {fileID: 638646689}
   m_Layer: 0
   m_Name: fridgeanagram_Frame_2
   m_TagString: Untagged
@@ -1332,8 +1411,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e49bd922c7dd143891925084cd9ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 0}
-  sfxObj: {fileID: 860636234}
+  targetObject: {fileID: 860636235}
+  sfxObj: {fileID: 2098532304}
   paperSound: {fileID: 3547748930619851456, guid: e6715475ebe9d5a47ac9e685f71481bd, type: 3}
 --- !u!61 &638646688
 BoxCollider2D:
@@ -1380,6 +1459,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
+--- !u!210 &638646689
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638646684}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_SortAtRoot: 0
 --- !u!1 &651250833
 GameObject:
   m_ObjectHideFlags: 0
@@ -1392,6 +1483,7 @@ GameObject:
   - component: {fileID: 651250834}
   - component: {fileID: 651250836}
   - component: {fileID: 651250837}
+  - component: {fileID: 651250838}
   m_Layer: 0
   m_Name: fridgeanagram_Frame_9
   m_TagString: Untagged
@@ -1526,6 +1618,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
+--- !u!210 &651250838
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 651250833}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_SortAtRoot: 0
 --- !u!1 &769630072
 GameObject:
   m_ObjectHideFlags: 0
@@ -2759,6 +2863,7 @@ GameObject:
   - component: {fileID: 1555145315}
   - component: {fileID: 1555145317}
   - component: {fileID: 1555145318}
+  - component: {fileID: 1555145319}
   m_Layer: 0
   m_Name: fridgeanagram_Frame_0
   m_TagString: Untagged
@@ -2893,6 +2998,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
+--- !u!210 &1555145319
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555145314}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_SortAtRoot: 0
 --- !u!1 &1566565947
 GameObject:
   m_ObjectHideFlags: 0
@@ -2989,6 +3106,7 @@ GameObject:
   - component: {fileID: 1682678407}
   - component: {fileID: 1682678409}
   - component: {fileID: 1682678410}
+  - component: {fileID: 1682678411}
   m_Layer: 0
   m_Name: fridgeanagram_Frame_1
   m_TagString: Untagged
@@ -3123,6 +3241,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
+--- !u!210 &1682678411
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682678406}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_SortAtRoot: 0
 --- !u!1 &1698455336
 GameObject:
   m_ObjectHideFlags: 0
