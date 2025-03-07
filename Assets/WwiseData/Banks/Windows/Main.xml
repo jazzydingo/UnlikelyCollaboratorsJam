@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="154">
 	<SoundBanks>
-		<SoundBank Id="3161908922" Type="User" GUID="{88305422-A641-4F8F-950F-A4F6BF65F496}" Language="SFX" Hash="{BEC48B6A-090D-9114-79D1-F4FB4927437A}">
+		<SoundBank Id="3161908922" Type="User" GUID="{88305422-A641-4F8F-950F-A4F6BF65F496}" Language="SFX" Hash="{F25CFABD-A03E-B103-10B5-53141EA202CA}">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
+				<File Id="26832371" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>leo_corridor.wav</ShortName>
+					<CachePath>73/{73F22787-6578-F329-6A54-28B392240AE7}.wem</CachePath>
+				</File>
 				<File Id="31436995" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footsteps-001.wav</ShortName>
 					<CachePath>26/{26945494-BF4F-CD2D-2D15-A28DFEE7DB7E}.wem</CachePath>
@@ -34,6 +38,10 @@
 					<ShortName>paper.wav</ShortName>
 					<CachePath>9D/{9DC1BF1F-ADB9-D3F4-8C14-F0034715B0EC}.wem</CachePath>
 				</File>
+				<File Id="613443728" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LEOS ROOM.wav</ShortName>
+					<CachePath>7E/{7EEACF83-63EC-608A-3DA8-1C9FE7C204EC}.wem</CachePath>
+				</File>
 				<File Id="806454560" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>R16-05-Children Laughing.wav</ShortName>
 					<CachePath>AB/{ABFEFA6D-FC73-9FD5-A54A-DAE12B632454}.wem</CachePath>
@@ -52,6 +60,16 @@
 				</File>
 			</Media>
 			<Events>
+				<Event Id="2696493678" Name="Play_Bedroom_Music" ObjectPath="\Events\Default Work Unit\Play_Bedroom_Music" GUID="{9D9CD4C7-41A0-42A4-8B2F-F7652BCB74C8}" DurationType="OneShot" DurationMin="173.46533" DurationMax="173.46533">
+					<MediaRefs>
+						<MediaRef Id="613443728"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1620709292" Name="Play_Corridor_Music" ObjectPath="\Events\Default Work Unit\Play_Corridor_Music" GUID="{F152E68D-3FB5-4599-9849-EE6A1F1CECE8}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="26832371"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3854155799" Name="Play_Footsteps" ObjectPath="\Events\Default Work Unit\Play_Footsteps" GUID="{A10B211A-605D-4DD3-8E93-8D0DE9AEF27D}" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="31436995"/>
@@ -90,5 +108,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{848D64FB-2A15-55FD-2276-70EC1A1B8428}</FileHash>
+	<FileHash>{5E383B7F-7641-87E2-5B51-FD65DD85A216}</FileHash>
 </SoundBanksInfo>

@@ -13,6 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_BEDROOM_MUSIC = 2696493678U;
+        static const AkUniqueID PLAY_CORRIDOR_MUSIC = 1620709292U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_NOTE_REVEALED = 3751761369U;
         static const AkUniqueID PLAY_NPC_TALK = 2134431836U;
