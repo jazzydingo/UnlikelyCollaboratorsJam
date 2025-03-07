@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c25b29ed57065a46a89cc74dd80a66e, type: 3}
+  m_Name: F152E68D-3FB5-4599-9849-EE6A1F1CECE8
+  m_EditorClassIdentifier: 
+  objectName: Play_Corridor_Music
+  id: 1620709292
+  guid: F152E68D-3FB5-4599-9849-EE6A1F1CECE8
+  AutoBank: {fileID: 0}
+  IsInUserDefinedSoundBank: 1
+  IsAutoBankLoaded: 0

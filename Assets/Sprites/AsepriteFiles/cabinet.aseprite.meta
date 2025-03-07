@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5499739673de3da44b2cff20573e1c42
+guid: a72bf667c3ab7744e8e23dea4e254fdf
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -77,7 +77,7 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
-    mosaicPadding: 0
+    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
@@ -90,14 +90,14 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
-    mosaicPadding: 0
+    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638769527232824577
+  platformSettingsDirtyTick: 638769436240052505
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,18 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: fridge
+  - name: cabinet
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 0
-      y: 0
+      x: 4
+      y: 4
       width: 16
-      height: 32
-    spriteID: 58876b4406588ef42a42af9ecede99c6
+      height: 16
+    spriteID: 54fc31e90d23966489dda4aaea6161d4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -140,24 +140,24 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
+    uvTransform: {x: 4, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1674064481
-    name: fridge
+    guid: 1693438158
+    name: cabinet
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: fridge
+    - name: cabinet
       frameIndex: 0
       cellRect:
         x: 0
         y: 0
         width: 16
-        height: 32
-      spriteId: 58876b4406588ef42a42af9ecede99c6
+        height: 16
+      spriteId: 54fc31e90d23966489dda4aaea6161d4
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -224,4 +224,4 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 16, y: 32}
+  canvasSize: {x: 16, y: 16}
