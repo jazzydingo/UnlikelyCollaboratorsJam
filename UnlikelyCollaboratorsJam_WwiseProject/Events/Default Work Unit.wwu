@@ -69,28 +69,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Bedroom_Music" ID="{9D9CD4C7-41A0-42A4-8B2F-F7652BCB74C8}">
-					<ChildrenList>
-						<Action Name="" ID="{6944C68E-A7FF-4470-AB16-AAB820EF495B}" ShortID="163895083">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Bedroom_1" ID="{4ABBA898-97B9-4A92-97FD-C0FC3C84BDBC}" WorkUnitID="{40DAA01C-CF7D-4D63-A509-2C615AB42EDE}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Corridor_Music" ID="{F152E68D-3FB5-4599-9849-EE6A1F1CECE8}">
-					<ChildrenList>
-						<Action Name="" ID="{57952D31-0270-4BB1-AFBD-B4DBC0FB808A}" ShortID="672090966">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Corridor_1" ID="{9D9D9987-0EE8-4DE2-B174-9CA53C7C1646}" WorkUnitID="{40DAA01C-CF7D-4D63-A509-2C615AB42EDE}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

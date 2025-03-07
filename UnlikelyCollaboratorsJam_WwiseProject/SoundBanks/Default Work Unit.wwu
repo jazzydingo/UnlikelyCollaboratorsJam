@@ -6,9 +6,7 @@
 				<SoundBank Name="Main" ID="{88305422-A641-4F8F-950F-A4F6BF65F496}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_Paper" ID="{F43E8D24-D557-41BA-A9D5-E1BACA1AACA9}" WorkUnitID="{21EEDD0E-8309-47D7-B671-76FBDABAFA78}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Bedroom_Music" ID="{9D9CD4C7-41A0-42A4-8B2F-F7652BCB74C8}" WorkUnitID="{21EEDD0E-8309-47D7-B671-76FBDABAFA78}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TEST" ID="{847B3BD1-9476-4424-9A7F-487C1941DE2C}" WorkUnitID="{21EEDD0E-8309-47D7-B671-76FBDABAFA78}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Corridor_Music" ID="{F152E68D-3FB5-4599-9849-EE6A1F1CECE8}" WorkUnitID="{21EEDD0E-8309-47D7-B671-76FBDABAFA78}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Note_Revealed" ID="{869EDF28-6A7C-45BC-8B87-53F4B74F05E8}" WorkUnitID="{21EEDD0E-8309-47D7-B671-76FBDABAFA78}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_NPC_Talk" ID="{BA78C965-0EBA-46DE-93E4-CD6915F0A1B4}" WorkUnitID="{21EEDD0E-8309-47D7-B671-76FBDABAFA78}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Pick_Up" ID="{0B39547D-ECC2-4CD4-A433-E628D3326572}" WorkUnitID="{21EEDD0E-8309-47D7-B671-76FBDABAFA78}" Origin="Manual" Filter="7"/>
