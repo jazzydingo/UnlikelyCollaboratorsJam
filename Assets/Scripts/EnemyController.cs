@@ -53,12 +53,16 @@ namespace game
         {
             if(chase)
             {
+                Animator anim = GetComponent<Animator>();
+                anim.enabled = true;
                 Vector2 direction = (Player.current.transform.position - transform.position).normalized;
                 body.velocity = direction * speed;
             }
             else
             {
                 body.velocity = new Vector2(0, 0);
+                Animator anim = GetComponent<Animator>();
+                anim.enabled = false;
             }
             
         }
