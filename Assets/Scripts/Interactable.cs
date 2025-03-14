@@ -139,28 +139,53 @@ namespace game
             }
             else if (dialogue)
             {
-                //pull up dialogue and display line
-                lineObj = Instantiate(lineDialogue);
-
-                isPlaying = false;
-
-                lineObj.gameObject.SetActive(true);
-
-                if (Player.current != null)
+                if(!key)
                 {
-                    Player.current.enabled = false;
-                }
-                if (OrbFollow.instance != null)
-                {
-                    OrbFollow.instance.enabled = false;
-                }
+                    //pull up dialogue and display line
+                    lineObj = Instantiate(lineDialogue);
 
-                StartCoroutine(NextLine());
+                    isPlaying = false;
+
+                    lineObj.gameObject.SetActive(true);
+
+                    if (Player.current != null)
+                    {
+                        Player.current.enabled = false;
+                    }
+                    if (OrbFollow.instance != null)
+                    {
+                        OrbFollow.instance.enabled = false;
+                    }
+
+                    StartCoroutine(NextLine());
+                }
+                else if(key && safeUI.GetComponentInParent<SafeController>().solved)
+                {
+                    //pull up dialogue and display line
+                    lineObj = Instantiate(lineDialogue);
+                    line = "You used the key to open the padlock.";
+                    
+
+                    isPlaying = false;
+
+                    lineObj.gameObject.SetActive(true);
+
+                    if (Player.current != null)
+                    {
+                        Player.current.enabled = false;
+                    }
+                    if (OrbFollow.instance != null)
+                    {
+                        OrbFollow.instance.enabled = false;
+                    }
+
+                    StartCoroutine(NextLine());
+
+                    //play unlock sound 
+                    //add object to inventory
+                }
             }
-            else if(key)
-            {
-                //code to use key to unlock door
-            }
+            
             else if(bed)
             {
                 if(!dialogueBox.gameObject.GetComponentInParent<DialogueController>().choiceYes)
