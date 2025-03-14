@@ -13,6 +13,7 @@ namespace game
         public bool flashlight;
         public bool key;
         public bool bed;
+        public bool safe;
 
         public Material defaultMaterial;
         public Material outlineMaterial;
@@ -38,6 +39,8 @@ namespace game
 
         public GameObject talkSound;
         public GameObject npcTalk;
+
+        public GameObject safeUI;
 
 
 
@@ -167,6 +170,10 @@ namespace game
                 }
                 
                 
+            }
+            else if(safe)
+            {
+                safeUI.gameObject.SetActive(true);
             }
 
             //other objects that need to be collected
