@@ -42,6 +42,8 @@ namespace game
 
         public GameObject safeUI;
 
+        public GameObject unlockSFX;
+
 
 
         // Start is called before the first frame update
@@ -139,7 +141,7 @@ namespace game
             }
             else if (dialogue)
             {
-                if(!key)
+                if(!key || key && !safeUI.GetComponentInParent<SafeController>().solved)
                 {
                     //pull up dialogue and display line
                     lineObj = Instantiate(lineDialogue);
@@ -182,7 +184,9 @@ namespace game
                     StartCoroutine(NextLine());
 
                     //play unlock sound 
+                    unlockSFX.GetComponent<AudioSource>().Play();
                     //add object to inventory
+
                 }
             }
             

@@ -19,6 +19,9 @@ namespace game
 
         public bool solved;
 
+        public GameObject lockedSFX;
+        public GameObject unlockedSFX;
+
         // Start is called before the first frame update
         void Start()
         {
@@ -39,7 +42,8 @@ namespace game
 
             if(num1 == 2 && num2 == 1 && num3 == 3 && num4 == 4)
             {
-                Debug.Log("solved");
+                //Debug.Log("solved");
+                if(!solved)
                 solved = true;
 
 
@@ -50,9 +54,14 @@ namespace game
 
         public void Solve()
         {
+            if(!solved)
+            {
+                lockedSFX.GetComponent<AudioSource>().Play();
+            }
             if(solved)
             {
                 //play sound
+                unlockedSFX.GetComponent<AudioSource>().Play();
 
                 UIPanel.gameObject.SetActive(false);
             }
