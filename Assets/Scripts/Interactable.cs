@@ -144,7 +144,17 @@ namespace game
                 if(!key || key && !safeUI.GetComponentInParent<SafeController>().solved)
                 {
                     //pull up dialogue and display line
+                    dialogueBox = GameObject.FindWithTag("UICanvas");
+                    if(dialogueBox != null)
+                    {
+                        dialogueBox.GetComponentInChildren<TextMeshProUGUI>().text = "";
+                    }
+                    
+                    Destroy(GameObject.FindWithTag("lineObj"));
+                    
+                    
                     lineObj = Instantiate(lineDialogue);
+                    
 
                     isPlaying = false;
 
