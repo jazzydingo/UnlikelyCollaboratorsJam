@@ -475,7 +475,7 @@ GameObject:
   - component: {fileID: 855153447}
   - component: {fileID: 855153446}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: Credits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -533,7 +533,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: music and sounds - andrei gorkovoi             programming - jasmine ding,
-    taisukee             art - yeun, kaiser
+    taisukee             art - yeun lee, kaiser
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a979b42f99a9584c96942a82ef14fa6, type: 2}
   m_sharedMaterial: {fileID: -2244805500867798784, guid: 3a979b42f99a9584c96942a82ef14fa6, type: 2}
