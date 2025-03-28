@@ -104,7 +104,7 @@ namespace game
 
         void KeepLightLow()
         {
-            if (this.GetComponentInChildren<RevealLightOrb>().isOn)
+            if (SingletonPlayer.Instance.isOn)
             {
                 bar.gameObject.SetActive(true);
                 bar.gameObject.GetComponent<Image>().color = Color.red;
@@ -206,7 +206,7 @@ namespace game
 
         void ControlLight()
         {
-            if(spotlight.activeSelf && this.GetComponentInChildren<RevealLightOrb>().isOn)
+            if(spotlight.activeSelf && SingletonPlayer.Instance.isOn)
             {
                 Vector3 mousePosition = Input.mousePosition;
                 Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(mousePosition);

@@ -9,14 +9,12 @@ namespace game {
         [SerializeField] private float _turnOffLightTimeSeconds = 1f;
         [SerializeField] private float _turnOnLightTimeSeconds = 1f;
 
-        public bool isOn;
-
         [HideInInspector] public float LightPixelRadius;
         [SerializeField] public bool _shouldSwitchState = false; // TODO: remove serialize field when done testing
 
         private void Awake() {
             LightPixelRadius = _maxLightPixelRadius;
-            isOn = true;
+            _lightState = SingletonPlayer.Instance.isOn ? ELightState.On : ELightState.Off;
         }
 
         private void Update() {
@@ -54,7 +52,7 @@ namespace game {
             // The while loop doesn't guarantee that we get to the target radius
             LightPixelRadius = radiusFinal;
             _lightState = ELightState.Off;
-            isOn = false;
+            SingletonPlayer.Instance.isOn = false;
         }
 
         private IEnumerator TurnOnLightCoroutine() {
@@ -70,7 +68,7 @@ namespace game {
             // The while loop doesn't guarantee that we get to the target radius
             LightPixelRadius = radiusFinal;
             _lightState = ELightState.On;
-            isOn = true;
+            SingletonPlayer.Instance.isOn = true;
         }
 
         private IEnumerator ChangeRadius(float timeTotal, float radiusInitial, float radiusFinal) {
