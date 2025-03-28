@@ -24,7 +24,7 @@ namespace game
 
         void Update()
         {
-            if (this.GetComponent<RevealLightOrb>().isOn)
+            if (SingletonPlayer.Instance.isOn)
             {
                 //lock to player
                 //Debug.Log("lock"); 
